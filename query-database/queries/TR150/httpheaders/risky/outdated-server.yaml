@@ -1,0 +1,69 @@
+id: TR150.httpheaders.outdated-apache-server-1.0.3
+label: risky
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - technique/url: https://www.cvedetails.com/vulnerability-list/vendor_id-45/product_id-66/version_id-363719/Apache-Http-Server-1.0.3.html
+annotations:
+  - risk/type: vulnerability
+  - risk/risky-lines: "L3"
+  - risk/present-vulnerability: httpheaders-outdated-apache
+  - risk/description: "The `Server` header suggests that the server is running Apache 1.0.3 wich is very old and vulnerable."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Tue, 02 May 2018 04:32:14 GMT
+  Server: Apache/1.0.3 (Debian)
+  Set-Cookie: PHPSESSID=hLAGcA9qClz36kOr71sSgw; path=/
+  Pragma: no-cache
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Content-Type: text/html
+---
+id: TR150.httpheaders.outdated-nginx-server-0.1.30
+label: risky
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - technique/url: http://nginx.org/en/security_advisories.html
+  - technique/url: https://www.cvedetails.com/cve/CVE-2009-2629/
+annotations:
+  - risk/type: vulnerability
+  - risk/risky-lines: "L2"
+  - risk/present-vulnerability: httpheaders-outdated-apache
+  - risk/description: "The `Server` header suggests that the server is running nginx 0.1.30 wich is very old and vulnerable."
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/0.1.30
+  Date: Tue, 02 May 2018 04:12:14 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding
+  Set-Cookie: PHPSESSID=d8pKPuRav1W9gbw1Ufkguw; path=/
+  Expires: Thu, 31 Dec 2037 23:55:55 GMT
+  Cache-Control: max-age=315360000
+  Pragma: no-cache
+---
+id: TR150.httpheaders.outdated-iis-server-5.0
+label: risky
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - technique/url: https://www.cvedetails.com/vulnerability-list/vendor_id-26/product_id-3427/version_id-364163/Microsoft-Internet-Information-Services-5.0.html
+annotations:
+  - risk/type: vulnerability
+  - risk/risky-lines: "L3"
+  - risk/present-vulnerability: httpheaders-outdated-apache
+  - risk/description: "The `Server` header suggests that the server is running IIS 5.0 wich is very old and vulnerable."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 13 Apr 2014 02:04:39 GMT
+  Server: Microsoft-IIS/5.0
+  X-Powered-By: ASP.NET
+  Content-Length: 18102
+  Content-Type: text/html
+  Set-Cookie: ASPSESSIONIDASQACSSR=OADOIJMAPGOPILLPMPIPMPNI; path=/
+  Cache-control: private

@@ -1,0 +1,56 @@
+id: TR150.networkrequests.juice_shop_herokuapp_com-004-mass-assignment
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - metaref: owasp-api6-2019-mass-assignment
+annotations:
+  - honeypatch/deceptive-lines: "L4-6"
+  - honeypatch/original-query: TR150.networkrequests.juice_shop_herokuapp_com-004
+  - honeypatch/applied-honeywire: networkrequests-mass-assignment
+  - honeypatch/description: "It seems that the `/rest/products/1/reviews` endpoint allows to set arbitrary attributes."
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.5 kB)
+  1.314 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.5 kB)
+  4.642 PUT https://juice-shop.herokuapp.com/rest/products/1/reviews 201 Created (20 bytes)
+  4.690 PUT https://juice-shop.herokuapp.com/rest/products/1/reviews?verified=false 201 Created (19 bytes)
+  4.692 PUT https://juice-shop.herokuapp.com/rest/products/1/reviews?assigned=false 201 Created (19 bytes)
+  4.701 PUT https://juice-shop.herokuapp.com/rest/products/1/reviews?utm_source=browser 201 Created (23 bytes)
+  4.716 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.6 kB)
+  4.719 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.6 kB)
+  4.806 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.6 kB)
+  7.640 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  8.196 POST https://juice-shop.herokuapp.com/api/Complaints/ 201 Created (0.2 kB)
+  8.281 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  9.264 GET https://juice-shop.herokuapp.com/rest/memories/ 200 OK (0.9 kB)
+---
+id: TR150.networkrequests.www_youtube_com-trunc-mass-assignment
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - metaref: owasp-api6-2019-mass-assignment
+annotations:
+  - honeypatch/deceptive-lines: "L7-9"
+  - honeypatch/original-query: TR150.networkrequests.www_youtube_com-trunc
+  - honeypatch/applied-honeywire: networkrequests-mass-assignment
+  - honeypatch/description: "It seems that the `/sitei/v1/log_event_ad` endpoint allows to set arbitrary attributes."
+data: |-
+  0.000 GET https://i.stimg.com/generate_204 204 No Content (0.3 kB)
+  1.179 GET https://www.sitestatic.com/site/img/emojis/emojis-svg-9.json 200 OK (48.6 kB)
+  2.509 POST https://www.site.com/sitei/v1/guide?key=J0bIiQpY_FZeYj_EGmB1TA&prettyPrint=false 200 OK (3.3 kB)
+  3.180 POST https://www.site.com/sitei/v1/feedback?key=J0bIiQpY_FZeYj_EGmB1TA&prettyPrint=false 200 OK (1.4 kB)
+  3.229 POST https://www.site.com/sitei/v1/log_event?alt=json&key=J0bIiQpY_FZeYj_EGmB1TA 200 OK (0.5 kB)
+  3.993 POST https://www.site.com/sitei/v1/log_event?alt=json&key=J0bIiQpY_FZeYj_EGmB1TA 200 OK (0.5 kB)
+  4.012 POST https://www.site.com/sitei/v1/log_event_ad?authorized=false 200 OK (0.7 kB)
+  4.014 POST https://www.site.com/sitei/v1/log_event_ad?ignore=false 200 OK (0.7 kB)
+  4.023 POST https://www.site.com/sitei/v1/log_event_ad?inc_credits=744200 200 OK (0.7 kB)
+  4.293 OPTIONS https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/Create 200 OK (0.7 kB)
+  4.363 POST https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/Create 200 OK (31.4 kB)
+  4.545 OPTIONS https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/GenerateIT 200 OK (0.7 kB)
+  4.573 POST https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/GenerateIT 200 OK (0.8 kB)
+  5.321 POST https://www.site.com/sitei/v1/att/get?key=J0bIiQpY_FZeYj_EGmB1TA&prettyPrint=false 200 OK (16.0 kB)

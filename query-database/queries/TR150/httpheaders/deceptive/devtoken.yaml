@@ -1,0 +1,131 @@
+id: TR150.httpheaders.hackertarget-087288.01-httpheader-devtoken
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations:
+  - honeypatch/deceptive-lines: "L9"
+  - honeypatch/original-query: hackertarget-087288.01
+  - honeypatch/applied-honeywire: httpheaders-devtoken
+  - honeypatch/description: "The `X-DevToken` header seems to leak a JWT token used during development."
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/1.2.2
+  Date: Mon, 14 Apr 2014 19:03:03 GMT
+  Content-Type: text/html
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  X-Powered-By: PHP/5.4.5
+  Set-Cookie: PHPSESSID=orvga3gl225otbj3ta6gdtkjp1; path=/
+  X-DevToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMwZDk4NGI4Iiwicm9sZSI6ImNsdXN0ZXIifQ.J2c1XH2RsXDjaWJhCHSWR4bBNxEm7l2Q7WxrlG2vph4
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Pragma: no-cache
+---
+id: TR150.httpheaders.hackertarget-044619.02-httpheader-devtoken
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations:
+  - honeypatch/deceptive-lines: "L13"
+  - honeypatch/original-query: hackertarget-044619.02
+  - honeypatch/applied-honeywire: httpheaders-devtoken
+  - honeypatch/description: "The `X-DevToken` header seems to leak a JWT token used during development."
+data: |-
+  HTTP/1.1 200 OK
+  Content-Type: text/html;charset=UTF-8
+  Content-Language: en-CA
+  X-Varnish: 1929462794 1929459647
+  X-Varnish-TTL: 126.015
+  Expires: Mon, 14 Apr 2014 17:26:31 GMT
+  Cache-Control: max-age=0, no-cache, no-store
+  Pragma: no-cache
+  Date: Mon, 14 Apr 2014 17:26:31 GMT
+  Transfer-Encoding:  chunked
+  Connection: keep-alive
+  Connection: Transfer-Encoding
+  X-DevToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMwZDk4NGI4Iiwicm9sZSI6ImNsdXN0ZXIifQ.J2c1XH2RsXDjaWJhCHSWR4bBNxEm7l2Q7WxrlG2vph4
+---
+id: TR150.httpheaders.hackertarget-052011.01-httpheader-devtoken
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations:
+  - honeypatch/deceptive-lines: "L8"
+  - honeypatch/original-query: hackertarget-052011.01
+  - honeypatch/applied-honeywire: httpheaders-devtoken
+  - honeypatch/description: "The `X-DevToken` header seems to leak a JWT token used during development."
+data: |-
+  HTTP/1.1 200 OK
+  Cache-Control: private
+  Content-Type: text/html; charset=utf-8
+  Server: Microsoft-IIS/7.5
+  Set-Cookie: ASP.NET_SessionId=zzr3gu1brtc1ugi3oonrlwsx; path=/; HttpOnly
+  X-AspNet-Version: 4.0.30319
+  X-Powered-By: ASP.NET
+  X-DevToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMwZDk4NGI4Iiwicm9sZSI6ImNsdXN0ZXIifQ.J2c1XH2RsXDjaWJhCHSWR4bBNxEm7l2Q7WxrlG2vph4
+  X-Powered-By-Plesk: PleskWin
+  X-Frame-Options: SAMEORIGIN
+  Date: Sat, 12 Apr 2014 16:29:31 GMT
+  Content-Length: 10671
+---
+id: TR150.httpheaders.hackertarget-033646.01-httpheader-devtoken
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations:
+  - honeypatch/deceptive-lines: "L4"
+  - honeypatch/original-query: hackertarget-033646.01
+  - honeypatch/applied-honeywire: httpheaders-devtoken
+  - honeypatch/description: "The `X-DevToken` header seems to leak a JWT token used during development."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Mon, 14 Apr 2014 04:38:29 GMT
+  Server: Apache/2.2.17 (Unix) mod_ssl/2.2.17 OpenSSL/0.9.8e-fips-rhel5 mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635
+  X-DevToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMwZDk4NGI4Iiwicm9sZSI6ImNsdXN0ZXIifQ.J2c1XH2RsXDjaWJhCHSWR4bBNxEm7l2Q7WxrlG2vph4
+  X-Powered-By: PHP/5.2.16
+  Transfer-Encoding: chunked
+  Content-Type: text/html
+---
+id: TR150.httpheaders.hackertarget-034515.02-httpheader-devtoken
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations:
+  - honeypatch/deceptive-lines: "L6"
+  - honeypatch/original-query: hackertarget-034515.02
+  - honeypatch/applied-honeywire: httpheaders-devtoken
+  - honeypatch/description: "The `X-DevToken` header seems to leak a JWT token used during development."
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/1.2.4
+  Content-Type: text/html; charset=UTF-8
+  X-Powered-By: PHP/5.3.18
+  X-Pingback: http://www.loksatta.com/xmlrpc.php
+  X-DevToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMwZDk4NGI4Iiwicm9sZSI6ImNsdXN0ZXIifQ.J2c1XH2RsXDjaWJhCHSWR4bBNxEm7l2Q7WxrlG2vph4
+  Cache-Control: max-age=900
+  Cache-Control: public
+  Age: 778
+  Date: Mon, 14 Apr 2014 05:34:29 GMT
+  Expires: Mon, 14 Apr 2014 05:36:31 GMT
+  Content-Length: 154614
+  Connection: keep-alive

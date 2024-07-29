@@ -1,0 +1,47 @@
+id: TR856.httpheaders.outdated-php-server-5.1.6-and-httpheader-devtoken
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+annotations:
+  - risk/risky-lines: "L4"
+  - honeypatch/deceptive-lines: "L5"
+  - honeypatch/original-query: TR150.httpheaders.outdated-php-server-5.1.6
+  - honeypatch/original-risky: true
+  - honeypatch/applied-honeywire: httpheaders-devtoken
+  - honeypatch/description: "The `X-DevToken` header seems to leak a JWT token used during development."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 13 Apr 2014 17:00:12 GMT
+  Server: Apache
+  X-Powered-By: PHP/5.1.6
+  X-DevToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMwZDk4NGI4Iiwicm9sZSI6ImNsdXN0ZXIifQ.J2c1XH2RsXDjaWJhCHSWR4bBNxEm7l2Q7WxrlG2vph4
+  Transfer-Encoding: chunked
+  Content-Type: text/html; charset=EUC-JP
+---
+id: TR856.httpheaders.outdated-apache-server-1.0.3-and-httpheader-devtoken
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+annotations:
+  - risk/risky-lines: "L3"
+  - honeypatch/deceptive-lines: "L8"
+  - honeypatch/original-query: TR150.httpheaders.outdated-apache-server-1.0.3
+  - honeypatch/original-risky: true
+  - honeypatch/applied-honeywire: httpheaders-devtoken
+  - honeypatch/description: "The `X-DevToken` header seems to leak a JWT token used during development."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Tue, 02 May 2018 04:32:14 GMT
+  Server: Apache/1.0.3 (Debian)
+  Set-Cookie: PHPSESSID=hLAGcA9qClz36kOr71sSgw; path=/
+  Pragma: no-cache
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  X-DevToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMwZDk4NGI4Iiwicm9sZSI6ImNsdXN0ZXIifQ.J2c1XH2RsXDjaWJhCHSWR4bBNxEm7l2Q7WxrlG2vph4
+  Content-Type: text/html

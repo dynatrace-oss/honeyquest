@@ -1,0 +1,47 @@
+id: TR856.httpheaders.outdated-php-server-5.1.6-and-httpheader-apiserver
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+annotations:
+  - risk/risky-lines: "L4"
+  - honeypatch/deceptive-lines: "L5"
+  - honeypatch/original-query: TR150.httpheaders.outdated-php-server-5.1.6
+  - honeypatch/original-risky: true
+  - honeypatch/applied-honeywire: httpheaders-apiserver
+  - honeypatch/description: "The `X-Kube-ApiServer` header seems to leak the location of an API endpoint."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 13 Apr 2014 17:00:12 GMT
+  Server: Apache
+  X-Powered-By: PHP/5.1.6
+  X-Kube-ApiServer: /hko/api
+  Transfer-Encoding: chunked
+  Content-Type: text/html; charset=EUC-JP
+---
+id: TR856.httpheaders.outdated-apache-server-1.0.3-and-httpheader-apiserver
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+annotations:
+  - risk/risky-lines: "L3"
+  - honeypatch/deceptive-lines: "L8"
+  - honeypatch/original-query: TR150.httpheaders.outdated-apache-server-1.0.3
+  - honeypatch/original-risky: true
+  - honeypatch/applied-honeywire: httpheaders-apiserver
+  - honeypatch/description: "The `X-Kube-ApiServer` header seems to leak the location of an API endpoint."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Tue, 02 May 2018 04:32:14 GMT
+  Server: Apache/1.0.3 (Debian)
+  Set-Cookie: PHPSESSID=hLAGcA9qClz36kOr71sSgw; path=/
+  Pragma: no-cache
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  X-Kube-ApiServer: /hko/api
+  Content-Type: text/html

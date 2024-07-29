@@ -1,0 +1,93 @@
+index:
+  queries/tutorial/tutorial.yaml:
+    - TR125.tutorial.welcome-01
+    - TR125.tutorial.welcome-02
+    - TR125.tutorial.welcome-03
+    - TR125.tutorial.welcome-04
+    - TR125.tutorial.welcome-05
+    - TR125.tutorial.welcome-06
+    - TR125.tutorial.welcome-07
+    - TR125.tutorial.welcome-08
+  queries/TR645/TR645-filesystem.yaml:
+    - TR645.filesystem.home-elsa-keys-json
+    - TR645.filesystem.home-goofy
+  queries/TR150/htaccess/neutral/github.yaml:
+    - TR150.htaccess.github-ZeroDayTea_kqctf
+  queries/TR150/htaccess/deceptive/admin-redirect.yaml:
+    - TR150.htaccess.admin-redirect
+  queries/TR150/httpheaders/neutral/hackertarget.yaml:
+    - hackertarget-000953.02
+    - hackertarget-001916.02
+    - hackertarget-003375.03
+    - hackertarget-005804.02
+    - hackertarget-011579.02
+    - hackertarget-033646.01
+    - hackertarget-034154.01
+    - hackertarget-034515.02
+    - hackertarget-044619.02
+    - hackertarget-052011.01
+    - hackertarget-054786.01
+    - hackertarget-056380.01
+    - hackertarget-059794.03
+    - hackertarget-060766.01
+    - hackertarget-065265.01
+    - hackertarget-069047.02
+    - hackertarget-070259.01
+    - hackertarget-071483.02
+    - hackertarget-087288.01
+    - hackertarget-094570.01
+    - hackertarget-101810.02
+    - hackertarget-161701.02
+    - hackertarget-177038.01
+    - hackertarget-180004.02
+    - hackertarget-187431.02
+  queries/TR150/networkrequests/neutral/juiceshop.yaml:
+    - TR150.networkrequests.juice_shop_herokuapp_com-001
+    - TR150.networkrequests.juice_shop_herokuapp_com-002
+    - TR150.networkrequests.juice_shop_herokuapp_com-003
+    - TR150.networkrequests.juice_shop_herokuapp_com-004
+    - TR150.networkrequests.juice_shop_herokuapp_com-005
+    - TR150.networkrequests.juice_shop_herokuapp_com-006
+    - TR150.networkrequests.juice_shop_herokuapp_com-007
+    - TR150.networkrequests.juice_shop_herokuapp_com-008
+    - TR150.networkrequests.juice_shop_herokuapp_com-009
+    - TR150.networkrequests.juice_shop_herokuapp_com-010
+    - TR150.networkrequests.juice_shop_herokuapp_com-011
+    - TR150.networkrequests.juice_shop_herokuapp_com-012
+    - TR150.networkrequests.juice_shop_herokuapp_com-013
+    - TR150.networkrequests.juice_shop_herokuapp_com-014
+    - TR150.networkrequests.juice_shop_herokuapp_com-015
+    - TR150.networkrequests.juice_shop_herokuapp_com-016
+    - TR150.networkrequests.juice_shop_herokuapp_com-017
+
+buckets:
+  tutorial:
+    strategy: sorted
+    description: Tutorial
+    queries:
+      - TR125.tutorial.welcome-01
+      - TR125.tutorial.welcome-02
+      - TR125.tutorial.welcome-03
+      - TR125.tutorial.welcome-04
+      - TR125.tutorial.welcome-05
+      - TR125.tutorial.welcome-06
+      - TR125.tutorial.welcome-07
+      - TR125.tutorial.welcome-08
+
+  # two queries from every type
+  warmup:
+    strategy: random
+    description: Warm-Up
+    queries:
+      - TR645.filesystem.home-elsa-keys-json
+      - TR645.filesystem.home-goofy
+      - TR150.htaccess.admin-redirect
+      - TR150.htaccess.github-ZeroDayTea_kqctf
+      - hackertarget-000953.02
+      - hackertarget-001916.02
+      - TR150.networkrequests.juice_shop_herokuapp_com-001
+      - TR150.networkrequests.juice_shop_herokuapp_com-002
+
+order:
+  - tutorial
+  - warmup

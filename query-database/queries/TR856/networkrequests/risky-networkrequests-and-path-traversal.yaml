@@ -1,0 +1,63 @@
+id: TR856.networkrequests.github_com.security-misconfiguration-and-path-traversal
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - metaref: path-traversal
+annotations:
+  - risk/risky-lines: "L2-5"
+  - honeypatch/deceptive-lines: "L9"
+  - honeypatch/original-query: TR150.networkrequests.github_com.security-misconfiguration
+  - honeypatch/original-risky: true
+  - honeypatch/applied-honeywire: networkrequests-path-traversal
+  - honeypatch/description: "It seems that the `file` query parameter may be used to access arbitrary files on the server."
+data: |-
+  0.000 GET https://site.com/ 200 OK (162.9 kB)
+  0.414 GET http://avatars.siteusercontent.com/u/10400532?s=40&v=4 200 OK (1.1 kB)
+  0.415 GET http://avatars.siteusercontent.com/u/76981099?s=40&v=4 200 OK (2.2 kB)
+  0.415 GET http://avatars.siteusercontent.com/u/6333118?s=40&v=4 200 OK (1.5 kB)
+  0.415 GET http://avatars.siteusercontent.com/u/82605399?s=40&v=4 200 OK (1.1 kB)
+  0.969 GET https://site.com/users/microsoft/feature_preview/indicator_check 200 OK (24 bytes)
+  1.055 GET https://site.com/dashboard/my_top_repositories?location=left 200 OK (16.8 kB)
+  1.055 GET https://site.com/dashboard/recent-activity 200 OK (0.2 kB)
+  0.415 GET https://assets.siteusercontent.com/u/418982Sccs?file=../dist/img/4FqAq.svg&w=53px 200 OK (1.1 kB)
+  1.056 GET https://site.com/dashboard/my_top_repositories?location=center 200 OK (16.8 kB)
+  1.057 GET https://site.com/dashboard/recent-activity 200 OK (0.2 kB)
+  1.057 GET https://site.com/conduit/filter 200 OK (9.4 kB)
+  2.460 POST https://api.site.com/_private/browser/stats
+  3.127 POST https://api.site.com/_private/browser/stats
+  3.127 POST https://api.site.com/_private/browser/stats
+---
+id: TR856.networkrequests.mail_google_com.insufficient-logging-monitoring-and-path-traversal
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - metaref: path-traversal
+annotations:
+  - risk/risky-lines: "L7-11"
+  - honeypatch/deceptive-lines: "L5:77-114"
+  - honeypatch/original-query: TR150.networkrequests.mail_google_com.insufficient-logging-monitoring
+  - honeypatch/original-risky: true
+  - honeypatch/applied-honeywire: networkrequests-path-traversal
+  - honeypatch/description: "It seems that the `file` query parameter may be used to access arbitrary files on the server."
+data: |-
+  3.251 POST https://people-pa.clients6.site.com/$rpc/comp.internal.people.v2.minimal.InternalPeopleMinimalService/ListRankedTargets 200 OK (532.7 kB)
+  3.255 OPTIONS https://people-pa.clients6.site.com/$rpc/comp.internal.people.v2.minimal.InternalPeopleMinimalService/ListRankedTargets 200 OK
+  4.289 GET https://ssl.static.site.com/ui/v1/icons/mail/images/cleardot.gif?zx=OSa4nRMH 200 OK (43 bytes)
+  4.393 POST https://play.site.com/log?format=query&msg=app.init.ok%3A4584134984654186&hasfast=true&authuser=0 204 No Content
+  5.441 GET https://mail.site.com/mail/u/0/images/cleardot.gif?zx=jzj8bat8q0rh&f=../pack/fonts/pDxWAF1pBB0dzGB.woff2 200 OK (43 bytes)
+  6.447 GET https://lh3.compusercontent.com/ogw/ygEVAUIdOM-xT1smDKYW8g=s128-b16-cc-rp-mo 200 OK (14.5 kB)
+  6.776 POST https://play.site.com/log?format=query&msg=xuRj8mgzIxnw5PzupASqm51XdFSm_gOvaea0pxdd7HWbq2Jwdr_fpYDsceY&hasfast=true&authuser=0 204 No Content
+  6.861 POST https://play.site.com/log?format=query&msg=vQvzHwhqQDxMUH575XQcmuPqoURUimxx_dpiUj-6U7g7TRkX8KNEvomPDd2iOsR&hasfast=true&authuser=0 204 No Content
+  6.921 POST https://play.site.com/log?format=query&msg=UtG5I4puH__lKuihh9hLYQVW9TGH9aG8GS-mEGLxMF-vNbXYGfisuKjeCX1drUr3g9pQeQ&hasfast=true&authuser=0 204 No Content
+  7.001 POST https://play.site.com/log?format=query&msg=CpxZSywgdX9iW1jhx8WxLrALwjnHD3UCWoysmpjq3wEBo8ZH8iHuUswp6opaG9-jK1FKdg&hasfast=true&authuser=0 204 No Content
+  7.352 POST https://play.site.com/log?format=query&msg=p50hRinsyhzG4MRLqOTESbFosSA9IK3S1e-uZXA7gTUj31-StdwIO2ZTjfhUbP4B8VuagA&hasfast=true&authuser=0 204 No Content

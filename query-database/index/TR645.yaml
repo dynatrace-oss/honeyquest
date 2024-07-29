@@ -1,0 +1,27 @@
+index:
+  queries/TR645/TR645-filesystem.yaml:
+    - TR645.filesystem.home-elsa-keys-json
+    # - TR645.filesystem.home-goofy
+  queries/TR645/TR645-htaccess.yaml:
+    - TR645.htaccess.admin-redirect
+    # - TR645.htaccess.github-ZeroDayTea_kqctf
+  # queries/tutorial/tutorial.yaml:
+  #   - TR125.tutorial.welcome-01
+  #   - TR125.tutorial.welcome-02
+  #   - TR125.tutorial.welcome-03
+  #   - TR125.tutorial.welcome-04
+  #   - TR125.tutorial.welcome-05
+  #   - TR125.tutorial.welcome-06
+  #   - TR125.tutorial.welcome-07
+  #   - TR125.tutorial.welcome-08
+
+buckets:
+  demo:
+    strategy: sorted
+    description: Demo
+    queries:
+      - TR645.filesystem.home-elsa-keys-json
+      - TR645.htaccess.admin-redirect
+
+order:
+  - demo

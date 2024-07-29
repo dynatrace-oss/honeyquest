@@ -1,0 +1,54 @@
+id: TR150.networkrequests.mail_google_com-trunc-01
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://mail.google.com/mail/u/0/#inbox
+data: |-
+  0.000 GET https://mail.site.com/mail/u/0/ 200 OK
+  0.374 POST https://mail.site.com/mail/u/0/logstreamz 204 No Content
+  0.375 GET https://mail.site.com/_/scs/mail-static/_/ss/k=mail.main.yah6DmR8vio.L.W.O/am=215165Hvhka-AAgAAAAOAC5Qc/d=1/excm=at/rs=AHGWq9DcAOAIh8nMlroy_nPNRZH-0-MjHw 200 OK
+  0.392 GET https://mail.site.com/mail/u/0/data?sw=2&token=%5B%22cftp%22,%226e75e4f3f0%22,%22mail.pinto-server_20221219.06_p0%22,%22ZyMrtXyj5A%5Cu003d%5Cu003d%22,%227841,7278,7137%22,3%5D&dilte=0 200 OK (324.8 kB)
+  1.279 GET https://mail.site.com/_/scs/mail-static/_/js/k=mail.main.en.CE191cIHKTw.es5.O/am=Brhyb_B_KY8AAIgIErnfDvy-AAAOAC5Qc/d=1/exm=DL8jZe,E1P0kd,;JFpGO:k00cOd;O9G84b:VjR9rd/m=f 200 OK
+  1.296 POST https://mail.site.com/mail/u/0/?ui=2&ik=6e75e4f3f0&jsver=CE191cIHKTw.en..es5&cbl=mail.pinto-server_20221219.06_p0&rid=b833..&view=dd&_reqid=32057&nsc=1&rt=j 200 OK (0.1 kB)
+  1.326 GET https://www.static.site.com/images/branding/complogo/svg/complogo_clr_74x24px.svg 200 OK (1.7 kB)
+  1.345 GET https://www.static.site.com/og/_/js/k=og.qtm.en_US.ngqips5sdmk.2019.O/rt=j/m=qhpr,qhsf,qhtt/d=1/ed=1/rs=qSz3ExBZ-dcmazg 200 OK (174.6 kB)
+  1.377 GET https://lh3.compusercontent.com/ogw/AOh-ky1c6c7ieuoEDLaVCiLi50HndKt4BS-LRTRKPFH_ag=s32-c-mo 200 OK (1.0 kB)
+  2.038 GET https://www.site.com/setmail?use_corp=on&no_1pjar=1&zx=b0j75n79v2dp 204 No Content
+  2.039 GET https://clients2.site.com/availability/?s=mail&a=viewinbox&c=scs&tm=576198645&zx=1h1USaIDj1qRCf 200 OK (35 bytes)
+  2.200 POST https://mail.site.com/mail/u/0/logstreamz 204 No Content
+  2.238 POST https://aa.site.com/u/0/_/gog/get?rt=j&sourceid=23 200 OK (19.8 kB)
+  2.956 POST https://play.site.com/log?format=json&hasfast=true&authuser=0
+  3.009 POST https://play.site.com/log?format=json&hasfast=true&authuser=0
+  3.028 POST https://signaler-pa.clients6.site.com/punctual/v1/chooseServer?key=nhD1h1USaIDj1qRCfbcKZA 200 OK (49 bytes)
+  3.032 OPTIONS https://signaler-pa.clients6.site.com/punctual/v1/chooseServer?key=nhD1h1USaIDj1qRCfbcKZA 200 OK
+  3.193 POST https://mail-ads.site.com/mail/u/0/ads/main_jspb?rt=r&client=25&pt=ji
+---
+id: TR150.networkrequests.mail_google_com-trunc-02
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://mail.google.com/mail/u/0/#inbox
+data: |-
+  3.251 POST https://people-pa.clients6.site.com/$rpc/comp.internal.people.v2.minimal.InternalPeopleMinimalService/ListRankedTargets 200 OK (532.7 kB)
+  3.255 OPTIONS https://people-pa.clients6.site.com/$rpc/comp.internal.people.v2.minimal.InternalPeopleMinimalService/ListRankedTargets 200 OK
+  3.331 POST https://signaler-pa.clients6.site.com/punctual/multi-watch/channel?VER=8&csessionid=-Cov_kcAnnD1efS-nZgYly8lU1g-M&key=nhD1h1USaIDj1qRCfbcKZA&RID=8593&CVER=22&zx=as2v23637&t=1 200 OK (54 bytes)
+  3.334 OPTIONS https://signaler-pa.clients6.site.com/punctual/multi-watch/channel?VER=8&csessionid=-Cov_kcAnnD1efS-nZgYly8lU1g-M&key=nhD1h1USaIDj1qRCfbcKZA&RID=8593&CVER=22&zx=as2v23637&t=1 200 OK
+  3.497 POST https://addons-pa.clients6.site.com/$rpc/comp.internal.apps.addons.v1.AddOnService/ListInstallations 200 OK (8 bytes)
+  3.501 OPTIONS https://addons-pa.clients6.site.com/$rpc/comp.internal.apps.addons.v1.AddOnService/ListInstallations 200 OK
+  3.519 GET https://clients6.site.com/mail/v1fpa_mail_frontend_gwt/users/me/storageQuota?alt=protojson&key=s_eHFAZm4Ks2KaxPjx77mQ&%24unique=gc323 200 OK (48 bytes)
+  3.524 OPTIONS https://clients6.site.com/mail/v1fpa_mail_frontend_gwt/users/me/storageQuota?alt=protojson&key=s_eHFAZm4Ks2KaxPjx77mQ&%24unique=gc323 200 OK
+  3.556 GET https://contacts.site.com/_/scs/social-static/_/js/k=boq.SocialPeopleHovercardUi.en.c2oh6mjrO.es5.O/am=oGkAQA/d=1/excm=_b,_r,_tp,hovercardwidget/ed=1/dg=0/wt=2/rs=AGLTcCP598Vrt-yn9adMGQlvXQAlK3_3QQ/m=_b,_tp,_r 200 OK (182.8 kB)
+  4.011 GET https://apis.site.com/js/api.js 200 OK (17.6 kB)
+  4.285 GET https://apis.site.com/_/scs/abc-static/_/js/k=gapi.gapi.en.QMFpsYJY.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-6ENqVAYuoxmMq7heI5jDLA/cb=gapi.loaded_0?le=scs 200 OK (96.1 kB)
+  4.289 GET https://ssl.static.site.com/ui/v1/icons/mail/images/cleardot.gif?zx=OSa4nRMH 200 OK (43 bytes)
+  4.393 POST https://play.site.com/log?format=json&hasfast=true&authuser=0
+  5.044 POST https://mail.site.com/mail/u/0/?ui=2&ik=6e75e4f3f0&jsver=CE191cIHKTw.en..es5&cbl=mail.pinto-server_20221219.06_p0&rid=b833..&auto=1&view=mic&_reqid=432057&pcd=1&cfact=7056&cfinact=7058%2C7083%2C7082%2C7117%2C7085%2C7057%2C7084%2C7086&mb=0&rt=j 200 OK (0.8 kB)
+  5.441 GET https://mail.site.com/mail/u/0/images/cleardot.gif?zx=jzj8bat8q0rh 200 OK (43 bytes)
+  6.262 GET https://ogs.site.com/u/0/widget/app?origin=https%3A%2F%2Fmail.site.com&cn=app&pid=23&spid=23&hl=en&dm= 200 OK (61.6 kB)
+  6.350 GET https://www.static.site.com/_/mss/boq-one-comp/_/js/k=boq-one-comp.OnecompWidgetUi.en.PZxR5QuJz6U.es5.O/am=oNkAAEA/d=1/excm=_b,_r,_tp,appwidgetauthview/ed=1/dg=0/wt=2/rs=AM-SdHtMO5PuFIyUPJqNpElexX9Np01lsQ/m=_b,_tp,_r 200 OK (180.1 kB)
+  6.447 GET https://lh3.compusercontent.com/ogw/ygEVAUIdOM-xT1smDKYW8g=s128-b16-cc-rp-mo 200 OK (14.5 kB)
+  6.776 POST https://play.site.com/log?format=json&hasfast=true&authuser=0

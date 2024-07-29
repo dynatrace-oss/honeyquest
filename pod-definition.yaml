@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+    - name: python-node
+      image: docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:97f8a87d28786db28a2796ca3932a52aaff75b703f9020a29fd6fc4387f64b47
+      imagePullPolicy: Always
+      tty: true
+      args:
+        - "cat"
+      resources:
+        requests:
+          cpu: "1"
+          memory: "1Gi"
+        limits:
+          cpu: "2"
+          memory: "4Gi"
+    - name: docker
+      image: registry.lab.dynatrace.org/jci/ubuntu18-amd64-docker
+      imagePullPolicy: Always
+      tty: true
+      args:
+        - "cat"
+      securityContext:
+        # required to interact with docker daemon
+        privileged: true
+      resources:
+        requests:
+          cpu: "1"
+          memory: "1Gi"
+        limits:
+          cpu: "2"
+          memory: "4Gi"

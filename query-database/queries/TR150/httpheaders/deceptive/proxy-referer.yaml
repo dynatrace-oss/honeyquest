@@ -1,0 +1,137 @@
+id: TR150.httpheaders.hackertarget-180004.02-referer-leakage
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations:
+  - honeypatch/deceptive-lines: "L11"
+  - honeypatch/original-query: hackertarget-180004.02
+  - honeypatch/applied-honeywire: httpheaders-proxy-referer
+  - honeypatch/description: "The `X-Proxy-Referer` header seems to leak the location of an internal proxy."
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/1.4.7
+  Date: Sun, 27 Apr 2014 04:42:11 GMT
+  Content-Type: text/html
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  X-Powered-By: PHP/5.3.28
+  Set-Cookie: PHPSESSID=9lmfffthjtj54n3sd880ibn0g3; path=/
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  X-Proxy-Referer: /haproxyext/forwarder/9lmfff#/listen
+  Pragma: no-cache
+---
+id: TR150.httpheaders.hackertarget-177038.01-referer-leakage
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations:
+  - honeypatch/deceptive-lines: "L8"
+  - honeypatch/original-query: hackertarget-177038.01
+  - honeypatch/applied-honeywire: httpheaders-proxy-referer
+  - honeypatch/description: "The `X-Proxy-Referer` header seems to leak the location of an internal proxy."
+data: |-
+  HTTP/1.1 200 OK
+  Cache-Control: private
+  Content-Length: 12765
+  Content-Type: text/html
+  Server: Microsoft-IIS/7.5
+  Set-Cookie: ASPSESSIONIDQSSSCATT=LFHHNJCCFOPJILMFCOBAOHGF; path=/
+  X-Powered-By: ASP.NET
+  X-Proxy-Referer: /asp/iis/7.5/aspnet/aspnet_2.0.50727.0/aspnet_isapi.dll
+  Date: Sun, 27 Apr 2014 00:53:06 GMT
+---
+id: TR150.httpheaders.hackertarget-101810.02-referer-leakage
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations:
+  - honeypatch/deceptive-lines: "L8"
+  - honeypatch/original-query: hackertarget-101810.02
+  - honeypatch/applied-honeywire: httpheaders-proxy-referer
+  - honeypatch/description: "The `X-Proxy-Referer` header seems to leak the location of an internal proxy."
+data: |-
+  HTTP/1.1 200 OK
+  Connection: close
+  Date: Wed, 23 Apr 2014 05:54:03 GMT
+  Server: Microsoft-IIS/6.0
+  P3P: CP="DSP ALL CUR ADMi DEVi CONi HISi OUR BUS NAV COM INT STA DEM LOC ONL PHY UNI"
+  X-Powered-By: ASP.NET
+  X-AspNet-Version: 4.0.30319
+  X-Proxy-Referer: /asp/iis/6.0/aspnet/bin/aspnet_isapi.dll
+  Set-Cookie: ASP.NET_SessionId=fyi3sylqfunbwtdy03s4fdqv; path=/; HttpOnly
+  Set-Cookie: language-betboo-tr=FOUND; expires=Sun, 23-Apr-2113 05:54:03 GMT; path=/
+  Set-Cookie: rStatus=1; expires=Sun, 23-Apr-2113 05:54:03 GMT; path=/
+  Cache-Control: private
+  Content-Type: text/html; charset=utf-8
+  Content-Length: 21049
+---
+id: TR150.httpheaders.hackertarget-161701.02-referer-leakage
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations:
+  - honeypatch/deceptive-lines: "L10"
+  - honeypatch/original-query: hackertarget-161701.02
+  - honeypatch/applied-honeywire: httpheaders-proxy-referer
+  - honeypatch/description: "The `X-Proxy-Referer` header seems to leak the location of an internal proxy."
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/1.6.0
+  Date: Sat, 26 Apr 2014 08:51:53 GMT
+  Content-Type: text/html; charset=windows-1256
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: private
+  Pragma: private
+  X-UA-Compatible: IE=7
+  X-Proxy-Referer: /proxypass/listener/1/UA
+  Set-Cookie: bbsessionhash=f3cdd7987b326584c6ee6696f3033087; path=/; HttpOnly
+  Set-Cookie: bblastvisit=1398502313; expires=Sun, 26-Apr-2015 08:51:53 GMT; path=/
+  Set-Cookie: bblastactivity=0; expires=Sun, 26-Apr-2015 08:51:53 GMT; path=/
+  Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  Pragma: no-cache
+---
+id: TR150.httpheaders.hackertarget-187431.02-referer-leakage
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations:
+  - honeypatch/deceptive-lines: "L10"
+  - honeypatch/original-query: hackertarget-187431.02
+  - honeypatch/applied-honeywire: httpheaders-proxy-referer
+  - honeypatch/description: "The `X-Proxy-Referer` header seems to leak the location of an internal proxy."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 27 Apr 2014 14:14:59 GMT
+  Server: Apache
+  X-Powered-By: PHP/5.3.10-1ubuntu3.10
+  Set-Cookie: frontend=tsu0iqd8pfse3j7s5cqf8gorn6; expires=Tue, 27-May-2014 14:14:59 GMT; path=/; domain=www.capeunionmart.co.za; HttpOnly
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Pragma: no-cache
+  X-Real-Server: V74
+  X-Proxy-Referer: /haproxyext/forwarder/tsu0iq#/74/listen
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Content-Type: text/html; charset=UTF-8

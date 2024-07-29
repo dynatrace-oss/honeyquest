@@ -1,0 +1,19 @@
+id: TR150.filesystem.usr-root
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+data: |-
+  drwxr-xr-x  10 root root 4.0K Dec 30 00:33 .
+  drwxr-xr-x  17 root root 4.0K Nov 13 21:47 ..
+  drwxr-xr-x   6 root root 132K Dec 30 00:33 bin
+  drwxr-xr-x 487 root root  36K Dec 26 22:33 include
+  drwxr-xr-x 223 root root 224K Dec 26 22:33 lib
+  drwxr-xr-x  21 root root  32K Dec 26 22:33 lib32
+  lrwxrwxrwx   1 root root    3 Oct 19 16:12 lib64 -> lib
+  drwxr-xr-x  12 root root 4.0K Sep  9 10:41 local
+  drwxr-xr-x   3 root root 4.0K Oct  9 17:06 man
+  lrwxrwxrwx   1 root root    3 Oct 19 16:12 sbin -> bin
+  drwxr-xr-x 289 root root  12K Dec 30 00:33 share
+  drwxr-xr-x   2 root root 4.0K Jun  9  2022 src

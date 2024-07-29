@@ -1,0 +1,14 @@
+id: TR150.networkrequests.www_google_com-trunc
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://www.google.com/
+data: |-
+  0.000 GET https://www.site.com/complete/search?q=performance&cp=0&client=desktop-gws-wiz-on-focus-serp 200 OK (1.5 kB)
+  0.003 GET https://www.site.com/complete/search?q&cp=0&client=gws-wiz-serp&xssi=t&hl=en-AT&authuser=0&pq=performance 200 OK (2.9 kB)
+  0.434 GET https://www.site.com/xjs/_/js/md=1/k=xjs.s.en_GB.pLNtfuM9W8RBL.O/rs=Tq6VPJKoVspQFb3AE8IlDg_aJVLk-5zVU 200 OK (66.2 kB)
+  0.448 GET https://www.site.com/async/hxtKP?ei=VQfgRE037WCUouUMut4_SA&yv=3&cs=0&async=_fmt:jspb 200 OK (6.3 kB)
+  0.528 OPTIONS https://play.site.com/log?format=json&hasfast=true&authuser=0 200 OK (0.9 kB)
+  0.634 POST https://play.site.com/log?format=json&hasfast=true&authuser=0 200 OK (0.7 kB)

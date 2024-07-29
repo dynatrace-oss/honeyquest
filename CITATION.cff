@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: Honeyquest
+message: If you use Honeyquest, please cite our research paper.
+type: software
+authors:
+  - given-names: Mario
+    family-names: Kahlhofer
+    orcid: "https://orcid.org/0000-0002-6820-4953"
+identifiers:
+  - type: url
+    value: "https://github.com/dynatrace-oss/honeyquest"
+license: Apache-2.0
+preferred-citation:
+  type: conference-paper
+  title: "Honeyquest: Rapidly Measuring the Enticingness of Cyber Deception Techniques with Code-based Questionnaires"
+  doi: "https://doi.org/10.1145/3678890.3678897"
+  year: 2024
+  collection-title: "Proceedings of the 27th International Symposium on Research in Attacks, Intrusions and Defenses"
+  conference:
+    - name: 27th International Symposium on Research in Attacks, Intrusions and Defenses
+      city: Padua
+      country: IT
+      date-start: 2024-09-30
+      date-end: 2024-10-02
+  authors:
+    - given-names: Mario
+      family-names: Kahlhofer
+      orcid: "https://orcid.org/0000-0002-6820-4953"
+    - given-names: Stefan
+      family-names: Achleitner
+      orcid: "https://orcid.org/0000-0002-5499-6101"
+    - given-names: Stefan
+      family-names: Rass
+      orcid: "https://orcid.org/0000-0003-2821-2489"
+    - given-names: René
+      family-names: Mayrhofer
+      orcid: "https://orcid.org/0000-0003-1566-4646"

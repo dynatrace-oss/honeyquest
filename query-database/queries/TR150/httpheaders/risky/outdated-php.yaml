@@ -1,0 +1,45 @@
+id: TR150.httpheaders.outdated-php-server-5.1.6
+label: risky
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - technique/url: https://www.cvedetails.com/vulnerability-list/vendor_id-74/product_id-128/version_id-399025/PHP-PHP-5.1.6.html
+annotations:
+  - risk/type: vulnerability
+  - risk/risky-lines: "L4"
+  - risk/present-vulnerability: httpheaders-outdated-php
+  - risk/description: "The `X-Powered-By` header suggests that the server is running PHP 5.1.6 wich is very old and vulnerable."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 13 Apr 2014 17:00:12 GMT
+  Server: Apache
+  X-Powered-By: PHP/5.1.6
+  Transfer-Encoding: chunked
+  Content-Type: text/html; charset=EUC-JP
+---
+id: TR150.httpheaders.outdated-php-server-5.2.10-ubuntu-5.10
+label: risky
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - technique/url: https://www.cvedetails.com/vulnerability-list/vendor_id-74/product_id-128/version_id-404987/PHP-PHP-5.2.9.html
+  - technique/url: https://www.cvedetails.com/vulnerability-list/vendor_id-51/product_id-80/version_id-396668/Ubuntu-Ubuntu-Linux-5.10.html
+annotations:
+  - risk/type: vulnerability
+  - risk/risky-lines: "L4"
+  - risk/present-vulnerability: httpheaders-outdated-php
+  - risk/description: "The `X-Powered-By` header suggests that the server is running PHP 5.2.9 and Ubuntu 5.10, both of wich are very old and vulnerable."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sat, 03 May 2015 02:05:36 GMT
+  Server: Apache/2.2.14 (Ubuntu)
+  X-Powered-By: PHP/5.2.9-2ubuntu5.10
+  Set-Cookie: PHPSESSID=evINGUkPZ46s2yGpwv6Jhb8Syeozv1w; path=/
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Pragma: no-cache
+  Vary: Accept-Encoding
+  Content-Length: 115
+  Content-Type: text/html;charset=UTF-8

@@ -1,0 +1,30 @@
+id: TR150.filesystem.niknad52-ddns-update-key
+label: risky
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - risk/type: weakness
+  - risk/risky-lines: "L8"
+  - risk/present-weakness: filesystem-dns-update-key
+  - risk/description: "A DNS update key may be used to update DNS records."
+data: |-
+  drwxr-xr-x 36 niknad52 niknad52 4.0K Dec 29 17:18 .
+  drwxr-xr-x  5 root     root     4.0K May 16  2022 ..
+  -rw-------  1 niknad52 niknad52  57K Dec 29 17:18 .bash_history
+  -rw-r--r--  1 niknad52 niknad52  220 Feb 25  2020 .bash_logout
+  -rw-r--r--  1 niknad52 niknad52 4.2K Dec  3 22:08 .bashrc
+  drwxr-xr-x  8 niknad52 niknad52 4.0K Sep 19 11:11 .config
+  drwxr-xr-x  4 niknad52 niknad52 4.0K Apr  6  2022 data
+  -rw-r--r--  1 niknad52 niknad52  167 Oct  2 13:57 ddns-update-key
+  drwxr-xr-x  5 niknad52 niknad52 4.0K Jul  7 13:36 .docker
+  drwxr-xr-x 13 niknad52 niknad52 4.0K Mar 25  2022 example-app
+  -rw-r--r--  1 niknad52 niknad52  426 Sep 27 09:48 .gitconfig
+  -rw-------  1 niknad52 niknad52   28 Mar 22  2022 .lesshst
+  drwxr-xr-x  5 niknad52 niknad52 4.0K Jan 20  2022 .local
+  -rw-r--r--  1 niknad52 niknad52  111 Jun  6  2022 nsupdate.txt
+  -rw-r--r--  1 niknad52 niknad52  862 May 16  2022 .profile
+  drwx------  2 niknad52 niknad52 4.0K May 16  2022 .ssh
+  drwxr-xr-x  2 niknad52 niknad52 4.0K Sep 25 12:20 .vim
+  -rw-------  1 niknad52 niknad52  14K Sep 25 12:20 .viminfo

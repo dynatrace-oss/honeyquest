@@ -1,0 +1,230 @@
+id: TR849.filesystem.nikiforakis.home-leonard-card3rz_reg_details
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Nikiforakis, Nick
+  - technique/url: https://www.usenix.org/conference/leet11/exposing-lack-privacy-file-hosting-services
+annotations:
+  - honeypatch/deceptive-lines: "L8"
+  - honeypatch/original-query: TR150.filesystem.home-leonard
+  - honeypatch/applied-honeywire: filesystem-card3rz
+  - honeypatch/description: "Filename used by Nikiforakis et al. to grab attention on file hosting services"
+data: |-
+  drwxr-xr-x 25 leonard leonard 4.0K Dec 30 08:36 .
+  drwxr-xr-x  4 root    root    4.0K Jun 21  2019 ..
+  -rw-r--r--  1 leonard leonard 3.5K Sep 17  2017 .bashrc
+  drwx------  7 leonard leonard 4.0K Jan 12  2022 .cache
+  drwx------  6 leonard leonard 4.0K Sep 25 17:40 .config
+  -rw-r--r--  1 leonard leonard   64 Jun 16  2019 .gitconfig
+  drwx------  4 leonard leonard 4.0K Jan 14  2022 .gnupg
+  -rw-r--r--  1 leonard leonard  25K Nov 20  2022 card3rz_reg_details.html
+  lrwxrwxrwx  1 leonard leonard   19 Jan 23  2018 html -> /srv/nginx-www/html
+---
+id: TR849.filesystem.nikiforakis.home-lpc-card3rz_reg_details
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Nikiforakis, Nick
+  - technique/url: https://www.usenix.org/conference/leet11/exposing-lack-privacy-file-hosting-services
+annotations:
+  - honeypatch/deceptive-lines: "L35"
+  - honeypatch/original-query: TR150.filesystem.home-lpc
+  - honeypatch/applied-honeywire: filesystem-card3rz
+  - honeypatch/description: "Filename used by Nikiforakis et al. to grab attention on file hosting services"
+data: |-
+  drwxr-xr-x 15 lpc  lpc  4.0K Dec 29 09:48 .
+  drwxr-xr-x  3 root root 4.0K Oct 17 12:38 ..
+  -rw-------  1 lpc  lpc   40K Dec 29 15:58 .bash_history
+  -rw-r--r--  1 lpc  lpc   220 Oct 17 12:38 .bash_logout
+  -rw-r--r--  1 lpc  lpc  3.7K Oct 17 12:38 .bashrc
+  drwxr-xr-x  6 lpc  lpc  4.0K Nov 21 11:39 .cache
+  drwx------  7 lpc  lpc  4.0K Nov 24 10:15 .config
+  drwx------  3 lpc  lpc  4.0K Nov 21 11:39 .dbus
+  drwxr-xr-x  2 lpc  lpc  4.0K Nov 14 09:12 .dtp-cli
+  -rw-r--r--  1 lpc  lpc    57 Nov 14 09:28 .gitconfig
+  -rw-r--r--  1 lpc  lpc     0 Oct 17 12:39 .hushlogin
+  drwxr-xr-x  2 lpc  lpc  4.0K Oct 17 12:38 .landscape
+  -rw-------  1 lpc  lpc    88 Nov 22 10:28 .lesshst
+  drwxr-xr-x  3 lpc  lpc  4.0K Nov 14 09:30 .local
+  -rw-r--r--  1 lpc  lpc     0 Oct 17 12:39 .motd_shown
+  drwxr-xr-x  4 lpc  lpc  4.0K Nov 14 09:08 .npm
+  -rw-r--r--  1 lpc  lpc   807 Oct 17 12:38 .profile
+  -rw-------  1 lpc  lpc  2.4K Dec 23 15:19 .python_history
+  drwx------  2 lpc  lpc  4.0K Nov  2 09:21 .ssh
+  -rw-r--r--  1 lpc  lpc     0 Oct 20 14:15 .sudo_as_admin_successful
+  -rw-------  1 lpc  lpc  9.3K Dec 28 14:31 .viminfo
+  drwxr-xr-x  5 lpc  lpc  4.0K Nov  2 12:32 .vscode-server
+  -rw-r--r--  1 lpc  lpc   183 Dec 28 09:53 .wget-hsts
+  drwxr-xr-x  3 lpc  lpc  4.0K Nov 14 09:12 .yarn
+  -rw-r--r--  1 lpc  lpc   116 Nov 14 09:10 .yarnrc
+  -rwxr-xr-x  1 lpc  lpc  3.9K Dec  5 16:02 buildcsv.py
+  -rw-r--r--  1 lpc  lpc  8.1K Nov 24 10:18 data.csv
+  -rw-r--r--  1 lpc  lpc  7.1K Nov 30 16:34 data.json
+  -rw-r--r--  1 lpc  lpc  2.4K Nov 21 11:36 description.json
+  -rw-r--r--  1 lpc  lpc  4.6K Nov 28 15:21 metadata.csv
+  -rw-r--r--  1 lpc  lpc  1.3K Nov 10 17:49 metrics.json
+  -rwxr--r--  1 lpc  lpc   919 Dec 28 14:31 query.sh
+  -rw-r--r--  1 lpc  lpc    85 Nov 11 10:02 sent.json
+  -rw-r--r--  1 lpc  lpc   24K Nov 21 14:40 units.json
+  -rw-r--r--  1 lpc  lpc   27K Nov 11 12:14 card3rz_reg_details.html
+  drwxr-xr-x  6 lpc  lpc  4.0K Nov 16 15:50 venv
+---
+id: TR849.filesystem.nikiforakis.home-leonard-customer_list_2010
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Nikiforakis, Nick
+  - technique/url: https://www.usenix.org/conference/leet11/exposing-lack-privacy-file-hosting-services
+annotations:
+  - honeypatch/deceptive-lines: "L8"
+  - honeypatch/original-query: TR150.filesystem.home-leonard
+  - honeypatch/applied-honeywire: filesystem-customer-list
+  - honeypatch/description: "Filename used by Nikiforakis et al. to grab attention on file hosting services"
+data: |-
+  drwxr-xr-x 25 leonard leonard 4.0K Dec 30 08:36 .
+  drwxr-xr-x  4 root    root    4.0K Jun 21  2019 ..
+  -rw-r--r--  1 leonard leonard 3.5K Sep 17  2017 .bashrc
+  drwx------  7 leonard leonard 4.0K Jan 12  2022 .cache
+  drwx------  6 leonard leonard 4.0K Sep 25 17:40 .config
+  -rw-r--r--  1 leonard leonard   64 Jun 16  2019 .gitconfig
+  drwx------  4 leonard leonard 4.0K Jan 14  2022 .gnupg
+  -rw-r--r--  1 leonard leonard  83K Nov 20  2022 customer_list_2010.html
+  lrwxrwxrwx  1 leonard leonard   19 Jan 23  2018 html -> /srv/nginx-www/html
+---
+id: TR849.filesystem.nikiforakis.home-lpc-customer_list_2010
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Nikiforakis, Nick
+  - technique/url: https://www.usenix.org/conference/leet11/exposing-lack-privacy-file-hosting-services
+annotations:
+  - honeypatch/deceptive-lines: "L35"
+  - honeypatch/original-query: TR150.filesystem.home-lpc
+  - honeypatch/applied-honeywire: filesystem-customer-list
+  - honeypatch/description: "Filename used by Nikiforakis et al. to grab attention on file hosting services"
+data: |-
+  drwxr-xr-x 15 lpc  lpc  4.0K Dec 29 09:48 .
+  drwxr-xr-x  3 root root 4.0K Oct 17 12:38 ..
+  -rw-------  1 lpc  lpc   40K Dec 29 15:58 .bash_history
+  -rw-r--r--  1 lpc  lpc   220 Oct 17 12:38 .bash_logout
+  -rw-r--r--  1 lpc  lpc  3.7K Oct 17 12:38 .bashrc
+  drwxr-xr-x  6 lpc  lpc  4.0K Nov 21 11:39 .cache
+  drwx------  7 lpc  lpc  4.0K Nov 24 10:15 .config
+  drwx------  3 lpc  lpc  4.0K Nov 21 11:39 .dbus
+  drwxr-xr-x  2 lpc  lpc  4.0K Nov 14 09:12 .dtp-cli
+  -rw-r--r--  1 lpc  lpc    57 Nov 14 09:28 .gitconfig
+  -rw-r--r--  1 lpc  lpc     0 Oct 17 12:39 .hushlogin
+  drwxr-xr-x  2 lpc  lpc  4.0K Oct 17 12:38 .landscape
+  -rw-------  1 lpc  lpc    88 Nov 22 10:28 .lesshst
+  drwxr-xr-x  3 lpc  lpc  4.0K Nov 14 09:30 .local
+  -rw-r--r--  1 lpc  lpc     0 Oct 17 12:39 .motd_shown
+  drwxr-xr-x  4 lpc  lpc  4.0K Nov 14 09:08 .npm
+  -rw-r--r--  1 lpc  lpc   807 Oct 17 12:38 .profile
+  -rw-------  1 lpc  lpc  2.4K Dec 23 15:19 .python_history
+  drwx------  2 lpc  lpc  4.0K Nov  2 09:21 .ssh
+  -rw-r--r--  1 lpc  lpc     0 Oct 20 14:15 .sudo_as_admin_successful
+  -rw-------  1 lpc  lpc  9.3K Dec 28 14:31 .viminfo
+  drwxr-xr-x  5 lpc  lpc  4.0K Nov  2 12:32 .vscode-server
+  -rw-r--r--  1 lpc  lpc   183 Dec 28 09:53 .wget-hsts
+  drwxr-xr-x  3 lpc  lpc  4.0K Nov 14 09:12 .yarn
+  -rw-r--r--  1 lpc  lpc   116 Nov 14 09:10 .yarnrc
+  -rwxr-xr-x  1 lpc  lpc  3.9K Dec  5 16:02 buildcsv.py
+  -rw-r--r--  1 lpc  lpc  8.1K Nov 24 10:18 data.csv
+  -rw-r--r--  1 lpc  lpc  7.1K Nov 30 16:34 data.json
+  -rw-r--r--  1 lpc  lpc  2.4K Nov 21 11:36 description.json
+  -rw-r--r--  1 lpc  lpc  4.6K Nov 28 15:21 metadata.csv
+  -rw-r--r--  1 lpc  lpc  1.3K Nov 10 17:49 metrics.json
+  -rwxr--r--  1 lpc  lpc   919 Dec 28 14:31 query.sh
+  -rw-r--r--  1 lpc  lpc    85 Nov 11 10:02 sent.json
+  -rw-r--r--  1 lpc  lpc   24K Nov 21 14:40 units.json
+  -rw-r--r--  1 lpc  lpc   83K Nov 11 12:14 customer_list_2010.html
+  drwxr-xr-x  6 lpc  lpc  4.0K Nov 16 15:50 venv
+---
+id: TR849.filesystem.nikiforakis.home-leonard-SPAM_list
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Nikiforakis, Nick
+  - technique/url: https://www.usenix.org/conference/leet11/exposing-lack-privacy-file-hosting-services
+annotations:
+  - honeypatch/deceptive-lines: "L8"
+  - honeypatch/original-query: TR150.filesystem.home-leonard
+  - honeypatch/applied-honeywire: filesystem-spam-list
+  - honeypatch/description: "Filename used by Nikiforakis et al. to grab attention on file hosting services"
+data: |-
+  drwxr-xr-x 25 leonard leonard 4.0K Dec 30 08:36 .
+  drwxr-xr-x  4 root    root    4.0K Jun 21  2019 ..
+  -rw-r--r--  1 leonard leonard 3.5K Sep 17  2017 .bashrc
+  drwx------  7 leonard leonard 4.0K Jan 12  2022 .cache
+  drwx------  6 leonard leonard 4.0K Sep 25 17:40 .config
+  -rw-r--r--  1 leonard leonard   64 Jun 16  2019 .gitconfig
+  drwx------  4 leonard leonard 4.0K Jan 14  2022 .gnupg
+  -rw-r--r--  1 leonard leonard  43K Nov 20  2022 SPAM_list.pdf
+  lrwxrwxrwx  1 leonard leonard   19 Jan 23  2018 html -> /srv/nginx-www/html
+---
+id: TR849.filesystem.nikiforakis.home-lpc-SPAM_list
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Nikiforakis, Nick
+  - technique/url: https://www.usenix.org/conference/leet11/exposing-lack-privacy-file-hosting-services
+annotations:
+  - honeypatch/deceptive-lines: "L35"
+  - honeypatch/original-query: TR150.filesystem.home-lpc
+  - honeypatch/applied-honeywire: filesystem-spam-list
+  - honeypatch/description: "Filename used by Nikiforakis et al. to grab attention on file hosting services"
+data: |-
+  drwxr-xr-x 15 lpc  lpc  4.0K Dec 29 09:48 .
+  drwxr-xr-x  3 root root 4.0K Oct 17 12:38 ..
+  -rw-------  1 lpc  lpc   40K Dec 29 15:58 .bash_history
+  -rw-r--r--  1 lpc  lpc   220 Oct 17 12:38 .bash_logout
+  -rw-r--r--  1 lpc  lpc  3.7K Oct 17 12:38 .bashrc
+  drwxr-xr-x  6 lpc  lpc  4.0K Nov 21 11:39 .cache
+  drwx------  7 lpc  lpc  4.0K Nov 24 10:15 .config
+  drwx------  3 lpc  lpc  4.0K Nov 21 11:39 .dbus
+  drwxr-xr-x  2 lpc  lpc  4.0K Nov 14 09:12 .dtp-cli
+  -rw-r--r--  1 lpc  lpc    57 Nov 14 09:28 .gitconfig
+  -rw-r--r--  1 lpc  lpc     0 Oct 17 12:39 .hushlogin
+  drwxr-xr-x  2 lpc  lpc  4.0K Oct 17 12:38 .landscape
+  -rw-------  1 lpc  lpc    88 Nov 22 10:28 .lesshst
+  drwxr-xr-x  3 lpc  lpc  4.0K Nov 14 09:30 .local
+  -rw-r--r--  1 lpc  lpc     0 Oct 17 12:39 .motd_shown
+  drwxr-xr-x  4 lpc  lpc  4.0K Nov 14 09:08 .npm
+  -rw-r--r--  1 lpc  lpc   807 Oct 17 12:38 .profile
+  -rw-------  1 lpc  lpc  2.4K Dec 23 15:19 .python_history
+  drwx------  2 lpc  lpc  4.0K Nov  2 09:21 .ssh
+  -rw-r--r--  1 lpc  lpc     0 Oct 20 14:15 .sudo_as_admin_successful
+  -rw-------  1 lpc  lpc  9.3K Dec 28 14:31 .viminfo
+  drwxr-xr-x  5 lpc  lpc  4.0K Nov  2 12:32 .vscode-server
+  -rw-r--r--  1 lpc  lpc   183 Dec 28 09:53 .wget-hsts
+  drwxr-xr-x  3 lpc  lpc  4.0K Nov 14 09:12 .yarn
+  -rw-r--r--  1 lpc  lpc   116 Nov 14 09:10 .yarnrc
+  -rwxr-xr-x  1 lpc  lpc  3.9K Dec  5 16:02 buildcsv.py
+  -rw-r--r--  1 lpc  lpc  8.1K Nov 24 10:18 data.csv
+  -rw-r--r--  1 lpc  lpc  7.1K Nov 30 16:34 data.json
+  -rw-r--r--  1 lpc  lpc  2.4K Nov 21 11:36 description.json
+  -rw-r--r--  1 lpc  lpc  4.6K Nov 28 15:21 metadata.csv
+  -rw-r--r--  1 lpc  lpc  1.3K Nov 10 17:49 metrics.json
+  -rwxr--r--  1 lpc  lpc   919 Dec 28 14:31 query.sh
+  -rw-r--r--  1 lpc  lpc    85 Nov 11 10:02 sent.json
+  -rw-r--r--  1 lpc  lpc   24K Nov 21 14:40 units.json
+  -rw-r--r--  1 lpc  lpc   43K Nov 11 12:14 SPAM_list.pdf
+  drwxr-xr-x  6 lpc  lpc  4.0K Nov 16 15:50 venv

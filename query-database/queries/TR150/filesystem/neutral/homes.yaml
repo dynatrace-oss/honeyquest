@@ -1,0 +1,259 @@
+id: TR150.filesystem.home-leonard
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+data: |-
+  drwxr-xr-x 25 leonard leonard 4.0K Dec 30 08:36 .
+  drwxr-xr-x  4 root    root    4.0K Jun 21  2019 ..
+  -rw-r--r--  1 leonard leonard 3.5K Sep 17  2017 .bashrc
+  drwx------  7 leonard leonard 4.0K Jan 12  2022 .cache
+  drwx------  6 leonard leonard 4.0K Sep 25 17:40 .config
+  -rw-r--r--  1 leonard leonard   64 Jun 16  2019 .gitconfig
+  drwxr-xr-x  5 leonard leonard 4.0K Jul 10  2021 git-crypt
+  drwx------  4 leonard leonard 4.0K Jan 14  2022 .gnupg
+  lrwxrwxrwx  1 leonard leonard   19 Jan 23  2018 html -> /srv/nginx-www/html
+  drwxr-xr-x  4 leonard leonard 4.0K Aug  1  2021 app-browser
+  -rw-r--r--  1 leonard leonard 816M Nov 18  2020 nginx-proxy-logs.txt
+  drwxr-xr-x  5 leonard leonard 4.0K Mar 21  2021 iklo-saas
+---
+id: TR150.filesystem.home-gringla
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+data: |-
+  drwxr-xr-x 25 gringla gringla 4.0K Dec 30 08:36 .
+  drwxr-xr-x  4 root    root    4.0K Jun 21  2019 ..
+  -rw-r--r--  1 gringla gringla 3.5K Sep 17  2017 .bashrc
+  drwxr-xr-x  3 gringla gringla 4.0K Oct  1  2017 .bundle
+  drwx------  7 gringla gringla 4.0K Jan 12  2022 .cache
+  drwx------  6 gringla gringla 4.0K Sep 25 17:40 .config
+  -rw-r--r--  1 gringla gringla   88 Jul 11  2021 test.gpg
+  -rw-r--r--  1 gringla gringla  25G Sep 25 18:23 vm-101-disk-0_000.qcow2
+  -rw-r--r--  1 gringla gringla  25G Sep 25 18:17 vm-101-disk-0_001.qcow2
+  -rw-r--r--  1 gringla gringla  25G Sep 25 18:13 vm-101-disk-0_002.qcow2
+  -rw-r--r--  1 gringla gringla  25G Sep 25 18:08 vm-101-disk-0_003.qcow2
+  -rw-r--r--  1 gringla gringla 3.3G Sep 25 18:01 vm-101-disk-0_004.qcow2
+  -rw-r--r--  1 gringla gringla  367 Sep  4  2020 .wget-hsts
+  -rw-------  1 gringla gringla  108 Sep 25 18:27 .Xauthority
+  -rw-------  1 gringla gringla 231K Dec 30 08:36 .zsh_history
+  -rw-r--r--  1 gringla gringla 3.1K Jun 13  2022 .zshrc
+---
+id: TR150.filesystem.home-lpc
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+data: |-
+  drwxr-xr-x 15 lpc  lpc  4.0K Dec 29 09:48 .
+  drwxr-xr-x  3 root root 4.0K Oct 17 12:38 ..
+  -rw-------  1 lpc  lpc   40K Dec 29 15:58 .bash_history
+  -rw-r--r--  1 lpc  lpc   220 Oct 17 12:38 .bash_logout
+  -rw-r--r--  1 lpc  lpc  3.7K Oct 17 12:38 .bashrc
+  drwxr-xr-x  6 lpc  lpc  4.0K Nov 21 11:39 .cache
+  drwx------  7 lpc  lpc  4.0K Nov 24 10:15 .config
+  drwx------  3 lpc  lpc  4.0K Nov 21 11:39 .dbus
+  drwxr-xr-x  2 lpc  lpc  4.0K Nov 14 09:12 .dtp-cli
+  -rw-r--r--  1 lpc  lpc    57 Nov 14 09:28 .gitconfig
+  -rw-r--r--  1 lpc  lpc     0 Oct 17 12:39 .hushlogin
+  drwxr-xr-x  2 lpc  lpc  4.0K Oct 17 12:38 .landscape
+  -rw-------  1 lpc  lpc    88 Nov 22 10:28 .lesshst
+  drwxr-xr-x  3 lpc  lpc  4.0K Nov 14 09:30 .local
+  -rw-r--r--  1 lpc  lpc     0 Oct 17 12:39 .motd_shown
+  drwxr-xr-x  4 lpc  lpc  4.0K Nov 14 09:08 .npm
+  -rw-r--r--  1 lpc  lpc   807 Oct 17 12:38 .profile
+  -rw-------  1 lpc  lpc  2.4K Dec 23 15:19 .python_history
+  drwx------  2 lpc  lpc  4.0K Nov  2 09:21 .ssh
+  -rw-r--r--  1 lpc  lpc     0 Oct 20 14:15 .sudo_as_admin_successful
+  -rw-------  1 lpc  lpc  9.3K Dec 28 14:31 .viminfo
+  drwxr-xr-x  5 lpc  lpc  4.0K Nov  2 12:32 .vscode-server
+  -rw-r--r--  1 lpc  lpc   183 Dec 28 09:53 .wget-hsts
+  drwxr-xr-x  3 lpc  lpc  4.0K Nov 14 09:12 .yarn
+  -rw-r--r--  1 lpc  lpc   116 Nov 14 09:10 .yarnrc
+  -rwxr-xr-x  1 lpc  lpc  3.9K Dec  5 16:02 buildcsv.py
+  -rw-r--r--  1 lpc  lpc  8.1K Nov 24 10:18 data.csv
+  -rw-r--r--  1 lpc  lpc  7.1K Nov 30 16:34 data.json
+  -rw-r--r--  1 lpc  lpc  2.4K Nov 21 11:36 description.json
+  -rw-r--r--  1 lpc  lpc  4.6K Nov 28 15:21 metadata.csv
+  -rw-r--r--  1 lpc  lpc  1.3K Nov 10 17:49 metrics.json
+  -rwxr--r--  1 lpc  lpc   919 Dec 28 14:31 query.sh
+  -rw-r--r--  1 lpc  lpc    85 Nov 11 10:02 sent.json
+  -rw-r--r--  1 lpc  lpc   24K Nov 21 14:40 units.json
+  drwxr-xr-x  6 lpc  lpc  4.0K Nov 16 15:50 venv
+---
+id: TR150.filesystem.home-cathy
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+data: |-
+  drwx------ 18 cathy cathy 4.0K Dec 30 03:12 .
+  drwxr-xr-x  3 root  root  4.0K Dec  5 08:43 ..
+  -rw-r--r--  1 cathy cathy  220 Dec  5 08:43 .bash_logout
+  -rw-r--r--  1 cathy cathy 5.5K Dec  5 08:43 .bashrc
+  -rw-r--r--  1 cathy cathy 3.5K Dec  5 08:43 .bashrc.original
+  drwxr-xr-x 10 cathy cathy 4.0K Dec 30 03:12 .cache
+  drwxr-xr-x 14 cathy cathy 4.0K Dec  7 15:16 .config
+  -rw-r--r--  1 cathy cathy   35 Dec  7 15:12 .dmrc
+  -rw-r--r--  1 cathy cathy  12K Dec  5 08:43 .face
+  drwx------  3 cathy cathy 4.0K Dec  7 13:22 .gnupg
+  -rw-------  1 cathy cathy    0 Dec  7 13:22 .ICEauthority
+  drwxr-xr-x  3 cathy cathy 4.0K Dec  5 08:43 .java
+  drwx------  2 cathy cathy 4.0K Dec  7 13:47 .john
+  drwx------  3 cathy cathy 4.0K Dec  7 13:22 .local
+  -rw-r--r--  1 cathy cathy  807 Dec  5 08:43 .profile
+  drwxr-xr-x  2 cathy cathy 4.0K Dec  7 13:22 Public
+  drwx------  2 cathy cathy 4.0K Dec  7 14:04 .ssh
+  -rw-r--r--  1 cathy cathy    0 Dec  7 13:23 .sudo_as_admin_successful
+  -rw-r-----  1 cathy cathy    5 Dec 30 03:12 .vboxclient-clipboard.pid
+  -rw-r-----  1 cathy cathy    5 Dec 30 03:12 .vboxclient-display-svga-x11.pid
+  -rw-r-----  1 cathy cathy    5 Dec 30 03:12 .vboxclient-draganddrop.pid
+  -rw-r-----  1 cathy cathy    4 Dec 30 03:12 .vboxclient-hostversion.pid
+  -rw-r-----  1 cathy cathy    5 Dec 30 03:12 .vboxclient-seamless.pid
+  -rw-------  1 cathy cathy   49 Dec 30 03:12 .Xauthority
+  -rw-------  1 cathy cathy 5.8K Dec 30 03:12 .xsession-errors
+  -rw-------  1 cathy cathy 7.9K Dec  7 15:33 .xsession-errors.old
+  -rw-------  1 cathy cathy 1.2K Dec  7 15:32 .zsh_history
+  -rw-r--r--  1 cathy cathy  11K Dec  5 08:43 .zshrc
+---
+id: TR150.filesystem.home-IconThor
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+data: |-
+  drwxr-xr-x 25 IconThor IconThor 4.0K Dec 30 08:36 .
+  drwxr-xr-x  4 root     root     4.0K Jun 21  2019 ..
+  -rw-r--r--  1 IconThor IconThor 3.5K Sep 17  2017 .bashrc
+  drwxr-xr-x  3 IconThor IconThor 4.0K Oct  1  2017 .bundle
+  drwx------  7 IconThor IconThor 4.0K Jan 12  2022 .cache
+  drwx------  6 IconThor IconThor 4.0K Sep 25 17:40 .config
+  -rw-r--r--  1 IconThor IconThor   88 Jul 11  2021 test.gpg
+  -rw-r--r--  1 IconThor IconThor  25G Sep 25 18:23 vm-101-disk-0_000.qcow2
+  -rw-r--r--  1 IconThor IconThor  25G Sep 25 18:17 vm-101-disk-0_001.qcow2
+  -rw-r--r--  1 IconThor IconThor  25G Sep 25 18:13 vm-101-disk-0_002.qcow2
+  -rw-r--r--  1 IconThor IconThor  25G Sep 25 18:08 vm-101-disk-0_003.qcow2
+  -rw-r--r--  1 IconThor IconThor 3.3G Sep 25 18:01 vm-101-disk-0_004.qcow2
+  -rw-r--r--  1 IconThor IconThor  367 Sep  4  2020 .wget-hsts
+  -rw-------  1 IconThor IconThor  108 Sep 25 18:27 .Xauthority
+  -rw-------  1 IconThor IconThor 231K Dec 30 08:36 .zsh_history
+  -rw-r--r--  1 IconThor IconThor 3.1K Jun 13  2022 .zshrc
+---
+id: TR150.filesystem.home-donald
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+data: |-
+  drwxr-xr-x 36 donald donald 4.0K Dec 29 17:18 .
+  drwxr-xr-x  5 root  root    4.0K May 16  2022 ..
+  drwxr-xr-x  3 donald donald 4.0K Jun 24  2022 aws
+  -rw-r--r--  1 donald donald  46M Jun 29  2022 awscliv2.zip
+  -rw-------  1 donald donald  57K Dec 29 17:18 .bash_history
+  -rw-r--r--  1 donald donald  220 Feb 25  2020 .bash_logout
+  -rw-r--r--  1 donald donald 4.2K Dec  3 22:08 .bashrc
+  -rwxr-xr-x  1 donald donald  45M Sep 13 18:41 cmake-3.24.2-linux-x86_64.sh
+  drwxr-xr-x  8 donald donald 4.0K Sep 19 11:11 .config
+  drwxr-xr-x  5 donald donald 4.0K Jul  7 13:36 .docker
+  -rw-r--r--  1 donald donald   17 Jul 19 22:40 file
+  -rw-r--r--  1 donald donald   25 Jul 19 22:41 file2
+  drwxr-xr-x  4 donald donald 4.0K Feb 22  2022 go
+  -rw-r--r--  1 donald donald 129M Feb 22  2022 go.tar.gz
+  -rwxr-xr-x  1 donald donald  320 Sep 28 15:08 ingest.sh
+  drwxr-xr-x  5 donald donald 4.0K Jan 20  2022 .local
+  -rw-------  1 donald donald 1.7K Nov 26 13:05 .node_repl_history
+  drwxr-xr-x  4 donald donald 4.0K Mar 18  2022 .npm
+  drwxr-xr-x  8 donald donald 4.0K Mar 18  2022 .nvm
+  -rw-r--r--  1 donald donald  862 May 16  2022 .profile
+  -rw-------  1 donald donald 2.7K Aug 18 10:01 .python_history
+  drwxr-xr-x  2 donald donald 4.0K Dec  9 09:46 rev
+  -rw-r--r--  1 donald donald  221 Dec 29 10:18 server2.py
+  -rw-r--r--  1 donald donald  221 Aug 18 09:58 server.py
+  drwx------  2 donald donald 4.0K May 16  2022 .ssh
+  drwxr-xr-x  2 donald donald 4.0K Jul 25 13:54 .terraform.d
+  drwxr-xr-x 14 donald donald 4.0K May  6  2022 .terrascan
+  drwxr-xr-x  4 donald donald 4.0K Aug 18 00:31 test
+  drwxr-xr-x  6 donald donald 4.0K Aug  5 22:24 test3
+---
+id: TR150.filesystem.home-user856
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+data: |-
+  drwxr-xr-x 36 user856 user856 4.0K Dec 29 17:18 .
+  drwxr-xr-x  5 root    root    4.0K May 16  2022 ..
+  -rw-------  1 user856 user856  57K Dec 29 17:18 .bash_history
+  -rw-r--r--  1 user856 user856  220 Feb 25  2020 .bash_logout
+  -rw-r--r--  1 user856 user856 4.2K Dec  3 22:08 .bashrc
+  drwxr-xr-x  8 user856 user856 4.0K Sep 19 11:11 .config
+  -rw-r--r--  1 user856 user856  862 May 16  2022 .profile
+  -rw-------  1 user856 user856 2.7K Aug 18 10:01 .python_history
+  drwx------  2 user856 user856 4.0K May 16  2022 .ssh
+  drwxr-xr-x  2 user856 user856 4.0K Jul 25 13:54 .terraform.d
+  drwxr-xr-x 14 user856 user856 4.0K May  6  2022 .terrascan
+  drwxr-xr-x  4 user856 user856 4.0K Aug 18 00:31 test
+  drwxr-xr-x  6 user856 user856 4.0K Aug  5 22:24 testt
+  drwxr-xr-x  3 user856 user856 4.0K Feb 23  2022 .vscode-remote-containers
+  drwxr-xr-x  5 user856 user856 4.0K Jan 19  2022 .vscode-server
+---
+id: TR150.filesystem.home-mario
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+data: |-
+  drwxr-xr-x 11 mario mario 4.0K Sep 19 12:05 .
+  drwxr-xr-x  3 root  root  4.0K Aug  6 15:41 ..
+  -rw-------  1 mario mario  11K Oct 27 13:02 .bash_history
+  -rw-r--r--  1 mario mario  220 Aug  6 15:41 .bash_logout
+  -rw-r--r--  1 mario mario 3.8K Sep 19 12:05 .bashrc
+  drwxr-xr-x  6 mario mario 4.0K Sep 19 12:05 .cache
+  drwxr-xr-x  5 mario mario 4.0K Sep 21 14:01 .config
+  drwxr-xr-x  5 mario mario 4.0K Aug  6 15:55 .docker
+  drwxr-xr-x  3 mario mario 4.0K Aug  6 17:00 .ipython
+  drwxr-xr-x  5 mario mario 4.0K Aug  6 16:54 .local
+  -rw-r--r--  1 mario mario  807 Aug  6 15:41 .profile
+  -rw-------  1 mario mario   34 Sep 16 09:39 .python_history
+  drwx------  2 mario mario 4.0K Aug  6 15:57 .ssh
+  -rw-r--r--  1 mario mario  183 Oct  6 11:25 .wget-hsts
+  drwxr-xr-x  6 mario mario 4.0K Aug 29 11:08 git
+---
+id: TR150.filesystem.home-furi0zuc
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+data: |-
+  drwx------ 12 furi0zuc furi0zuc 4.0K Sep 25 17:51 .
+  drwxr-xr-x 28 root     root     4.0K Dec  6 16:40 ..
+  -rw-------  1 furi0zuc furi0zuc 8.9K Jul  5 21:47 .bash_history
+  -rw-r--r--  1 furi0zuc furi0zuc  570 Jan 31  2010 .bashrc
+  drwxr-xr-x  2 furi0zuc furi0zuc 4.0K Oct  8  2017 .build-cache
+  drwx------  2 furi0zuc furi0zuc 4.0K Sep 17  2017 .cache
+  drwx------  5 furi0zuc furi0zuc 4.0K Dec  2  2021 .config
+  -rw-------  1 root     root     357M Dec 25 07:00 dead.letter
+  drwx------  2 root     root     4.0K Aug  1  2021 .docker
+  -rw-r--r--  1 root     root      40M Sep 25 17:55 .duc.db
+  drwxr-xr-x  3 furi0zuc furi0zuc 4.0K Oct  1  2017 .gem
+  -rw-r--r--  1 root     root      167 Nov  3  2018 .gitconfig
+  drwx------  2 root     root     4.0K Jul 10  2021 .gnupg
+  drwxr-xr-x  2 furi0zuc furi0zuc 4.0K Nov  3  2018 .nano
+  -rw-r--r--  1 furi0zuc furi0zuc   32 Sep 21  2017 .nanorc
+  -rw-r--r--  1 furi0zuc furi0zuc  148 Aug 17  2015 .profile
+  -rw-r--r--  1 furi0zuc furi0zuc  458 Sep 17  2017 .setinterfaces
+  drwxr-xr-x  2 root     root     4.0K Mar 15  2018 share
+  drwx------  2 furi0zuc furi0zuc 4.0K Jun 21  2019 .ssh
+  drwxr-xr-x 15 root     root     4.0K Jun 10  2019 trash-systemd
+  -rw-------  1 furi0zuc furi0zuc  13K Apr 23  2018 .viminfo
+  -rw-r--r--  1 root     root      220 May  8  2018 .wget-hsts

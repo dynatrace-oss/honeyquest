@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm run dev",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "dev"],
+      "options": {
+        "cwd": "src/honeyfront"
+      }
+    },
+    {
+      "label": "honeyquest -r ./results",
+      "type": "process",
+      "command": "poetry",
+      "args": ["run", "honeyquest"],
+      "options": {
+        "cwd": "src/honeyback",
+        "env": {
+          "HONEYQUEST_DATA": "../../query-database",
+          "HONEYQUEST_RESULTS": "${workspaceFolder}/results",
+          "COOKIE_SECRET": "cookie",
+          "ADMIN_TOKEN": "admin"
+        }
+      }
+    },
+    {
+      "label": "honeyquest",
+      "type": "process",
+      "command": "poetry",
+      "args": ["run", "honeyquest"],
+      "options": {
+        "cwd": "src/honeyback",
+        "env": {
+          "HONEYQUEST_DATA": "../../query-database",
+          "ADMIN_TOKEN": "admin"
+        }
+      }
+    },
+    {
+      "label": "dagit",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "dagit", "-p", "3333"],
+      "options": {
+        "env": {
+          "DAGSTER_HOME": "${workspaceFolder}/.dagster"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+id: TR150.filesystem.home-leonard-config-ini
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+annotations:
+  - honeypatch/deceptive-lines: "L8"
+  - honeypatch/original-query: TR150.filesystem.home-leonard
+  - honeypatch/applied-honeywire: filesystem-config
+  - honeypatch/description: "A configuration file may contain sensitive information."
+data: |-
+  drwxr-xr-x 25 leonard leonard 4.0K Dec 30 08:36 .
+  drwxr-xr-x  4 root    root    4.0K Jun 21  2019 ..
+  -rw-r--r--  1 leonard leonard 3.5K Sep 17  2017 .bashrc
+  drwx------  7 leonard leonard 4.0K Jan 12  2022 .cache
+  drwx------  6 leonard leonard 4.0K Sep 25 17:40 .config
+  -rw-r--r--  1 leonard leonard   64 Jun 16  2019 .gitconfig
+  drwx------  4 leonard leonard 4.0K Jan 14  2022 .gnupg
+  -rw-r--r--  1 leonard leonard 9.7K Jun  6  2022 config.ini
+  lrwxrwxrwx  1 leonard leonard   19 Jan 23  2018 html -> /srv/nginx-www/html
+---
+id: TR150.filesystem.home-furi0zuc-config-ini
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+annotations:
+  - honeypatch/deceptive-lines: "L19"
+  - honeypatch/original-query: TR150.filesystem.home-furi0zuc
+  - honeypatch/applied-honeywire: filesystem-config
+  - honeypatch/description: "A configuration file may contain sensitive information."
+data: |-
+  drwx------ 12 furi0zuc furi0zuc 4.0K Sep 25 17:51 .
+  drwxr-xr-x 28 root     root     4.0K Dec  6 16:40 ..
+  -rw-------  1 furi0zuc furi0zuc 8.9K Jul  5 21:47 .bash_history
+  -rw-r--r--  1 furi0zuc furi0zuc  570 Jan 31  2010 .bashrc
+  drwxr-xr-x  2 furi0zuc furi0zuc 4.0K Oct  8  2017 .build-cache
+  drwx------  2 furi0zuc furi0zuc 4.0K Sep 17  2017 .cache
+  drwx------  5 furi0zuc furi0zuc 4.0K Dec  2  2021 .config
+  -rw-------  1 root     root     357M Dec 25 07:00 dead.letter
+  drwx------  2 root     root     4.0K Aug  1  2021 .docker
+  -rw-r--r--  1 root     root      40M Sep 25 17:55 .duc.db
+  drwxr-xr-x  3 furi0zuc furi0zuc 4.0K Oct  1  2017 .gem
+  -rw-r--r--  1 root     root      167 Nov  3  2018 .gitconfig
+  drwx------  2 root     root     4.0K Jul 10  2021 .gnupg
+  drwxr-xr-x  2 furi0zuc furi0zuc 4.0K Nov  3  2018 .nano
+  -rw-r--r--  1 furi0zuc furi0zuc   32 Sep 21  2017 .nanorc
+  -rw-r--r--  1 furi0zuc furi0zuc  148 Aug 17  2015 .profile
+  -rw-r--r--  1 furi0zuc furi0zuc  458 Sep 17  2017 .setinterfaces
+  drwxr-xr-x  2 root     root     4.0K Mar 15  2018 share
+  -rw-r--r--  1 furi0zuc furi0zuc 9.7K Jun  6  2022 config.ini
+  drwx------  2 furi0zuc furi0zuc 4.0K Jun 21  2019 .ssh
+  drwxr-xr-x 15 root     root     4.0K Jun 10  2019 trash-systemd
+  -rw-------  1 furi0zuc furi0zuc  13K Apr 23  2018 .viminfo
+  -rw-r--r--  1 root     root      220 May  8  2018 .wget-hsts

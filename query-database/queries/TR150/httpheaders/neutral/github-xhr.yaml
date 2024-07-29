@@ -1,0 +1,25 @@
+id: TR150.httpheaders.github-zaproxy_zap-extensions-xhr
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrules
+data: |-
+  GET /zaproxy/zap-extensions/tree-commit/16997ba70fc3c40e98ebb77c650d3d18b4080c82/addOns/pscanrules HTTP/2
+  Host: github.com
+  Accept: text/html
+  Accept-Encoding: gzip, deflate, br
+  Accept-Language: en-US,en;q=0.9,de-AT;q=0.8,de-DE;q=0.7,de;q=0.6
+  Cache-Control: no-cache
+  Cookie: preferred_color_mode=light; tz=Europe%2FVienna; logged_in=no;
+  Pragma: no-cache
+  Referer: https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrules
+  Sec-CH-UA: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"
+  Sec-CH-UA-Mobile: ?0
+  Sec-CH-UA-Platform: "Windows"
+  Sec-Fetch-Dest: empty
+  Sec-Fetch-Mode: cors
+  Sec-Fetch-Site: same-origin
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+  X-Requested-With: XMLHttpRequest

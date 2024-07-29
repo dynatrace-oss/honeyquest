@@ -1,0 +1,68 @@
+id: TR849.httpheaders.sahin.hackertarget-087288.01-admin-cookie
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.14722/madweb.2020.23005"
+  - technique/author: Han, Xiao
+  - technique/doi: "10.1145/3140549.3140555"
+  - metaref: owasp-api2-2019-broken-user-authentication
+annotations:
+  - honeypatch/deceptive-lines: "L8"
+  - honeypatch/original-query: hackertarget-087288.01
+  - honeypatch/applied-honeywire: httpheaders-admin-cookie
+  - honeypatch/description: "The base64-encoded cookie value is `admin=false`"
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/1.2.2
+  Date: Mon, 14 Apr 2014 19:03:03 GMT
+  Content-Type: text/html
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  X-Powered-By: PHP/5.4.5
+  Set-Cookie: DATA=YWRtaW49ZmFsc2U%3D; path=/
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Pragma: no-cache
+---
+id: TR849.httpheaders.sahin.hackertarget-101810.02-admin-cookie
+label: deceptive
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://hackertarget.com/500k-http-headers/
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.14722/madweb.2020.23005"
+  - technique/author: Han, Xiao
+  - technique/doi: "10.1145/3140549.3140555"
+  - metaref: owasp-api2-2019-broken-user-authentication
+annotations:
+  - honeypatch/deceptive-lines: "L11"
+  - honeypatch/original-query: hackertarget-101810.02
+  - honeypatch/applied-honeywire: httpheaders-admin-cookie
+  - honeypatch/description: "The base64-encoded cookie value is `authenticated=0`"
+data: |-
+  HTTP/1.1 200 OK
+  Connection: close
+  Date: Wed, 23 Apr 2014 05:54:03 GMT
+  Server: Microsoft-IIS/6.0
+  P3P: CP="DSP ALL CUR ADMi DEVi CONi HISi OUR BUS NAV COM INT STA DEM LOC ONL PHY UNI"
+  X-Powered-By: ASP.NET
+  X-AspNet-Version: 4.0.30319
+  Set-Cookie: ASP.NET_SessionId=fyi3sylqfunbwtdy03s4fdqv; path=/; HttpOnly
+  Set-Cookie: language-betboo-tr=FOUND; expires=Sun, 23-Apr-2113 05:54:03 GMT; path=/
+  Set-Cookie: rStatus=1; expires=Sun, 23-Apr-2113 05:54:03 GMT; path=/
+  Set-Cookie: DATA=YXV0aGVudGljYXRlZD0w; expires=Sun, 23-Apr-2113 05:54:03 GMT; path=/
+  Cache-Control: private
+  Content-Type: text/html; charset=utf-8
+  Content-Length: 21049

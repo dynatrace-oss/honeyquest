@@ -1,0 +1,29 @@
+id: TR150.filesystem.root-k8s-manifests
+label: risky
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - risk/type: weakness
+  - risk/risky-lines: "L12,L14"
+  - risk/present-weakness: filesystem-kubernetes-manifests
+  - risk/description: "Kubernetes manifests may contain credentials or other sensitive information about the cluster."
+data: |-
+  drwxr-xr-x. 12 root root 4.0K Oct 25 19:26 .
+  dr-xr-xr-x. 18 root root 4.0K May  7  2022 ..
+  -rw-------.  1 root root  21K Oct 25 19:26 .bash_history
+  -rw-r--r--.  1 root root   18 May 11  2019 .bash_logout
+  -rw-r--r--.  1 root root  176 May 11  2019 .bash_profile
+  -rw-r--r--.  1 root root  176 May 11  2019 .bashrc
+  drwx------.  3 root root 4.0K Apr 11  2021 .config
+  -rw-r--r--.  1 root root  53M May  7  2022 k3s-bin-1.23.6+k3s1-4.el8.x86_64.rpm
+  -rw-r--r--.  1 root root  57M Jul 30 19:44 k3s-bin-1.24.3+k3s1-7.el8.x86_64.rpm
+  -rw-r--r--.  1 root root  21K May  7  2022 k3s-selinux-1.1-1.el8.noarch.rpm
+  -rw-r--r--.  1 root root  21K Jun 10  2022 k3s-selinux-1.2-2.el8.noarch.rpm
+  drwxr-xr-x. 12 root root 4.0K Jun  6  2022 k8s-manifests
+  drwxr-xr-x.  2 root root 4.0K Aug  8 11:06 .k9s
+  drwxr-x---.  4 root root 4.0K Apr  7  2022 .kube
+  -rw-------.  1 root root   75 Oct  2 19:25 .lesshst
+  drwx------.  2 root root 4.0K Sep 27 19:30 .ssh
+  -rw-------.  1 root root  15K Sep 27 19:30 .viminfo

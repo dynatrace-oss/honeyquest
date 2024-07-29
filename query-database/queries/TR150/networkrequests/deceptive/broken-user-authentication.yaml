@@ -1,0 +1,24 @@
+id: TR150.networkrequests.juice_shop_herokuapp_com-007-broken-user-authentication
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Han, Xiao
+  - technique/doi: "10.1145/3140549.3140555"
+  - metaref: owasp-api2-2019-broken-user-authentication
+annotations:
+  - honeypatch/deceptive-lines: "L5"
+  - honeypatch/original-query: TR150.networkrequests.juice_shop_herokuapp_com-007
+  - honeypatch/applied-honeywire: networkrequests-sessid-parameter
+  - honeypatch/description: "The `refresh-session` endpoint seems to leak the session ID in the query parameters."
+data: |-
+  0.120 POST https://juice-shop.herokuapp.com/rest/user/data-export 200 OK (0.4 kB)
+  0.215 GET https://juice-shop.herokuapp.com/rest/image-captcha/ 200 OK (4.1 kB)
+  0.380 GET https://juice-shop.herokuapp.com/rest/basket/NaN 200 OK (30 bytes)
+  0.381 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  0.581 GET https://juice-shop.herokuapp.com/rest/user/refresh-session?SESSID=odq5CI18NZTqrl3uxWdF 200 OK (0.1 kB)
+  2.031 GET https://juice-shop.herokuapp.com/rest/order-history 200 OK (30 bytes)
+  2.058 GET https://juice-shop.herokuapp.com/assets/public/images/products/no-results.png 200 OK (31.3 kB)
+  2.876 GET https://juice-shop.herokuapp.com/api/Quantitys/ 200 OK (0.6 kB)

@@ -1,0 +1,39 @@
+id: TR150.networkrequests.www_tiktok_com-trunc
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://www.tiktok.com/
+data: |-
+  0.000 GET https://www.site.com/node/common/web-privacy-config?locale=en 200 OK (3.7 kB)
+  0.096 GET https://starling-oversea.bytesite.com/check_and_get_text/5q8QNUD1-KN-cTk2KV9yA/normal/WebApp_Login?lang=en,zh&version=89060992 200 OK (1.2 kB)
+  0.114 OPTIONS https://vmweb-va.bytesite.com/service/2/abtest_config/ 200 OK (1.3 kB)
+  0.119 OPTIONS https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  0.265 POST https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  0.288 POST https://www.site.com/ttwid/check/ 200 OK (1.4 kB)
+  0.566 POST https://vmweb-va.bytesite.com/service/2/abtest_config/ 200 OK (1.5 kB)
+  0.672 GET https://www.site.com/api/policy/notice/?aid=1568&app_language=en&browser_language=en-US&_signature=_fIICGe4dXWl0ZiFibWr3xA 200 OK (1.2 kB)
+  0.674 GET https://www.site.com/node/share/discover?aid=1568&app_language=en&browser_language=en-U&_signature=_UQdknbaYd9UzUECIQhNAQw 200 OK (10.3 kB)
+  0.677 GET https://www.site.com/node/share/discover/list?aid=1568&app_language=en&browser_language=en-US&_signature=_8hvsqLuYEwh4uuKSXpeuYw 200 OK (1.8 kB)
+  0.685 GET https://www.site.com/passport/web/account/info/?aid=1459&app_language=en&browser_language=en-US&_signature=_G0z4aUiXALZJreSXZ1NnxA 200 OK (1.0 kB)
+  0.687 OPTIONS https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  0.721 OPTIONS https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  0.723 GET https://www.site.com/api/ba/business/suite/permission/list/?aid=1568&app_language=en&browser_language=en-US&_signature=_02B4Z6wo00001BqueZgAAIDBBu3HJidVYbgar30AAGUf96 200 OK (1.5 kB)
+  0.838 OPTIONS https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  1.087 POST https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  1.646 OPTIONS https://mcs-va.sitev.com/v1/list 200 OK (0.8 kB)
+  1.648 POST https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  1.697 OPTIONS https://mcs-va.sitev.com/v1/list 200 OK (0.8 kB)
+  1.728 GET https://mssdk-va.site.com/web/resource?eq=IJe-VbPyVOz/zXCkrplBzAsfMTaik6JOIg-OMrzeHlbGeYdM5VEWmvKHQ 200 OK (1.9 kB)
+  1.972 POST https://mcs-va.sitev.com/v1/list 200 OK (0.8 kB)
+  2.004 POST https://mcs-va.sitev.com/v1/list 200 OK (0.8 kB)
+  2.274 OPTIONS https://mon-va.bytesite.com/monitor_web/settings/browser-settings?bid=webmssdk&store=1 200 OK (1.6 kB)
+  2.414 POST https://mon-va.bytesite.com/monitor_browser/collect/batch/ 204 No Content (45.1 kB)
+  2.459 GET https://mon-va.bytesite.com/monitor_web/settings/browser-settings?bid=webmssdk&store=1 200 OK (1.6 kB)
+  2.474 OPTIONS https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  2.585 POST https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  3.427 POST https://mon-va.bytesite.com/monitor_browser/collect/batch/ 204 No Content (10.1 kB)
+  3.578 OPTIONS https://mon-va.bytesite.com/monitor_browser/collect/batch/?biz_id=webmssdk 204 No Content (1.2 kB)
+  3.731 POST https://mon-va.bytesite.com/monitor_browser/collect/batch/?biz_id=webmssdk 204 No Content (19.9 kB)
+  4.321 POST https://mssdk-va.site.com/web/report?msToken=lu5T2a0G8HjUdNiHRhsu2w-na1KSujAJRy0TzaWCbQf9Q6d9UdzOv1&X-Bogus=cbzNG8D_tE6RJCw/ 200 OK (1.7 kB)

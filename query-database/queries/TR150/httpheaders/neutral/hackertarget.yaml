@@ -1,0 +1,513 @@
+id: hackertarget-087288.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/1.2.2
+  Date: Mon, 14 Apr 2014 19:03:03 GMT
+  Content-Type: text/html
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  X-Powered-By: PHP/5.4.5
+  Set-Cookie: PHPSESSID=orvga3gl225otbj3ta6gdtkjp1; path=/
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Pragma: no-cache
+---
+id: hackertarget-044619.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Content-Type: text/html;charset=UTF-8
+  Content-Language: en-CA
+  X-Varnish: 1929462794 1929459647
+  X-Varnish-TTL: 126.015
+  Expires: Mon, 14 Apr 2014 17:26:31 GMT
+  Cache-Control: max-age=0, no-cache, no-store
+  Pragma: no-cache
+  Date: Mon, 14 Apr 2014 17:26:31 GMT
+  Transfer-Encoding:  chunked
+  Connection: keep-alive
+  Connection: Transfer-Encoding
+---
+id: hackertarget-052011.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Cache-Control: private
+  Content-Type: text/html; charset=utf-8
+  Server: Microsoft-IIS/7.5
+  Set-Cookie: ASP.NET_SessionId=zzr3gu1brtc1ugi3oonrlwsx; path=/; HttpOnly
+  X-AspNet-Version: 4.0.30319
+  X-Powered-By: ASP.NET
+  X-Powered-By-Plesk: PleskWin
+  X-Frame-Options: SAMEORIGIN
+  Date: Sat, 12 Apr 2014 16:29:31 GMT
+  Content-Length: 10671
+---
+id: hackertarget-033646.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Date: Mon, 14 Apr 2014 04:38:29 GMT
+  Server: Apache/2.2.17 (Unix) mod_ssl/2.2.17 OpenSSL/0.9.8e-fips-rhel5 mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635
+  X-Powered-By: PHP/5.2.16
+  Transfer-Encoding: chunked
+  Content-Type: text/html
+---
+id: hackertarget-034515.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/1.2.4
+  Content-Type: text/html; charset=UTF-8
+  X-Powered-By: PHP/5.3.18
+  X-Pingback: http://www.loksatta.com/xmlrpc.php
+  Cache-Control: max-age=900
+  Cache-Control: public
+  Age: 778
+  Date: Mon, 14 Apr 2014 05:34:29 GMT
+  Expires: Mon, 14 Apr 2014 05:36:31 GMT
+  Content-Length: 154614
+  Connection: keep-alive
+---
+id: hackertarget-000953.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Content-Type: text/html; charset=utf-8
+  Last-Modified: Sat, 12 Apr 2014 15:12:59 GMT
+  X: 23
+  Cache-Control: private, max-age=1
+  Expires: Sat, 12 Apr 2014 15:16:42 GMT
+  Date: Sat, 12 Apr 2014 15:16:41 GMT
+  Transfer-Encoding:  chunked
+  Connection: keep-alive
+  Connection: Transfer-Encoding
+---
+id: hackertarget-003375.03
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sat, 12 Apr 2014 18:46:41 GMT
+  Server: Apache
+  X-Powered-By: PHP/5.3.14
+  Set-Cookie: PHPSESSID=76eia055llsgecl8tata6grjm6; path=/
+  Connection: close
+  Transfer-Encoding: chunked
+  Content-Type: text/html; charset=UTF-8
+---
+id: hackertarget-054786.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 400 Bad Request
+  Content-Type: text/html
+  Date: Sat, 12 Apr 2014 21:31:08 GMT
+  Connection: close
+  Content-Length: 39
+---
+id: hackertarget-001916.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sat, 12 Apr 2014 16:38:29 GMT
+  Server: LiteSpeed
+  Accept-Ranges: bytes
+  Connection: close
+  ETag: "edb9-53496b3a-f74498d855146fe7"
+  Last-Modified: Sat, 12 Apr 2014 16:35:06 GMT
+  Content-Type: text/html
+  Content-Length: 60857
+  X-Geek: What's black and white and red all over? Please don't kill our penguin-powered server.
+  X-Bacon: I wonder what penguin bacon tastes like.
+---
+id: hackertarget-094570.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Date: Tue, 15 Apr 2014 04:16:52 GMT
+  Server: Apache
+  Cache-Control: max-age=0, public
+  Expires: Tue, 15 Apr 2014 04:16:52 GMT
+  X-Powered-By: PleskLin
+  MS-Author-Via: DAV
+  Vary: User-Agent,Accept-Encoding
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Headers: X-Requested-With
+  Content-Length: 6749
+  Connection: close
+  Content-Type: text/html; charset=utf-8
+---
+id: hackertarget-005804.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Server: Apache
+  P3p: CP="CAO PSA OUR"
+  X-Cache-Debug: 1
+  Vary: Accept-Encoding
+  Content-Type: text/html; charset=UTF-8
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Pragma: no-cache
+  Expires: Mon, 31 Mar 2008 10:00:00 GMT
+  Transfer-Encoding: chunked
+  Date: Sat, 12 Apr 2014 22:19:32 GMT
+  Age: 77
+  Connection: keep-alive
+---
+id: hackertarget-070259.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 13 Apr 2014 19:19:43 GMT
+  Server: Apache/2.2.3 (CentOS)
+  X-Powered-By: PHP/5.3.3
+  Set-Cookie: PHPSESSID=hko4j9c2mpfisd2ksgpgnkil91; path=/
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Pragma: no-cache
+  Connection: close
+  Transfer-Encoding: chunked
+  Content-Type: text/html; charset: iso-8859-1; charset=UTF-8
+---
+id: hackertarget-011579.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Vary: Accept-Encoding
+  Content-Type: text/html;charset=iso-8859-1
+  Accept-Ranges: bytes
+  ETag: "2910624538"
+  Last-Modified: Sun, 13 Apr 2014 04:05:31 GMT
+  Content-Length: 103371
+  Date: Sun, 13 Apr 2014 04:21:18 GMT
+  Server: lighttpd
+---
+id: hackertarget-034154.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Mon, 14 Apr 2014 05:12:22 GMT
+  Content-Type: text/html; charset=utf-8
+  Content-Length: 37176
+  Connection: keep-alive
+  Status: 200 OK
+  Cache-Control: max-age=30, public
+  ETag: "5c2af237ad762cdaa550de19fc805b84"
+  X-Request-Id: 171dee28be1d6e392b7c8b1244e87ccc
+  X-Runtime: 56
+  Vary: Accept
+  Timing-Allow-Origin: *
+---
+id: hackertarget-069047.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Cache-Control: private
+  Content-Type: text/html; charset=utf-8
+  Server: Microsoft-IIS/8.0
+  X-AspNetMvc-Version: 5.1
+  X-AspNet-Version: 4.0.30319
+  X-Powered-By: ASP.NET
+  Date: Sun, 13 Apr 2014 17:37:54 GMT
+  Content-Length: 37031
+---
+id: hackertarget-071483.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 13 Apr 2014 21:05:48 GMT
+  Server: Apache
+  X-Powered-By: PHP/5.4.22
+  Cache-Control: no-cache, must-revalidate, max-age=0
+  Pragma: no-cache
+  Expires: Wed, 11 Jan 1984 05:00:00 GMT
+  Last-Modified: Sat, 12 Apr 2014 12:00:10 GMT
+  Vary: User-Agent,Accept-Encoding
+  Transfer-Encoding: chunked
+  Content-Type: text/html;charset=UTF-8
+---
+id: hackertarget-065265.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 13 Apr 2014 11:24:03 GMT
+  Server: Apache
+  Last-Modified: Tue, 31 Dec 2013 19:52:02 GMT
+  ETag: "3008ab16-30ab-4eed9e4df5c80"
+  Accept-Ranges: bytes
+  Content-Length: 12459
+  Content-Type: text/html
+---
+id: hackertarget-060766.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/1.4.7
+  Date: Sun, 13 Apr 2014 05:53:14 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  X-Powered-By: PHP/5.4.26
+  Vary:
+  X-Pingback: http://urbanpost.it/xmlrpc.php
+  X-Served-by: FE2
+---
+id: hackertarget-056380.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 13 Apr 2014 00:03:00 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Pragma: no-cache
+  Expires: Thu, 01 Jan 2008 00:00:00 GMT
+---
+id: hackertarget-059794.03
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+data: |-
+  HTTP/1.1 200 OK
+  Content-Type: text/html
+  Last-Modified: Sun, 13 Apr 2014 04:50:20 GMT
+  Accept-Ranges: bytes
+  ETag: "e0a544dfd356cf1:0"
+  Server: Microsoft-IIS/7.5
+  servername_intern: gw18
+  P3P: policyref="http://www.golf.de/w3c/p3p.xml",CP="NOI DSP COR NID NOR UNI STA"
+  Date: Sun, 13 Apr 2014 04:54:56 GMT
+  Content-Length: 103086
+---
+id: hackertarget-180004.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations: []
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/1.4.7
+  Date: Sun, 27 Apr 2014 04:42:11 GMT
+  Content-Type: text/html
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  X-Powered-By: PHP/5.3.28
+  Set-Cookie: PHPSESSID=9lmfffthjtj54n3sd880ibn0g3; path=/
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Pragma: no-cache
+---
+id: hackertarget-177038.01
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations: []
+data: |-
+  HTTP/1.1 200 OK
+  Cache-Control: private
+  Content-Length: 12765
+  Content-Type: text/html
+  Server: Microsoft-IIS/7.5
+  Set-Cookie: ASPSESSIONIDQSSSCATT=LFHHNJCCFOPJILMFCOBAOHGF; path=/
+  X-Powered-By: ASP.NET
+  Date: Sun, 27 Apr 2014 00:53:06 GMT
+---
+id: hackertarget-101810.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations: []
+data: |-
+  HTTP/1.1 200 OK
+  Connection: close
+  Date: Wed, 23 Apr 2014 05:54:03 GMT
+  Server: Microsoft-IIS/6.0
+  P3P: CP="DSP ALL CUR ADMi DEVi CONi HISi OUR BUS NAV COM INT STA DEM LOC ONL PHY UNI"
+  X-Powered-By: ASP.NET
+  X-AspNet-Version: 4.0.30319
+  Set-Cookie: ASP.NET_SessionId=fyi3sylqfunbwtdy03s4fdqv; path=/; HttpOnly
+  Set-Cookie: language-betboo-tr=FOUND; expires=Sun, 23-Apr-2113 05:54:03 GMT; path=/
+  Set-Cookie: rStatus=1; expires=Sun, 23-Apr-2113 05:54:03 GMT; path=/
+  Cache-Control: private
+  Content-Type: text/html; charset=utf-8
+  Content-Length: 21049
+---
+id: hackertarget-161701.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations: []
+data: |-
+  HTTP/1.1 200 OK
+  Server: nginx/1.6.0
+  Date: Sat, 26 Apr 2014 08:51:53 GMT
+  Content-Type: text/html; charset=windows-1256
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: private
+  Pragma: private
+  X-UA-Compatible: IE=7
+  Set-Cookie: bbsessionhash=f3cdd7987b326584c6ee6696f3033087; path=/; HttpOnly
+  Set-Cookie: bblastvisit=1398502313; expires=Sun, 26-Apr-2015 08:51:53 GMT; path=/
+  Set-Cookie: bblastactivity=0; expires=Sun, 26-Apr-2015 08:51:53 GMT; path=/
+  Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform
+  Pragma: no-cache
+---
+id: hackertarget-187431.02
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Hacker Target Pty Ltd
+  - payload/license: CC-BY-4.0
+  - payload/adapted: false
+  - payload/url: https://hackertarget.com/500k-http-headers/
+annotations: []
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 27 Apr 2014 14:14:59 GMT
+  Server: Apache
+  X-Powered-By: PHP/5.3.10-1ubuntu3.10
+  Set-Cookie: frontend=tsu0iqd8pfse3j7s5cqf8gorn6; expires=Tue, 27-May-2014 14:14:59 GMT; path=/; domain=www.capeunionmart.co.za; HttpOnly
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Pragma: no-cache
+  X-Real-Server: V74
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Content-Type: text/html; charset=UTF-8

@@ -1,0 +1,10 @@
+{
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.git": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true
+  },
+  "flake8.args": ["--config=${workspaceFolder}/src/honeyback/tox.ini"]
+}

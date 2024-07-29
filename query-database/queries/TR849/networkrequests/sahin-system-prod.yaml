@@ -1,0 +1,39 @@
+id: TR849.networkrequests.sahin.github_com-trunc-system-prod
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - technique/author: Han, Xiao
+  - technique/doi: "10.1145/3140549.3140555"
+  - metaref: owasp-api9-2019-improper-assets-management
+annotations:
+  - honeypatch/deceptive-lines: "L8:54-64,L10:54-64"
+  - honeypatch/original-query: TR150.networkrequests.github_com-trunc
+  - honeypatch/applied-honeywire: networkrequests-system-parameter
+  - honeypatch/description: "The `system=prod` query parameter seems to be a modifiable"
+data: |-
+  0.000 GET https://site.com/ 200 OK (162.9 kB)
+  0.414 GET https://avatars.siteusercontent.com/u/10400532?s=40&v=4 200 OK (1.1 kB)
+  0.415 GET https://avatars.siteusercontent.com/u/76981099?s=40&v=4 200 OK (2.2 kB)
+  0.415 GET https://avatars.siteusercontent.com/u/6333118?s=40&v=4 200 OK (1.5 kB)
+  0.415 GET https://avatars.siteusercontent.com/u/82605399?s=40&v=4 200 OK (1.1 kB)
+  0.969 GET https://site.com/users/microsoft/feature_preview/indicator_check 200 OK (24 bytes)
+  1.055 GET https://site.com/dashboard/my_top_repositories?location=left 200 OK (16.8 kB)
+  1.055 GET https://site.com/dashboard/recent-activity?system=prod 200 OK (0.2 kB)
+  1.056 GET https://site.com/dashboard/my_top_repositories?location=center 200 OK (16.8 kB)
+  1.057 GET https://site.com/dashboard/recent-activity?system=prod 200 OK (0.2 kB)
+  1.057 GET https://site.com/conduit/filter 200 OK (9.4 kB)
+  1.058 GET https://site.com/dashboard-feed 200 OK (447.6 kB)
+  1.059 GET https://site.com/conduit/for_you_feed 200 OK (816.4 kB)
+  1.128 GET https://site.com/dashboard/changelog 200 OK (3.8 kB)
+  1.391 POST https://collector.site.com/github/collect
+  1.407 GET https://github.siteassets.com/favicons/favicon.svg 200 OK (1.0 kB)
+  1.418 GET https://site.com/manifest.json 200 OK (1.2 kB)
+  1.432 GET https://github.siteassets.com/favicons/favicon.png 200 OK (1.0 kB)
+  1.497 POST https://api.site.com/_private/browser/stats
+  1.574 GET https://github.siteassets.com/apple-touch-icon-144x144.png 200 OK (14.4 kB)
+  3.127 POST https://api.site.com/_private/browser/stats

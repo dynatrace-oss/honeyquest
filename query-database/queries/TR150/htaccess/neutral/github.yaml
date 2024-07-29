@@ -1,0 +1,223 @@
+id: TR150.htaccess.github-react-boilerplate_react-boilerplate
+label: neutral
+type: htaccess
+references:
+  - payload/author: Stoiber, Maximilian
+  - payload/license: MIT
+  - payload/adapted: true
+  - payload/url: https://github.com/react-boilerplate/react-boilerplate/blob/d19099afeff64ecfb09133c06c1cb18c0d40887e/app/.htaccess
+data: |-
+  Options -MultiViews
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^ index.php [QSA,L]
+---
+id: TR150.htaccess.github-dtbaker_ucm
+label: neutral
+type: htaccess
+references:
+  - payload/author: dtbaker
+  - payload/license: null
+  - payload/adapted: false
+  - payload/url: https://github.com/dtbaker/ucm/blob/bd5d6c5ed4ee6952efdf32848aa689cecbaca95a/.htaccess
+data: |-
+  #php_flag xdebug.remote_enable on
+  #php_flag xdebug.remote_connect_back on
+  #
+  #php_flag xdebug.profiler_enable_trigger on
+  #php_flag xdebug.show_mem_delta on
+  #php_flag xdebug.trace_format 1
+  #php_flag xdebug.trace_enable_trigger on
+  #php_flag xdebug.auto_trace on
+
+  <IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php [L,QSA]
+  </IfModule>
+---
+id: TR150.htaccess.github-ohel_gaincms
+label: neutral
+type: htaccess
+references:
+  - payload/author: Helin, Olli
+  - payload/license: GPL-3.0-only
+  - payload/adapted: false
+  - payload/url: https://github.com/ohel/gaincms/blob/2f10fd563054084f7be5dd5b5a3275d297ee9eb2/.htaccess
+data: |-
+  RewriteEngine On
+
+  # Private address for local development and testing, skips redirect rules.
+  RewriteCond %{HTTP_HOST} ^10\.0\.1\.2$
+  RewriteRule ".?" "-" [S=2]
+
+  # Remove trailing slashes if not a directory or file. Also forces HTTPS.
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^ https://%{HTTP_HOST}%1 [R=301,L]
+
+  # Force HTTPS.
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Setting DirectoryIndex prevents net::ERR_INCOMPLETE_CHUNKED_ENCODING errors on main page.
+  DirectoryIndex index.php
+  FallbackResource /index.php
+  Options -Indexes
+
+  ErrorDocument 404 /error
+---
+id: TR150.htaccess.github-GemGeorge_SniperPhish
+label: neutral
+type: htaccess
+references:
+  - payload/author: George, Gem
+  - payload/license: MIT
+  - payload/adapted: false
+  - payload/url: https://github.com/GemGeorge/SniperPhish/blob/9d88be15a101eab08edce4a21dacd9ff0d320f0c/.htaccess
+data: |-
+  Options -Indexes
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+  # php -- BEGIN cPanel-generated handler, do not edit
+  # Set the “ea-php80” package as the default “PHP” programming language.
+  <IfModule mime_module>
+    AddHandler application/x-httpd-ea-php80___lsphp .php .php8 .phtml
+  </IfModule>
+  # php -- END cPanel-generated handler, do not edit
+---
+id: TR150.htaccess.github-Aiko-IT-Systems_DisCatSharp
+label: neutral
+type: htaccess
+references:
+  - payload/author: AITSYS
+  - payload/license: MIT
+  - payload/adapted: true
+  - payload/url: https://github.com/Aiko-IT-Systems/DisCatSharp/blob/423309722fa9788bea92f684833e722f017e5a73/DisCatSharp.Docs/dcs/.htaccess
+data: |-
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+  RewriteRule ^ %1 [R=301,L]
+
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*?)/?$ $1.html [NC,L]
+---
+id: TR150.htaccess.github-defiprime_defiprime
+label: neutral
+type: htaccess
+references:
+  - payload/author: defiprime
+  - payload/license: CC-BY-3.0
+  - payload/adapted: true
+  - payload/url: https://github.com/defiprime/defiprime1/blob/1c81be5a16af8fcdfa8f05d8eacffde759e9e037/.htaccess
+data: |-
+  ErrorDocument 404 /404.html
+---
+id: TR150.htaccess.github-awurth_Slim3
+label: neutral
+type: htaccess
+references:
+  - payload/author: Wurth, Alexis
+  - payload/license: MIT
+  - payload/adapted: false
+  - payload/url: https://github.com/awurth/Slim3/blob/df1c88d5238e4fb0417540160e48ab0f3e5844a8/public/.htaccess
+data: |-
+  DirectoryIndex index.php
+
+  <IfModule mod_negotiation.c>
+    Options -MultiViews
+  </IfModule>
+
+  <IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
+    RewriteRule ^(.*) - [E=BASE:%1]
+
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    RewriteCond %{ENV:REDIRECT_STATUS} ^$
+    RewriteRule ^index\.php(?:/(.*)|$) %{ENV:BASE}/$1 [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+
+    RewriteRule ^ %{ENV:BASE}/index.php [L]
+  </IfModule>
+
+  <IfModule !mod_rewrite.c>
+    <IfModule mod_alias.c>
+      RedirectMatch 307 ^/$ /index.php/
+    </IfModule>
+  </IfModule>
+---
+id: TR150.htaccess.github-ZeroDayTea_kqctf
+label: neutral
+type: htaccess
+references:
+  - payload/author: Dobranowski, Patrick
+  - payload/license: MIT
+  - payload/adapted: true
+  - payload/url: https://github.com/ZeroDayTea/kqctf/blob/3da2ad2636ccc6e3ac45a6d5f7f91531e9857644/.htaccess
+data: |-
+  Options +FollowSymLinks -MultiViews
+  # Turn mod_rewrite on
+  RewriteEngine On
+  RewriteBase /
+
+  # To externally redirect /dir/foo.php to /dir/foo
+  RewriteCond %{REQUEST_METHOD} !POST
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+  RewriteRule ^ %1 [R=302,L,NE]
+
+  ## To internally redirect /dir/foo to /dir/foo.php
+  RewriteCond %{REQUEST_FILENAME}.php -f [NC]
+  RewriteRule ^ %{REQUEST_URI}.php [L]
+---
+id: TR150.htaccess.github-swiftyspiffy_twitch-token-generator
+label: neutral
+type: htaccess
+references:
+  - payload/author: swiftyspiffy
+  - payload/license: MIT
+  - payload/adapted: false
+  - payload/url: https://github.com/swiftyspiffy/twitch-token-generator/blob/e0c2092e187b62d42eba4c187aed862acaf0ffec/quick/.htaccess
+data: |-
+  RewriteEngine on
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteRule ^(.*)$ index.php?id=$1 [L,QSA]
+---
+id: TR150.htaccess.github-lomboboo_webpack-typescript-boilerplate
+label: neutral
+type: htaccess
+references:
+  - payload/author: lomboboo
+  - payload/license: MIT
+  - payload/adapted: false
+  - payload/url: https://github.com/lomboboo/webpack-typescript-boilerplate/blob/ad0bff6f01a9017de8d26db419f37ea792216422/src/.htaccess
+data: |-
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2$
+  RewriteRule ^(.*)$ - [E=BASE:%1]
+
+  RewriteCond %{REQUEST_METHOD} !POST
+  RewriteCond %{THE_REQUEST} /(.+?)\.html[\s?] [NC]
+  RewriteRule ^ %1 [R=302,L,NE]
+
+  RewriteRule ^(.*)index$ %{ENV:BASE} [R=301,NC,L]
+
+  # To internally forward /dir/file to /dir/file.html
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}\.html -f [NC]
+  RewriteRule ^(.+?)/?$ %{ENV:BASE}$1.html [L]

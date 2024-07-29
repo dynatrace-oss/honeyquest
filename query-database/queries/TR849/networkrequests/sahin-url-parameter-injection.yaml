@@ -1,0 +1,124 @@
+id: TR849.networkrequests.sahin.juice_shop_herokuapp_com-012-inject-unescaped-json
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - metaref: owasp-api8-2019-injection
+annotations:
+  - honeypatch/deceptive-lines: "L7:62-94"
+  - honeypatch/original-query: TR150.networkrequests.juice_shop_herokuapp_com-012
+  - honeypatch/applied-honeywire: networkrequests-unescaped-json
+  - honeypatch/description: "The `d` parameter holds unescaped JSON payload"
+data: |-
+  0.000 POST https://juice-shop.herokuapp.com/rest/user/login 401 Unauthorized (38 bytes)
+  6.318 GET https://juice-shop.herokuapp.com/api/SecurityQuestions/ 200 OK (0.5 kB)
+  9.665 POST https://juice-shop.herokuapp.com/api/Users/ 201 Created (0.3 kB)
+  9.743 POST https://juice-shop.herokuapp.com/api/SecurityAnswers/ 201 Created (0.2 kB)
+  9.912 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  13.956 POST https://juice-shop.herokuapp.com/rest/user/login 200 OK (0.8 kB)
+  14.043 GET https://juice-shop.herokuapp.com/rest/basket/23?d=%7Bitem%3A%22apple-juice%22%7D%0A 200 OK (0.2 kB)
+---
+id: TR849.networkrequests.sahin.www_tiktok_com-trunc-012-inject-unescaped-json
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - metaref: owasp-api8-2019-injection
+annotations:
+  - honeypatch/deceptive-lines: "L12:44-96"
+  - honeypatch/original-query: TR150.networkrequests.www_tiktok_com-trunc
+  - honeypatch/applied-honeywire: networkrequests-unescaped-json
+  - honeypatch/description: "The `dat` parameter holds unescaped JSON payload"
+data: |-
+  0.000 GET https://www.site.com/node/common/web-privacy-config?locale=en 200 OK (3.7 kB)
+  0.096 GET https://starling-oversea.bytesite.com/check_and_get_text/5q8QNUD1-KN-cTk2KV9yA/normal/WebApp_Login?lang=en,zh&version=89060992 200 OK (1.2 kB)
+  0.114 OPTIONS https://vmweb-va.bytesite.com/service/2/abtest_config/ 200 OK (1.3 kB)
+  0.119 OPTIONS https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  0.265 POST https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  0.288 POST https://www.site.com/ttwid/check/ 200 OK (1.4 kB)
+  0.566 POST https://vmweb-va.bytesite.com/service/2/abtest_config/ 200 OK (1.5 kB)
+  0.672 GET https://www.site.com/api/policy/notice/?aid=1568&app_language=en&browser_language=en-US&_signature=_fIICGe4dXWl0ZiFibWr3xA 200 OK (1.2 kB)
+  0.674 GET https://www.site.com/node/share/discover?aid=1568&app_language=en&browser_language=en-U&_signature=_UQdknbaYd9UzUECIQhNAQw 200 OK (10.3 kB)
+  0.677 GET https://www.site.com/node/share/discover/list?aid=1568&app_language=en&browser_language=en-US&_signature=_8hvsqLuYEwh4uuKSXpeuYw 200 OK (1.8 kB)
+  0.685 GET https://www.site.com/passport/web/account/info/?aid=1459&app_language=en&browser_language=en-US&_signature=_G0z4aUiXALZJreSXZ1NnxA 200 OK (1.0 kB)
+  0.697 POST https://mcs-va.site.com/v1/list?dat=%7Bdrv%3A%22KN17%22%2C%22ab%22%3A%221568%22%7D%0A 200 OK (1.2 kB)
+  0.707 OPTIONS https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  0.721 OPTIONS https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  0.723 GET https://www.site.com/api/ba/business/suite/permission/list/?aid=1568&app_language=en&browser_language=en-US&_signature=_02B4Z6wo00001BqueZgAAIDBBu3HJidVYbgar30AAGUf96 200 OK (1.5 kB)
+  0.838 OPTIONS https://mcs-va.site.com/v1/list 200 OK (1.2 kB)
+  1.646 OPTIONS https://mcs-va.sitev.com/v1/list 200 OK (0.8 kB)
+---
+id: TR849.networkrequests.sahin.www_amazon_com-trunc-inject-script-tag
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - metaref: owasp-api8-2019-injection
+annotations:
+  - honeypatch/deceptive-lines: "L5:37-114"
+  - honeypatch/original-query: TR150.networkrequests.www_amazon_com-trunc
+  - honeypatch/applied-honeywire: networkrequests-unescaped-javascript
+  - honeypatch/description: "The `st` parameter holds unescaped JavaScript code"
+data: |-
+  0.110 HEAD https://completion.site.com/api/2017/suggestions 204 No Content (0.3 kB)
+  0.309 OPTIONS https://aan.site.com/cem 200 OK (0.6 kB)
+  0.990 POST https://aan.site.com/cem 200 OK (0.6 kB)
+  1.560 OPTIONS https://aan.site.com/cem 200 OK (0.6 kB)
+  1.674 POST https://aan.site.com/cem?st=%3Cscript%3Eib.push%28%22cssRules%22%2C%22insertRule%22%29%3B%3C%2Fscript%3E 200 OK (0.6 kB)
+  2.045 GET https://hftOcb3t8X3ER.cloudfront.net/?71166aab-b979-4800-9061-4e0a1f353e4c 200 OK (0.5 kB)
+  2.048 GET https://JPQB7nXGB.cloudfront.net/?080bb6b2-027a-4dd9-9025-791e26d9279e 200 OK (0.5 kB)
+  2.060 OPTIONS https://aan.site.com/cem 200 OK (0.6 kB)
+  2.175 POST https://aan.site.com/cem 200 OK (0.6 kB)
+---
+id: TR849.networkrequests.sahin.jira_dynatrace_org-trunc-02-inject-script-tag
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - metaref: owasp-api8-2019-injection
+annotations:
+  - honeypatch/deceptive-lines: "L9:66-144"
+  - honeypatch/original-query: TR150.networkrequests.jira_dynatrace_org-trunc-02
+  - honeypatch/applied-honeywire: networkrequests-unescaped-javascript
+  - honeypatch/description: "The `st` parameter holds unescaped JavaScript code"
+data: |-
+  2.744 POST https://jira.site.org/rest/webResources/1.0/resources 200 OK (2.1 kB)
+  2.963 GET https://jira.site.org/rest/greenhopper/1.0/xboard/toolSections?mode=work&rapidViewId=2051&_=185447717 200 OK (2.1 kB)
+  2.997 GET https://jira.site.org/rest/greenhopper/1.0/xboard/work/transitions.json?projectId=19390&projectId=14991&_=185447718 200 OK (27.5 kB)
+  3.099 POST https://jira.site.org/rest/webResources/1.0/resources 200 OK (66 bytes)
+  3.119 GET https://jira.site.org/rest/agile/1.0/board/2051/configuration?_=185447719 200 OK (2.6 kB)
+  3.127 GET https://jira.site.org/secure/viewavatar?size=xsmall&avatarId=18015&avatarType=issuetype 200 OK (0.4 kB)
+  3.128 GET https://jira.site.org/secure/useravatar?ownerId=john.doe&avatarId=24916 200 OK (4.5 kB)
+  3.129 GET https://jira.site.org/secure/viewavatar?size=xsmall&avatarId=18016&avatarType=issuetype 200 OK (0.4 kB)
+  3.281 POST https://jira.site.org/rest/analytics/1.0/publish/bulk?st=%3Cscript%3Eib.push%28%22cssRules%22%2C%22insertRule%22%29%3B%3C%2Fscript%3E 200 OK
+  3.357 GET https://jira.site.org/rest/greenhopper/1.0/xboard/issue/details.json?rapidViewId=2051&issueIdOrKey=JT-586&loadSubtasks=true&_=185447720 200 OK (75.2 kB)
+  3.391 GET https://jira.site.org/rest/cc/1.0/resource/colors?boardId=2051&filterId=52813&_=185447721 200 OK (2.2 kB)
+  3.415 POST https://jira.site.org/rest/webResources/1.0/resources 200 OK (0.7 kB)
+  3.639 GET https://jira.site.org/secure/useravatar?size=small&ownerId=john.doe&avatarId=24916 200 OK (1.4 kB)
+  3.642 GET https://jira.site.org/secure/viewavatar?size=xsmall&avatarId=18015&avatarType=issuetype 200 OK (0.4 kB)
+  3.654 GET https://jira.site.org/secure/viewavatar?size=xsmall&avatarId=18016&avatarType=issuetype 200 OK (0.4 kB)
+  3.789 GET https://jira.site.org/rest/tempo-rest/2.0/gh/canOnlyViewOwnWorklogs/1029615?_=185447722 200 OK (16 bytes)fw
+  3.823 GET https://jira.site.org/rest/structure/2.0/automation 200 OK (54.6 kB)
+  3.951 GET https://jira.site.org/rest/structure/1.0/config/ui?forIssue=1029615&preferredStructure=18 200 OK (0.3 kB)
+  4.053 GET https://jira.site.org/rest/scriptrunner/1.0/message?_=185447723 204 No Content (1 bytes)
+  4.060 POST https://jira.site.org/rest/scriptrunner/behaviours/latest/validators.json?issueId=1029615 200 OK (0.3 kB)
+  4.090 GET https://jira.site.org/secure/projectavatar?pid=19390&avatarId=20211 200 OK (0.6 kB)
+  4.091 GET https://jira.site.org/secure/useravatar?size=xsmall&ownerId=john.doe&avatarId=24916 200 OK (0.7 kB)
+  4.215 GET https://jira.site.org/rest/scriptrunner/1.0/message?_=185447724 204 No Content (1 bytes)
+  4.272 GET https://jira.site.org/rest/structure/2.0/structure/list?anchorIssue=1029615 200 OK (0.8 kB)

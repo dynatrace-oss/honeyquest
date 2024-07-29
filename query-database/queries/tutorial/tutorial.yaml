@@ -1,0 +1,214 @@
+id: TR125.tutorial.welcome-01
+label: neutral
+type: tutorial
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - honeyquest/button-text: "Continue tutorial"
+  - honeyquest/select: false
+data: |-
+  > ./usr/bin/welcome_to_honeyquest
+
+  You are reading a tutorial QUERY.
+  A query is simply a text of a certain TYPE.
+
+  Honeyquest shows you queries of different types.
+
+  We want to understand how you would respond to them,
+  if you act like a hacker or cyber security researcher.
+---
+id: TR125.tutorial.welcome-02
+label: neutral
+type: tutorial
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - honeyquest/select: false
+data: |-
+  The following is a QUERY of type HTTPHEADERS, meaning,
+  you observe that an application is making this HTTP request:
+
+  > GET /wiki/Cat HTTP/1.1
+  > Host: en.wikipedia.org
+  > User-Agent: curl/7.68.0
+  > Accept: */*
+
+  Behind the scenes, Honeyquest classified this query as NEUTRAL.
+  This means, there is nothing RISKY or DECEPTIVE about it.
+
+  If you agree that this query is NEUTRAL, click the button above.
+---
+id: TR125.tutorial.welcome-03
+label: risky
+type: tutorial
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - risk/type: vulnerability
+  - risk/risky-lines: "L8"
+  - risk/present-vulnerability: httpheaders-outdated-apache
+  - risk/description: "The `Server` header suggests that the server is running Apache 1.0.3 wich is very old and vulnerable."
+  - honeyquest/select-traps: false
+  - honeyquest/allow-lines: "L6-10"
+  - honeyquest/max-hacks: 1
+data: |-
+  Correct! This query was indeed NEUTRAL.
+  And sorry for not giving you a choice anyway ;)
+
+  Let's look at another query of the same type:
+
+  > HTTP/1.1 200 OK
+  > Date: Wed, 04 Jan 2016 23:18:20 GMT
+  > Server: Apache/1.0.3 (Debian)
+  > Content-Type: text/html
+  > Transfer-Encoding: chunked
+
+  If you think this query is NEUTRAL again, just click the button, as before.
+  However, if you see a VULNERABILITY please mark the line that indicates it.
+  You can mark and unmark lines by clicking to the LEFT of a line.
+
+  Hint: There is exactly one vulnerability to be found here.
+---
+id: TR125.tutorial.welcome-04
+label: neutral
+type: tutorial
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - honeyquest/button-text: "Continue tutorial"
+  - honeyquest/select: false
+data: |-
+  Well done! You found the vulnerability:
+
+  > Server: Apache/1.0.3 (Debian)
+
+  When we say VULNERABILITY, we mean an indicator for it.
+  The vulnerability here is CVE-1999-0067.
+  The old version of Apache indicated that.
+
+  We don't expect you to look that up.
+  Try to think like an attacker looking for vulnerabilities to EXPLOIT.
+---
+id: TR125.tutorial.welcome-05
+label: deceptive
+type: tutorial
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - honeypatch/deceptive-lines: "L3"
+  - honeypatch/original-query: null
+  - honeypatch/applied-honeywire: httpheaders-path-traversal
+  - honeypatch/description: "It seems that the `file` query parameter may be used to access arbitrary files on the server."
+  - honeyquest/allow-lines: "L3-6"
+  - honeyquest/max-hacks: 1
+  - honeyquest/max-traps: 1
+data: |-
+  Let's look at another query.
+
+  > GET /wiki/view?file=../articles/Cat.php 200 OK
+  > Host: en.wikipedia.org
+  > User-Agent: curl/7.68.0
+  > Accept: */*
+
+  This time, you may also mark lines as TRAPS instead.
+  A trap wants you to believe that there is something to exploit.
+  You want to avoid them so you don't waste time or set off alarms.
+  You can mark and unmark traps by clicking to the RIGHT of a line.
+
+  So, you now have three options:
+
+  - Mark lines that you would like to EXPLOIT
+  - Mark lines that you think are TRAPS (and therefore, will avoid)
+  - Continue without marking anything, if you think this query is NEUTRAL
+---
+id: TR125.tutorial.welcome-06
+label: neutral
+type: tutorial
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - honeyquest/button-text: "Continue tutorial"
+  - honeyquest/select: false
+data: |-
+  This was a bit harder, wasn't it? You probably marked this line:
+
+  > GET /wiki/view?file=../articles/Cat.php 200 OK
+
+  This looks like a path traversal vulnerability, doesn't it?
+
+  Honeyquest classified this query as either RISKY or DECEPTIVE.
+
+  - RISKY queries contain vulnerabilities or weaknesses
+  - DECEPTIVE queries contain traps you must avoid
+
+  You are probably wondering now if this was really a vulnerability or a trap?
+  Sadly, we can't tell you either. That depends on the actual implementation.
+
+  What matters is only what you - the hacker - THINK it was.
+  Honeyquest wants to understand how you PERCEIVE such queries.
+---
+id: TR125.tutorial.welcome-07
+label: neutral
+type: tutorial
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - honeyquest/allow-lines: "L3-12"
+data: |-
+  Let's look at one last query. This time, it is of type FILESYSTEM.
+
+  > -rw-r--r--  1 goofy goofy 3.5K Sep 17  2017 .bashrc
+  > drwx------  7 goofy goofy 4.0K Jan 12  2022 .cache
+  > drwx------  6 goofy goofy 4.0K Sep 25 17:40 .config
+  > -rw-r--r--  1 goofy goofy   64 Jun 16  2019 .gitconfig
+  > drwxr-xr-x  5 goofy goofy 4.0K Jul 10  2021 git-crypt
+  > drwx------  4 goofy goofy 4.0K Jan 14  2022 .gnupg
+  > lrwxrwxrwx  1 goofy goofy   19 Jan 23  2018 html -> /srv/nginx-www/html
+  > drwxr-xr-x  4 goofy goofy 4.0K Aug  1  2021 app-browser
+  > -rw-r--r--  1 goofy goofy 816M Nov 18  2020 nginx-proxy-logs.txt
+  > drwxr-xr-x  5 goofy goofy 4.0K Mar 21  2021 terraform-saas
+
+  Here, marking something to EXPLOIT means opening the file or folder.
+  Marking something as a TRAP means you definitely want to AVOID opening it.
+
+  You might also have noticed that we put numbers next to your marks.
+  You can use them to indicate the ORDER in which you would like to EXPLOIT something.
+
+  A few notes:
+
+  - Marking multiple lines is OPTIONAL. Marking just one or nothing is fine.
+  - There might be queries where indicating an order makes no sense. Ignore it then.
+  - We don't expect you to go over every single line and mark it. Remember, you are a
+    hacker, rather tell us your next move, not an exhaustive list of all possible moves.
+---
+id: TR125.tutorial.welcome-08
+label: neutral
+type: tutorial
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - honeyquest/tutorial-end: true
+  - honeyquest/button-text: "Start the game"
+  - honeyquest/select: false
+data: |-
+  You are all set, here is a brief summary.
+
+  Honeyquest shows you NEUTRAL or RISKY or DECEPTIVE queries.
+  You can answer as many questions as you like and come back later.
+  Honeyquest saves your progress automatically.
+
+  Think like a hacker and tell us your NEXT MOVE.
+
+  - You can CONTINUE without marking anything
+  - You can mark lines to EXPLOIT or mark them as a TRAP to avoid
+  - You can indicate the ORDER in which you would like to exploit something
+
+  That's it. Enjoy the game!

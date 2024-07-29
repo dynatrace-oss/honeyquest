@@ -1,0 +1,87 @@
+id: TR150.networkrequests.en_wikipedia_org-trunc-path-traversal
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - metaref: path-traversal
+annotations:
+  - honeypatch/deceptive-lines: "L4"
+  - honeypatch/original-query: TR150.networkrequests.en_wikipedia_org-trunc
+  - honeypatch/applied-honeywire: networkrequests-path-traversal
+  - honeypatch/description: "It seems that the `file` query parameter may be used to access arbitrary files on the server."
+data: |-
+  0.000 GET https://en.site.org/api/rest_v1/page/summary/Batman%3A_The_Animated_Series 200 OK (3.2 kB)
+  1.578 GET https://en.site.org/api/rest_v1/page/summary/List_of_Ukraine_international_footballers 200 OK (3.6 kB)
+  1.761 GET https://en.site.org/api/rest_v1/page/summary/Pressurized_water_reactor 200 OK (3.1 kB)
+  2.140 GET https://en.site.org/cdn/commons/df?file=../dist/img/4FqAq.svg&w=53px&h=53px 200 OK (5.3 kB)
+  5.920 GET https://en.site.org/api/rest_v1/page/summary/Kokcha_River 200 OK (2.9 kB)
+---
+id: TR150.networkrequests.www_amazon_com-trunc-path-traversal
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+  - metaref: path-traversal
+annotations:
+  - honeypatch/deceptive-lines: "L6-8"
+  - honeypatch/original-query: TR150.networkrequests.www_amazon_com-trunc
+  - honeypatch/applied-honeywire: networkrequests-path-traversal
+  - honeypatch/description: "It seems that the `f` query parameter may be used to access arbitrary files on the server."
+data: |-
+  0.110 HEAD https://completion.site.com/api/2017/suggestions 204 No Content (0.3 kB)
+  0.309 OPTIONS https://aan.site.com/cem 200 OK (0.6 kB)
+  0.990 POST https://aan.site.com/cem 200 OK (0.6 kB)
+  1.560 OPTIONS https://aan.site.com/cem 200 OK (0.6 kB)
+  1.674 POST https://aan.site.com/cem 200 OK (0.6 kB)
+  1.734 GET https://m.media-site.com/images/S/sash?f=../pack/fonts/pDxWAF1pBB0dzGB.woff2 200 OK (17.2 kB)
+  1.752 GET https://m.media-site.com/images/S/sash?f=../pack/fonts/KFPk-9IF4FqAqY-.woff2 200 OK (17.1 kB)
+  1.764 GET https://m.media-site.com/images/S/sash?f=../pack/fonts/WOnTLzkiaEccV7F.woff2 200 OK (18.0 kB)
+  2.045 GET https://hftOcb3t8X3ER.cloudfront.net/?71166aab-b979-4800-9061-4e0a1f353e4c 200 OK (0.5 kB)
+  2.048 GET https://JPQB7nXGB.cloudfront.net/?080bb6b2-027a-4dd9-9025-791e26d9279e 200 OK (0.5 kB)
+  2.060 OPTIONS https://aan.site.com/cem 200 OK (0.6 kB)
+  2.175 POST https://aan.site.com/cem 200 OK (0.6 kB)
+---
+id: TR150.networkrequests.mail_google_com-trunc-02-path-traversal
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - metaref: path-traversal
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.1109/SPW54247.2022.9833858"
+annotations:
+  - honeypatch/deceptive-lines: "L13"
+  - honeypatch/original-query: TR150.networkrequests.mail_google_com-trunc-02
+  - honeypatch/applied-honeywire: networkrequests-path-traversal
+  - honeypatch/description: "It seems that the `file` query parameter may be used to access arbitrary files on the server."
+data: |-
+  3.251 POST https://people-pa.clients6.site.com/$rpc/comp.internal.people.v2.minimal.InternalPeopleMinimalService/ListRankedTargets 200 OK (532.7 kB)
+  3.255 OPTIONS https://people-pa.clients6.site.com/$rpc/comp.internal.people.v2.minimal.InternalPeopleMinimalService/ListRankedTargets 200 OK
+  3.331 POST https://signaler-pa.clients6.site.com/punctual/multi-watch/channel?VER=8&csessionid=-Cov_kcAnnD1efS-nZgYly8lU1g-M&key=nhD1h1USaIDj1qRCfbcKZA&RID=8593&CVER=22&zx=as2v23637&t=1 200 OK (54 bytes)
+  3.334 OPTIONS https://signaler-pa.clients6.site.com/punctual/multi-watch/channel?VER=8&csessionid=-Cov_kcAnnD1efS-nZgYly8lU1g-M&key=nhD1h1USaIDj1qRCfbcKZA&RID=8593&CVER=22&zx=as2v23637&t=1 200 OK
+  3.497 POST https://addons-pa.clients6.site.com/$rpc/comp.internal.apps.addons.v1.AddOnService/ListInstallations 200 OK (8 bytes)
+  3.501 OPTIONS https://addons-pa.clients6.site.com/$rpc/comp.internal.apps.addons.v1.AddOnService/ListInstallations 200 OK
+  3.519 GET https://clients6.site.com/mail/v1fpa_mail_frontend_gwt/users/me/storageQuota?alt=protojson&key=s_eHFAZm4Ks2KaxPjx77mQ&%24unique=gc323 200 OK (48 bytes)
+  3.524 OPTIONS https://clients6.site.com/mail/v1fpa_mail_frontend_gwt/users/me/storageQuota?alt=protojson&key=s_eHFAZm4Ks2KaxPjx77mQ&%24unique=gc323 200 OK
+  3.556 GET https://contacts.site.com/_/scs/social-static/_/js/k=boq.SocialPeopleHovercardUi.en.c2oh6mjrO.es5.O/am=oGkAQA/d=1/excm=_b,_r,_tp,hovercardwidget/ed=1/dg=0/wt=2/rs=AGLTcCP598Vrt-yn9adMGQlvXQAlK3_3QQ/m=_b,_tp,_r 200 OK (182.8 kB)
+  4.011 GET https://apis.site.com/js/api.js 200 OK (17.6 kB)
+  4.285 GET https://apis.site.com/_/scs/abc-static/_/js/k=gapi.gapi.en.QMFpsYJY.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-6ENqVAYuoxmMq7heI5jDLA/cb=gapi.loaded_0?le=scs 200 OK (96.1 kB)
+  4.289 GET https://ssl.static.site.com/ui/v1/icons/mail/images/cleardot.gif?zx=OSa4nRMH 200 OK (43 bytes)
+  4.701 GET https://ssl.static.site.com/ui/v1/resize?file=./dist/img/avatar_67812ngdhu.png 200 OK (8.2 kB)
+  4.393 POST https://play.site.com/log?format=json&hasfast=true&authuser=0
+  5.044 POST https://mail.site.com/mail/u/0/?ui=2&ik=6e75e4f3f0&jsver=CE191cIHKTw.en..es5&cbl=mail.pinto-server_20221219.06_p0&rid=b833..&auto=1&view=mic&_reqid=432057&pcd=1&cfact=7056&cfinact=7058%2C7083%2C7082%2C7117%2C7085%2C7057%2C7084%2C7086&mb=0&rt=j 200 OK (0.8 kB)
+  5.441 GET https://mail.site.com/mail/u/0/images/cleardot.gif?zx=jzj8bat8q0rh 200 OK (43 bytes)
+  6.262 GET https://ogs.site.com/u/0/widget/app?origin=https%3A%2F%2Fmail.site.com&cn=app&pid=23&spid=23&hl=en&dm= 200 OK (61.6 kB)
+  6.350 GET https://www.static.site.com/_/mss/boq-one-comp/_/js/k=boq-one-comp.OnecompWidgetUi.en.PZxR5QuJz6U.es5.O/am=oNkAAEA/d=1/excm=_b,_r,_tp,appwidgetauthview/ed=1/dg=0/wt=2/rs=AM-SdHtMO5PuFIyUPJqNpElexX9Np01lsQ/m=_b,_tp,_r 200 OK (180.1 kB)
+  6.447 GET https://lh3.compusercontent.com/ogw/ygEVAUIdOM-xT1smDKYW8g=s128-b16-cc-rp-mo 200 OK (14.5 kB)
+  6.776 POST https://play.site.com/log?format=json&hasfast=true&authuser=0

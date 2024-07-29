@@ -1,0 +1,31 @@
+id: TR150.networkrequests.www_dropbox_com.broken-function-level-authorization
+label: risky
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://www.dropbox.com/home
+  - metaref: owasp-api5-2019-broken-function-level-authorization
+  - metaref: owasp-api2-2019-broken-user-authentication
+annotations:
+  - risk/type: attack
+  - risk/risky-lines: "L1:63-86,L7:64-89,L10-12"
+  - risk/present-attack: networkrequests-broken-function-level-authorization
+  - risk/description: >-
+      In `L1-5` we see that an admin user `hugo` has owner permissions and can list backups and external accounts.
+      In `L8-9` we see that the normal user `marlies` does not have owner permissions.
+      However, in `L10-12` we see that `marlies` is still able to list backups and external accounts.
+      Although not explicitly exploited here, it might even be possible to simply change the `role` parameter to `admin` for any user.
+data: |-
+  0.000 POST https://www.app.com/2/profile_services/impersonate?username=hugo&role=admin 200 OK (2.5 kB)
+  3.477 POST https://www.app.com/2/roles/has_owner_permissions 204 No Content (15 bytes)
+  3.581 POST https://www.app.com/2/account_management/get_eligibility 200 OK (39 bytes)
+  3.603 POST https://www.app.com/2/account_management/list_backups 200 OK (5.8 kB)
+  3.804 POST https://www.app.com/2/account_management/list_external_accounts 200 OK (12.5 kB)
+  4.604 POST https://www.app.com/2/external_drive_backup/list_backups 200 OK (35 bytes)
+  11.003 POST https://www.app.com/2/profile_services/impersonate?username=marlies&role=user 200 OK (2.4 kB)
+  12.477 POST https://www.app.com/2/roles/has_owner_permissions 403 Forbidden (43 bytes)
+  12.581 POST https://www.app.com/2/account_management/get_eligibility 403 Forbidden (56 bytes)
+  16.101 POST https://www.app.com/2/account_management/list_backups 200 OK (5.8 kB)
+  16.603 POST https://www.app.com/2/account_management/list_external_accounts 200 OK (12.5 kB)
+  16.605 POST https://www.app.com/2/external_drive_backup/list_backups 200 OK (35 bytes)

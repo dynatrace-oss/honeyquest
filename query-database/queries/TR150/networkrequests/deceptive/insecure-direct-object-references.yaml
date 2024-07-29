@@ -1,0 +1,32 @@
+id: TR150.networkrequests.github_com-idor
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - payload/url: https://github.com/redcanaryco/atomic-red-team
+  - technique/author: Sahin, Merve
+  - technique/doi: "10.14722/madweb.2020.23005"
+  - metaref: insecure-direct-object-references
+  - metaref: owasp-api1-2019-broken-object-level-authorization
+annotations:
+  - honeypatch/deceptive-lines: "L13-14"
+  - honeypatch/original-query: null
+  - honeypatch/applied-honeywire: networkrequests-idor-read-secrets
+  - honeypatch/description: "The requests suggest that you can read secrets just by guessing their IDs."
+data: |-
+  0.000 GET https://github.com/owner/my_repo 200 OK (318.4 kB)
+  1.172 GET https://github.com/owner/my_repo/security/overall-count 200 OK
+  1.175 GET https://github.com/owner/my_repo/overview_actions/main 200 OK (2.7 kB)
+  1.175 GET https://github.com/owner/my_repo/tree-commit/816c5e6a2b3987d7270b4abee9c021cf697046d4 200 OK (3.2 kB)
+  1.176 GET https://github.com/owner/my_repo/file-list/main 200 OK (31.8 kB)
+  1.177 GET https://github.com/owner/my_repo/topic_suggestions?async_topics=false 200 OK (2.1 kB)
+  1.178 GET https://github.com/owner/my_repo/topic_suggestions?decline_forms_only=true 200 OK (2.9 kB)
+  1.179 GET https://github.com/owner/my_repo/hovercards/citation/sidebar_partial?tree_name=main 204 No Content
+  1.179 GET https://github.com/owner/my_repo/used_by_list 200 OK (2 bytes)
+  1.180 GET https://github.com/owner/my_repo/environment_status?environment=github-pages 200 OK (1.4 kB)
+  2.128 GET https://github.com/owner/my_repo/settings 200 OK (173.0 kB)
+  2.146 GET https://github.githubassets.com/assets/settings-c97e813978b0.js 200 OK (110.7 kB)
+  2.493 GET https://github.com/owner/my_repo/settings/secrets/58962/read 200 OK (99.4 kB)
+  3.021 GET https://github.com/owner/my_repo/settings/secrets/58975/read 200 OK (72.1 kB)

@@ -1,0 +1,12 @@
+id: TR150.networkrequests.en_wikipedia_org-trunc
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://en.wikipedia.org/wiki/Main_Page
+data: |-
+  0.000 GET https://en.site.org/api/rest_v1/page/summary/Batman%3A_The_Animated_Series 200 OK (3.2 kB)
+  1.578 GET https://en.site.org/api/rest_v1/page/summary/List_of_Ukraine_international_footballers 200 OK (3.6 kB)
+  1.761 GET https://en.site.org/api/rest_v1/page/summary/Pressurized_water_reactor 200 OK (3.1 kB)
+  5.920 GET https://en.site.org/api/rest_v1/page/summary/Kokcha_River 200 OK (2.9 kB)

@@ -1,0 +1,230 @@
+index:
+  queries/tutorial/tutorial.yaml:
+    - TR125.tutorial.welcome-01
+    - TR125.tutorial.welcome-02
+    - TR125.tutorial.welcome-03
+    - TR125.tutorial.welcome-04
+    - TR125.tutorial.welcome-05
+    - TR125.tutorial.welcome-06
+    - TR125.tutorial.welcome-07
+    - TR125.tutorial.welcome-08
+  queries/TR150/filesystem/deceptive/backup-tar-gz.yaml:
+    - TR150.filesystem.home-IconThor-backup-tar-gz
+    # - TR150.filesystem.home-cathy-backup-tar-gz
+  queries/TR150/filesystem/deceptive/config-ini.yaml:
+    - TR150.filesystem.home-furi0zuc-config-ini
+    # - TR150.filesystem.home-leonard-config-ini
+  queries/TR150/filesystem/deceptive/keys-json.yaml:
+    - TR150.filesystem.home-leonard-keys-json
+    # - TR150.filesystem.home-lpc-keys-json
+  queries/TR150/filesystem/deceptive/password-txt.yaml:
+    - TR150.filesystem.home-leonard-password-txt
+    # - TR150.filesystem.home-lpc-password-txt
+  queries/TR150/filesystem/deceptive/private-key.yaml:
+    - TR150.filesystem.home-donald-private-key-pem
+    # - TR150.filesystem.home-gringla-private-key-pem
+  queries/TR150/filesystem/neutral/homes.yaml:
+    - TR150.filesystem.home-IconThor
+    - TR150.filesystem.home-cathy
+    - TR150.filesystem.home-donald
+    - TR150.filesystem.home-furi0zuc
+    # - TR150.filesystem.home-gringla
+    # - TR150.filesystem.home-leonard
+    # - TR150.filesystem.home-lpc
+    # - TR150.filesystem.home-mario
+    # - TR150.filesystem.home-user856
+  queries/TR150/filesystem/neutral/usr.yaml:
+    - TR150.filesystem.usr-root
+  queries/TR150/filesystem/risky/backup.yaml:
+    - TR150.filesystem.Plut0-backup
+  queries/TR150/filesystem/risky/ddns-update-key.yaml:
+    - TR150.filesystem.niknad52-ddns-update-key
+  queries/TR150/filesystem/risky/k8s-manifests.yaml:
+    - TR150.filesystem.root-k8s-manifests
+  queries/TR150/filesystem/risky/mariadb-backup.yaml:
+    - TR150.filesystem.root-mariadb-backup
+  queries/TR150/filesystem/risky/openvpn-config.yaml:
+    - TR150.filesystem.salphard-openvpn-config
+  queries/TR150/filesystem/risky/root-certificates.yaml:
+    - TR150.filesystem.root-certificates
+  queries/TR150/htaccess/deceptive/admin-redirect.yaml:
+    - TR150.htaccess.admin-redirect
+    - TR150.htaccess.github-Aiko-IT-Systems_DisCatSharp-admin-redirect
+    - TR150.htaccess.github-ZeroDayTea_kqctf-admin-redirect
+    # - TR150.htaccess.github-awurth_Slim3-admin-redirect
+    # - TR150.htaccess.github-swiftyspiffy_twitch-token-generator-admin-redirect
+  queries/TR150/htaccess/neutral/github.yaml:
+    - TR150.htaccess.github-Aiko-IT-Systems_DisCatSharp
+    - TR150.htaccess.github-ZeroDayTea_kqctf
+    - TR150.htaccess.github-GemGeorge_SniperPhish
+    - TR150.htaccess.github-react-boilerplate_react-boilerplate
+    # - TR150.htaccess.github-awurth_Slim3
+    # - TR150.htaccess.github-defiprime_defiprime
+    # - TR150.htaccess.github-dtbaker_ucm
+    # - TR150.htaccess.github-lomboboo_webpack-typescript-boilerplate
+    # - TR150.htaccess.github-ohel_gaincms
+    # - TR150.htaccess.github-swiftyspiffy_twitch-token-generator
+  queries/TR150/httpheaders/deceptive/apiserver.yaml:
+    - TR150.httpheaders.hackertarget-001916.02-httpheader-apiserver
+    - TR150.httpheaders.hackertarget-034515.02-httpheader-apiserver
+    # - TR150.httpheaders.hackertarget-054786.01-httpheader-apiserver
+    # - TR150.httpheaders.hackertarget-056380.01-httpheader-apiserver
+    # - TR150.httpheaders.hackertarget-059794.03-httpheader-apiserver
+  queries/TR150/httpheaders/deceptive/devtoken.yaml:
+    - TR150.httpheaders.hackertarget-033646.01-httpheader-devtoken
+    - TR150.httpheaders.hackertarget-034515.02-httpheader-devtoken
+    # - TR150.httpheaders.hackertarget-044619.02-httpheader-devtoken
+    # - TR150.httpheaders.hackertarget-052011.01-httpheader-devtoken
+    # - TR150.httpheaders.hackertarget-087288.01-httpheader-devtoken
+  queries/TR150/httpheaders/deceptive/proxy-referer.yaml:
+    - TR150.httpheaders.hackertarget-101810.02-referer-leakage
+    - TR150.httpheaders.hackertarget-161701.02-referer-leakage
+    # - TR150.httpheaders.hackertarget-177038.01-referer-leakage
+    # - TR150.httpheaders.hackertarget-180004.02-referer-leakage
+    # - TR150.httpheaders.hackertarget-187431.02-referer-leakage
+  queries/TR150/httpheaders/neutral/github-xhr.yaml:
+    - TR150.httpheaders.github-zaproxy_zap-extensions-xhr
+  queries/TR150/httpheaders/neutral/hackertarget.yaml:
+    - hackertarget-000953.02
+    - hackertarget-001916.02
+    - hackertarget-003375.03
+    - hackertarget-005804.02
+    - hackertarget-011579.02
+    - hackertarget-033646.01
+    - hackertarget-034154.01
+    - hackertarget-034515.02
+    # - hackertarget-044619.02
+    # - hackertarget-052011.01
+    # - hackertarget-054786.01
+    # - hackertarget-056380.01
+    # - hackertarget-059794.03
+    # - hackertarget-060766.01
+    # - hackertarget-065265.01
+    # - hackertarget-069047.02
+    # - hackertarget-070259.01
+    # - hackertarget-071483.02
+    # - hackertarget-087288.01
+    # - hackertarget-094570.01
+    - hackertarget-101810.02
+    - hackertarget-161701.02
+    # - hackertarget-177038.01
+    # - hackertarget-180004.02
+    # - hackertarget-187431.02
+  # queries/TR150/httpheaders/neutral/timecockpi-xhr.yaml:
+  #   - TR150.httpheaders.dynatrace_timecokpit-xhr
+  # queries/TR150/httpheaders/risky/http-request-smuggling-clte.yaml:
+  #   - TR150.httpheaders.http-request-smuggling-clte
+  queries/TR150/httpheaders/risky/outdated-php.yaml:
+    - TR150.httpheaders.outdated-php-server-5.1.6
+    # - TR150.httpheaders.outdated-php-server-5.2.10-ubuntu-5.10
+  queries/TR150/httpheaders/risky/outdated-server.yaml:
+    - TR150.httpheaders.outdated-apache-server-1.0.3
+    # - TR150.httpheaders.outdated-iis-server-5.0
+    # - TR150.httpheaders.outdated-nginx-server-0.1.30
+  queries/TR150/httpheaders/risky/proxy-auth-leak.yaml:
+    - TR150.httpheaders.proxy-auth-leak
+  queries/TR150/httpheaders/risky/referer-leakage.yaml:
+    - TR150.httpheaders.cross-domain-referer-leakage
+  queries/TR150/networkrequests/deceptive/broken-user-authentication.yaml:
+    - TR150.networkrequests.juice_shop_herokuapp_com-007-broken-user-authentication
+  queries/TR150/networkrequests/deceptive/improper-assets-management.yaml:
+    - TR150.networkrequests.en_wikipedia_org-trunc-improper-assets-management
+    # - TR150.networkrequests.juice_shop_herokuapp_com-012-improper-assets-management
+    - TR150.networkrequests.mail_google_com-trunc-02-improper-assets-management
+    # - TR150.networkrequests.www_youtube_com-trunc-improper-assets-management
+  # queries/TR150/networkrequests/deceptive/insecure-direct-object-references.yaml:
+  #   - TR150.networkrequests.github_com-idor
+  queries/TR150/networkrequests/deceptive/insufficient-logging-monitoring.yaml:
+    - TR150.networkrequests.jira_dynatrace_org-trunc-02-insufficient-logging-monitoring
+    # - TR150.networkrequests.juice_shop_herokuapp_com-010-insufficient-logging-monitoring
+    - TR150.networkrequests.www_amazon_com-trunc-insufficient-logging-monitoring
+  queries/TR150/networkrequests/deceptive/mass-assignment.yaml:
+    - TR150.networkrequests.juice_shop_herokuapp_com-004-mass-assignment
+    # - TR150.networkrequests.www_youtube_com-trunc-mass-assignment
+  queries/TR150/networkrequests/deceptive/path-traversal.yaml:
+    - TR150.networkrequests.en_wikipedia_org-trunc-path-traversal
+    - TR150.networkrequests.mail_google_com-trunc-02-path-traversal
+    # - TR150.networkrequests.www_amazon_com-trunc-path-traversal
+  queries/TR150/networkrequests/neutral/amazon.yaml:
+    - TR150.networkrequests.www_amazon_com-trunc
+  # queries/TR150/networkrequests/neutral/dropbox.yaml:
+  #   - TR150.networkrequests.www_dropbox_com-trunc-01
+  #   - TR150.networkrequests.www_dropbox_com-trunc-02
+  #   - TR150.networkrequests.www_dropbox_com-trunc-03
+  # queries/TR150/networkrequests/neutral/dynatrace.yaml:
+  #   - TR150.networkrequests.www_dynatrace_com-trunc
+  # queries/TR150/networkrequests/neutral/github.yaml:
+  #   - TR150.networkrequests.github_com-trunc
+  queries/TR150/networkrequests/neutral/gmail.yaml:
+    # - TR150.networkrequests.mail_google_com-trunc-01
+    - TR150.networkrequests.mail_google_com-trunc-02
+  queries/TR150/networkrequests/neutral/google.yaml:
+    - TR150.networkrequests.www_google_com-trunc
+  queries/TR150/networkrequests/neutral/jira.yaml:
+    # - TR150.networkrequests.jira_dynatrace_org-trunc-01
+    - TR150.networkrequests.jira_dynatrace_org-trunc-02
+  queries/TR150/networkrequests/neutral/juiceshop.yaml:
+    - TR150.networkrequests.juice_shop_herokuapp_com-001
+    - TR150.networkrequests.juice_shop_herokuapp_com-002
+    - TR150.networkrequests.juice_shop_herokuapp_com-003
+    - TR150.networkrequests.juice_shop_herokuapp_com-004
+    - TR150.networkrequests.juice_shop_herokuapp_com-005
+    - TR150.networkrequests.juice_shop_herokuapp_com-006
+    - TR150.networkrequests.juice_shop_herokuapp_com-007
+    # - TR150.networkrequests.juice_shop_herokuapp_com-008
+    # - TR150.networkrequests.juice_shop_herokuapp_com-009
+    # - TR150.networkrequests.juice_shop_herokuapp_com-010
+    # - TR150.networkrequests.juice_shop_herokuapp_com-011
+    # - TR150.networkrequests.juice_shop_herokuapp_com-012
+    # - TR150.networkrequests.juice_shop_herokuapp_com-013
+    # - TR150.networkrequests.juice_shop_herokuapp_com-014
+    # - TR150.networkrequests.juice_shop_herokuapp_com-015
+    # - TR150.networkrequests.juice_shop_herokuapp_com-016
+    # - TR150.networkrequests.juice_shop_herokuapp_com-017
+  # queries/TR150/networkrequests/neutral/tiktok.yaml:
+  #   - TR150.networkrequests.www_tiktok_com-trunc
+  queries/TR150/networkrequests/neutral/wikipedia.yaml:
+    - TR150.networkrequests.en_wikipedia_org-trunc
+  # queries/TR150/networkrequests/neutral/youtube.yaml:
+  #   - TR150.networkrequests.www_youtube_com-trunc
+  # queries/TR150/networkrequests/risky/broken-function-level-authorization.yaml:
+  #   - TR150.networkrequests.www_dropbox_com.broken-function-level-authorization
+  # queries/TR150/networkrequests/risky/broken-object-level-authorization.yaml:
+  #   - TR150.networkrequests.juice-shop.broken-object-level-authorization
+  # queries/TR150/networkrequests/risky/broken-user-authentication.yaml:
+  #   - TR150.networkrequests.juice-shop.broken-user-authentication
+  # queries/TR150/networkrequests/risky/improper-assets-management.yaml:
+  #   - TR150.networkrequests.juice-shop.improper-assets-management
+  queries/TR150/networkrequests/risky/insufficient-logging-monitoring.yaml:
+    - TR150.networkrequests.mail_google_com.insufficient-logging-monitoring
+  # queries/TR150/networkrequests/risky/lack-of-resources-and-rate-limiting.yaml:
+  #   - TR150.networkrequests.juice-shop.lack-of-resources-and-rate-limiting
+  # queries/TR150/networkrequests/risky/mass-assignment.yaml:
+  #   - TR150.networkrequests.mail_google_com.mass-assignment
+  # queries/TR150/networkrequests/risky/nosql-injection.yaml:
+  #   - TR150.networkrequests.trello_com.nosql-injection
+  queries/TR150/networkrequests/risky/security-misconfiguration.yaml:
+    - TR150.networkrequests.github_com.security-misconfiguration
+  queries/TR645/TR645-filesystem.yaml:
+    - TR645.filesystem.home-elsa-keys-json
+    - TR645.filesystem.home-goofy
+  queries/TR645/TR645-htaccess.yaml:
+    - TR645.htaccess.admin-redirect
+    - TR645.htaccess.github-ZeroDayTea_kqctf
+
+buckets:
+  tutorial:
+    strategy: sorted
+    description: Tutorial
+    queries:
+      - TR125.tutorial.welcome-01
+      - TR125.tutorial.welcome-02
+      - TR125.tutorial.welcome-03
+      - TR125.tutorial.welcome-04
+      - TR125.tutorial.welcome-05
+      - TR125.tutorial.welcome-06
+      - TR125.tutorial.welcome-07
+      - TR125.tutorial.welcome-08
+
+order:
+  - tutorial

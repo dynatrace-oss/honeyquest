@@ -1,0 +1,40 @@
+id: TR856.networkrequests.github_com.security-misconfiguration-and-broken-user-authentication
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - technique/author: Han, Xiao
+  - technique/doi: "10.1145/3140549.3140555"
+  - metaref: owasp-api2-2019-broken-user-authentication
+annotations:
+  - risk/risky-lines: "L2-5,L12-19"
+  - honeypatch/deceptive-lines: "L1:28-55"
+  - honeypatch/original-query: TR150.networkrequests.github_com.security-misconfiguration
+  - honeypatch/original-risky: true
+  - honeypatch/applied-honeywire: networkrequests-sessid-parameter
+  - honeypatch/description: "The `refresh-session` endpoint seems to leak the session ID in the query parameters."
+data: |-
+  0.000 GET https://site.com/?SESSID=odq5CI18NZTqrl3uxWdF 200 OK (162.9 kB)
+  0.414 GET http://avatars.siteusercontent.com/u/10400532?s=40&v=4 200 OK (1.1 kB)
+  0.415 GET http://avatars.siteusercontent.com/u/76981099?s=40&v=4 200 OK (2.2 kB)
+  0.415 GET http://avatars.siteusercontent.com/u/6333118?s=40&v=4 200 OK (1.5 kB)
+  0.415 GET http://avatars.siteusercontent.com/u/82605399?s=40&v=4 200 OK (1.1 kB)
+  0.969 GET https://site.com/users/microsoft/feature_preview/indicator_check 200 OK (24 bytes)
+  1.055 GET https://site.com/dashboard/my_top_repositories?location=left 200 OK (16.8 kB)
+  1.055 GET https://site.com/dashboard/recent-activity 200 OK (0.2 kB)
+  1.056 GET https://site.com/dashboard/my_top_repositories?location=center 200 OK (16.8 kB)
+  1.057 GET https://site.com/dashboard/recent-activity 200 OK (0.2 kB)
+  1.057 GET https://site.com/conduit/filter 200 OK (9.4 kB)
+  1.574 GET http://site.siteassets.com/apple-touch-icon-144x144.png 200 OK (14.4 kB)
+  2.023 GET http://avatars.siteusercontent.com/in/15368?s=64&v=4 200 OK (2.0 kB)
+  2.023 GET http://avatars.siteusercontent.com/u/10400532?s=32&v=4 200 OK (0.9 kB)
+  2.023 GET http://avatars.siteusercontent.com/u/31434466?s=64&v=4 200 OK (1.8 kB)
+  2.023 GET http://avatars.siteusercontent.com/u/14328197?s=64&v=4 200 OK (1.5 kB)
+  2.228 GET http://avatars.siteusercontent.com/u/63284097?s=64&v=4 200 OK (5.0 kB)
+  2.228 GET http://avatars.siteusercontent.com/u/63284097?s=40&v=4 200 OK (2.8 kB)
+  2.229 GET http://avatars.siteusercontent.com/u/92726601?s=64&v=4 200 OK (1.5 kB)
+  2.460 POST https://api.site.com/_private/browser/stats
+  3.127 POST https://api.site.com/_private/browser/stats
+  3.127 POST https://api.site.com/_private/browser/stats

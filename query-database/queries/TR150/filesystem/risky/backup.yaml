@@ -1,0 +1,24 @@
+id: TR150.filesystem.Plut0-backup
+label: risky
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - risk/type: weakness
+  - risk/risky-lines: "L9"
+  - risk/present-weakness: filesystem-backup
+  - risk/description: "A backup file may contain sensitive information."
+data: |-
+  drwxr-xr-x. 12 Plut0 Plut0 4.0K Oct 25 19:26 .
+  dr-xr-xr-x. 18 Plut0 Plut0 4.0K May  7  2022 ..
+  -rw-------.  1 Plut0 Plut0  21K Oct 25 19:26 .bash_history
+  -rw-r--r--.  1 Plut0 Plut0   18 May 11  2019 .bash_logout
+  -rw-r--r--.  1 Plut0 Plut0  176 May 11  2019 .bash_profile
+  -rw-r--r--.  1 Plut0 Plut0  176 May 11  2019 .bashrc
+  drwxr-xr-x.  3 Plut0 Plut0 4.0K Oct  2 18:02 .cache
+  drwx------.  3 Plut0 Plut0 4.0K Apr 11  2021 .config
+  -rw-r--r--.  1 Plut0 Plut0  13M Jun 16  2022 backup.tar.gz
+  -rw-r--r--   1 Plut0 Plut0 2.6K Jul 25 14:00 install_linux.sh
+  drwx------.  2 Plut0 Plut0 4.0K Sep 27 19:30 .ssh
+  -rw-------.  1 Plut0 Plut0  15K Sep 27 19:30 .viminfo

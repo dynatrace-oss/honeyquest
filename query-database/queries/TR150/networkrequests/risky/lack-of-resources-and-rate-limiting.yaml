@@ -1,0 +1,30 @@
+id: TR150.networkrequests.juice-shop.lack-of-resources-and-rate-limiting
+label: risky
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+  - metaref: owasp-api4-2019-lack-of-resources-and-rate-limiting
+annotations:
+  - risk/type: attack
+  - risk/risky-lines: "L1-14"
+  - risk/present-attack: networkrequests-no-rate-limiting
+  - risk/description: >-
+      Huge amounts of data are transfered from the server and it seems there is no rate limiting.
+      This might be vulnerbale to a Denial of Service attack.
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/products/1/details 200 OK (7.82 MB)
+  1.314 GET https://juice-shop.herokuapp.com/rest/products/2/details 200 OK (5.98 MB)
+  3.716 GET https://juice-shop.herokuapp.com/rest/products/4/details 200 OK (2.65 MB)
+  5.719 GET https://juice-shop.herokuapp.com/rest/products/5/details 200 OK (8.95 MB)
+  7.806 GET https://juice-shop.herokuapp.com/rest/products/6/details 200 OK (6.35 MB)
+  8.914 GET https://juice-shop.herokuapp.com/rest/products/7/details 200 OK (5.78 MB)
+  10.112 GET https://juice-shop.herokuapp.com/rest/products/8/details 200 OK (1.52 MB)
+  12.719 GET https://juice-shop.herokuapp.com/rest/products/9/details 200 OK (4.86 MB)
+  13.806 GET https://juice-shop.herokuapp.com/rest/products/10/details 200 OK (7.77 MB)
+  15.002 GET https://juice-shop.herokuapp.com/rest/products/11/details 200 OK (6.68 MB)
+  17.500 GET https://juice-shop.herokuapp.com/rest/products/12/details 200 OK (4.45 MB)
+  19.122 GET https://juice-shop.herokuapp.com/rest/products/13/details 200 OK (8.58 MB)
+  19.852 GET https://juice-shop.herokuapp.com/rest/products/14/details 200 OK (1.26 MB)
+  21.018 GET https://juice-shop.herokuapp.com/rest/products/15/details 200 OK (4.52 MB)

@@ -1,0 +1,21 @@
+id: TR150.httpheaders.proxy-auth-leak
+label: risky
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - technique/url: https://www.zaproxy.org/docs/alerts/10107/
+  - technique/url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Proxy-Authorization
+annotations:
+  - risk/type: weakness
+  - risk/risky-lines: "L7"
+  - risk/present-weakness: httpheaders-proxy-auth-leak
+  - risk/description: "The `Proxy-Authorization` header seems to leak the base64-encoded credentials of an internal proxy server."
+data: |-
+  HTTP/1.1 200 OK
+  Date: Sun, 27 Apr 2014 16:51:02 GMT
+  Server: Apache
+  Vary: Accept-Encoding,User-Agent
+  Content-Length: 2173
+  Content-Type: text/html; charset=utf-8
+  Proxy-Authorization: Basic dXNlcj1wcm94eTtwYXNzPTdMOUFDQ0FKS3BLU3A0

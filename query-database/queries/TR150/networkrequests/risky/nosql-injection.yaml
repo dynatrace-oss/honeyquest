@@ -1,0 +1,32 @@
+id: TR150.networkrequests.trello_com.nosql-injection
+label: risky
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://trello.com/
+  - metaref: owasp-api8-2019-injection
+annotations:
+  - risk/type: attack
+  - risk/risky-lines: "L6:47-57"
+  - risk/present-attack: networkrequests-nosql-injection
+  - risk/description: >-
+      We assume that there is a NoSQL database in the backend that would take the `id=859` parameter as a value in a query.
+      However, we attack this by putting a `$ne` operator in front of the value, which means "not equal".
+      Thus, we are asking the database to return all users that are not equal to the user with ID `859`.
+data: |-
+  0.000 GET https://site.com/b/Hazs87nss/active 200 OK (59.6 kB)
+  2.155 GET https://site.com/1/Members/Ml2fwGI8BE1TbgOd?fields=&customEmoji=all 200 OK (50 bytes)
+  2.173 POST https://api.company.com/flags/api/v2/frontend/featureFlagValues 200 OK (45.5 kB)
+  2.177 OPTIONS https://api.company.com/flags/api/v2/frontend/featureFlagValues 200 OK
+  2.871 POST https://site.com/1/boards/bQznzS7VagK0ZFz48HJ/markAsViewed 200 OK (2 bytes)
+  3.120 GET https://site.com/1/member/me?fields=id[$ne]=859&oneTimeMessagesDismissed 200 OK (0.3 kB)
+  3.284 GET https://site.com/1/boards/xSUVU2nsJIKh4ETV0h/plugins?filter=enabled 200 OK (3.6 kB)
+  3.690 POST https://api-gateway.site.com/gateway/api/session/heartbeat 200 OK (87 bytes)
+  3.714 GET https://site.com/1/members/me/notificationsCount?grouped=true&filter=all 200 OK (2 bytes)
+  4.104 POST https://site.com/graphql 200 OK (68 bytes)
+  4.220 GET https://app.butlerforsite.com/8evWyc1fJ6BSSDrFRBMKzenNH3NgQ/powerup-loader.html 200 OK (0.4 kB)
+  4.309 GET https://accounts.google.com/o/oauth2/iframe 200 OK (0.3 kB)
+  7.362 POST https://api-gateway.site.com/gateway/api/gasv3/api/v1/batch 200 OK (64 bytes)
+  8.205 POST https://api-gateway.site.com/gateway/api/gasv3/api/v1/batch 200 OK (64 bytes)
+  9.364 POST https://site.com/1/cards 200 OK (1.2 kB)

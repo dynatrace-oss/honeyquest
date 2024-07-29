@@ -1,0 +1,2 @@
+*.sh eol=lf
+*.ipynb linguist-documentation=true

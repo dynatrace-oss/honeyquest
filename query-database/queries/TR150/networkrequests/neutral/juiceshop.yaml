@@ -1,0 +1,380 @@
+id: TR150.networkrequests.juice_shop_herokuapp_com-001
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (11 bytes)
+  0.034 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.3 kB)
+  0.037 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.3 kB)
+  0.367 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_juice.jpg 200 OK (15.3 kB)
+  0.645 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.3 kB)
+  5.827 GET https://juice-shop.herokuapp.com/font-mfizz.woff 200 OK (40.9 kB)
+  10.200 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (11 bytes)
+  10.221 GET https://juice-shop.herokuapp.com/rest/products/24/reviews 200 OK (30 bytes)
+  10.224 GET https://juice-shop.herokuapp.com/rest/products/24/reviews 200 OK (30 bytes)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-002
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_pressings.jpg 200 OK (29.2 kB)
+  6.588 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  9.021 GET https://juice-shop.herokuapp.com/api/Quantitys/ 200 OK (0.6 kB)
+  9.022 GET https://juice-shop.herokuapp.com/rest/products/search?q= 200 OK (3.5 kB)
+  9.639 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_juice.jpg 200 OK (15.3 kB)
+  9.640 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_pressings.jpg 200 OK (29.2 kB)
+  9.640 GET https://juice-shop.herokuapp.com/assets/public/images/products/banana_juice.jpg 200 OK (19.8 kB)
+  9.640 GET https://juice-shop.herokuapp.com/assets/public/images/products/artwork2.jpg 200 OK (35.9 kB)
+  9.641 GET https://juice-shop.herokuapp.com/assets/public/images/products/carrot_juice.jpeg 200 OK (19.0 kB)
+  9.641 GET https://juice-shop.herokuapp.com/assets/public/images/products/eggfruit_juice.jpg 200 OK (15.1 kB)
+  9.641 GET https://juice-shop.herokuapp.com/assets/public/images/products/fruit_press.jpg 200 OK (17.1 kB)
+  9.641 GET https://juice-shop.herokuapp.com/assets/public/images/products/green_smoothie.jpg 200 OK (15.9 kB)
+  9.641 GET https://juice-shop.herokuapp.com/assets/public/images/products/permafrost.jpg 200 OK (93.6 kB)
+  9.642 GET https://juice-shop.herokuapp.com/assets/public/images/products/lemon_juice.jpg 200 OK (17.0 kB)
+  9.642 GET https://juice-shop.herokuapp.com/assets/public/images/products/melon_bike.jpeg 200 OK (21.5 kB)
+  9.642 GET https://juice-shop.herokuapp.com/assets/public/images/products/fan_facemask.jpg 200 OK (26.9 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-003
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/continue-code 200 OK (79 bytes)
+  0.303 GET https://juice-shop.herokuapp.com/103.js 200 OK (3.4 kB)
+  0.595 GET https://juice-shop.herokuapp.com/rest/continue-code 200 OK (81 bytes)
+  6.491 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  6.514 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_juice.jpg 200 OK (15.3 kB)
+  6.520 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.4 kB)
+  6.523 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.4 kB)
+  7.261 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.4 kB)
+  9.752 POST https://juice-shop.herokuapp.com/rest/products/reviews 200 OK (0.3 kB)
+  9.978 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.4 kB)
+  9.984 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.4 kB)
+  10.069 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.4 kB)
+  10.026 POST https://juice-shop.herokuapp.com/rest/products/reviews 200 OK (0.3 kB)
+  10.229 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.5 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-004
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.5 kB)
+  1.314 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.5 kB)
+  4.642 PUT https://juice-shop.herokuapp.com/rest/products/1/reviews 201 Created (20 bytes)
+  4.716 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.6 kB)
+  4.719 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.6 kB)
+  4.806 GET https://juice-shop.herokuapp.com/rest/products/1/reviews 200 OK (0.6 kB)
+  7.640 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  8.196 POST https://juice-shop.herokuapp.com/api/Complaints/ 201 Created (0.2 kB)
+  8.281 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  9.264 GET https://juice-shop.herokuapp.com/rest/memories/ 200 OK (0.9 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-005
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  0.427 GET https://juice-shop.herokuapp.com/assets/public/images/products/no-results.png 200 OK (31.3 kB)
+  0.485 GET https://juice-shop.herokuapp.com/assets/public/images/uploads/%F0%9F%98%BC- 200 OK (1.5 kB)
+  0.485 GET https://juice-shop.herokuapp.com/assets/public/images/uploads/magn(et)ificent!-1571814229653.jpg 200 OK (108.0 kB)
+  0.485 GET https://juice-shop.herokuapp.com/assets/public/images/uploads/my-rare-collectors-item!-[%CC%B2%CC%85$%CC%B2%CC%85(%CC%B2%CC%85-%CD%A1%C2%B0-%CD%9C%CA%96-%CD%A1%C2%B0%CC%B2%CC%85)%CC%B2%CC%85$%CC%B2%CC%85]-1572603645543.jpg 200 OK (71.3 kB)
+  0.486 GET https://juice-shop.herokuapp.com/assets/public/images/uploads/favorite-hiking-place.png 200 OK (666.7 kB)
+  0.486 GET https://juice-shop.herokuapp.com/assets/public/images/uploads/IMG_4253.jpg 200 OK (6.3 MB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-006
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  2.913 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  2.914 GET https://juice-shop.herokuapp.com/rest/deluxe-membership 200 OK (49 bytes)
+  3.098 GET https://juice-shop.herokuapp.com/assets/public/images/deluxe/blankBoxes.png 200 OK (289.4 kB)
+  3.099 GET https://juice-shop.herokuapp.com/assets/public/images/JuiceShop_Logo.png 200 OK (75.0 kB)
+  5.217 GET https://juice-shop.herokuapp.com/rest/deluxe-membership 200 OK (49 bytes)
+  5.218 GET https://juice-shop.herokuapp.com/rest/wallet/balance 200 OK (29 bytes)
+  5.219 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  5.221 GET https://juice-shop.herokuapp.com/api/Cards 200 OK (30 bytes)
+  8.018 GET https://juice-shop.herokuapp.com/rest/basket/NaN 200 OK (30 bytes)
+  8.019 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  11.527 GET https://juice-shop.herokuapp.com/assets/i18n/cs_CZ.json 200 OK (11.6 kB)
+  13.415 GET https://juice-shop.herokuapp.com/assets/i18n/de_DE.json 200 OK (11.3 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-007
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.120 POST https://juice-shop.herokuapp.com/rest/user/data-export 200 OK (0.4 kB)
+  0.215 GET https://juice-shop.herokuapp.com/rest/image-captcha/ 200 OK (4.1 kB)
+  0.380 GET https://juice-shop.herokuapp.com/rest/basket/NaN 200 OK (30 bytes)
+  0.381 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  2.031 GET https://juice-shop.herokuapp.com/rest/order-history 200 OK (30 bytes)
+  2.058 GET https://juice-shop.herokuapp.com/assets/public/images/products/no-results.png 200 OK (31.3 kB)
+  2.876 GET https://juice-shop.herokuapp.com/api/Quantitys/ 200 OK (0.6 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-008
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/products/search?q= 200 OK (3.9 kB)
+  0.659 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_juice.jpg 200 OK (15.3 kB)
+  0.659 GET https://juice-shop.herokuapp.com/assets/public/images/products/banana_juice.jpg 200 OK (19.8 kB)
+  0.660 GET https://juice-shop.herokuapp.com/assets/public/images/products/artwork2.jpg 200 OK (35.9 kB)
+  0.660 GET https://juice-shop.herokuapp.com/assets/public/images/products/carrot_juice.jpeg 200 OK (19.0 kB)
+  0.660 GET https://juice-shop.herokuapp.com/assets/public/images/products/eggfruit_juice.jpg 200 OK (15.1 kB)
+  0.660 GET https://juice-shop.herokuapp.com/assets/public/images/products/permafrost.jpg 200 OK (93.6 kB)
+  0.661 GET https://juice-shop.herokuapp.com/assets/public/images/products/lemon_juice.jpg 200 OK (17.0 kB)
+  0.661 GET https://juice-shop.herokuapp.com/assets/public/images/products/fan_facemask.jpg 200 OK (26.9 kB)
+  0.661 GET https://juice-shop.herokuapp.com/assets/public/images/products/fan_girlie.jpg 200 OK (18.5 kB)
+  0.662 GET https://juice-shop.herokuapp.com/assets/public/images/products/card_alpha.jpg 200 OK (254.9 kB)
+  0.662 GET https://juice-shop.herokuapp.com/assets/public/images/products/coaster.jpg 200 OK (11.1 kB)
+  0.662 GET https://juice-shop.herokuapp.com/assets/public/images/products/holo_sticker.png 200 OK (72.5 kB)
+  1.717 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  1.736 GET https://juice-shop.herokuapp.com/assets/public/images/products/artwork2.jpg 200 OK (35.9 kB)
+  1.743 GET https://juice-shop.herokuapp.com/rest/products/42/reviews 200 OK (0.5 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-009
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  4.746 GET https://juice-shop.herokuapp.com/rest/products/42/reviews 200 OK (0.5 kB)
+  5.524 GET https://juice-shop.herokuapp.com/rest/products/42/reviews 200 OK (0.5 kB)
+  6.460 GET https://juice-shop.herokuapp.com/rest/basket/0 200 OK (30 bytes)
+  7.240 GET https://juice-shop.herokuapp.com/rest/basket/0 200 OK (30 bytes)
+  7.998 GET https://juice-shop.herokuapp.com/rest/basket/0 200 OK (30 bytes)
+  9.577 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  9.597 GET https://juice-shop.herokuapp.com/assets/public/images/products/banana_juice.jpg 200 OK (19.8 kB)
+  9.603 GET https://juice-shop.herokuapp.com/rest/products/6/reviews 200 OK (0.2 kB)
+  9.606 GET https://juice-shop.herokuapp.com/rest/products/6/reviews 200 OK (0.2 kB)
+  10.270 GET https://juice-shop.herokuapp.com/rest/products/6/reviews 200 OK (0.2 kB)
+  14.181 GET https://juice-shop.herokuapp.com/rest/basket/NaN 200 OK (30 bytes)
+  14.181 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  16.349 GET https://juice-shop.herokuapp.com/api/Quantitys/ 200 OK (0.6 kB)
+  16.350 GET https://juice-shop.herokuapp.com/rest/products/search?q= 200 OK (3.9 kB)
+  16.508 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_juice.jpg 200 OK (15.3 kB)
+  16.551 GET https://juice-shop.herokuapp.com/assets/public/images/products/banana_juice.jpg 200 OK (19.8 kB)
+  16.597 GET https://juice-shop.herokuapp.com/assets/public/images/products/artwork2.jpg 200 OK (35.9 kB)
+  16.637 GET https://juice-shop.herokuapp.com/assets/public/images/products/carrot_juice.jpeg 200 OK (19.0 kB)
+  16.680 GET https://juice-shop.herokuapp.com/assets/public/images/products/eggfruit_juice.jpg 200 OK (15.1 kB)
+  16.723 GET https://juice-shop.herokuapp.com/assets/public/images/products/permafrost.jpg 200 OK (93.6 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-010
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  8.199 GET https://juice-shop.herokuapp.com/rest/basket/0 200 OK (30 bytes)
+  9.519 GET https://juice-shop.herokuapp.com/rest/basket/0 200 OK (30 bytes)
+  13.264 GET https://juice-shop.herokuapp.com/rest/basket/NaN 200 OK (30 bytes)
+  13.265 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  23.278 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  23.279 GET https://juice-shop.herokuapp.com/rest/captcha/ 200 OK (48 bytes)
+  24.785 GET https://juice-shop.herokuapp.com/api/Quantitys/ 200 OK (0.6 kB)
+  24.786 GET https://juice-shop.herokuapp.com/rest/products/search?q= 200 OK (3.9 kB)
+  25.595 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_juice.jpg 200 OK (15.3 kB)
+  25.595 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_pressings.jpg 200 OK (29.2 kB)
+  25.595 GET https://juice-shop.herokuapp.com/assets/public/images/products/banana_juice.jpg 200 OK (19.8 kB)
+  25.596 GET https://juice-shop.herokuapp.com/assets/public/images/products/artwork2.jpg 200 OK (35.9 kB)
+  27.038 GET https://juice-shop.herokuapp.com/rest/basket/0 200 OK (30 bytes)
+  28.067 GET https://juice-shop.herokuapp.com/rest/basket/0 200 OK (30 bytes)
+  28.782 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  28.810 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_pressings.jpg 200 OK (29.2 kB)
+  28.816 GET https://juice-shop.herokuapp.com/rest/products/24/reviews 200 OK (30 bytes)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-011
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/basket/NaN 200 OK (30 bytes)
+  0.002 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  5.673 GET https://juice-shop.herokuapp.com/rest/saveLoginIp 200 OK (0.3 kB)
+  5.747 GET https://juice-shop.herokuapp.com/api/Quantitys/ 200 OK (0.6 kB)
+  5.748 GET https://juice-shop.herokuapp.com/rest/products/search?q= 200 OK (3.9 kB)
+  5.958 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_juice.jpg 200 OK (15.3 kB)
+  5.994 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_pressings.jpg 200 OK (29.2 kB)
+  6.031 GET https://juice-shop.herokuapp.com/assets/public/images/products/banana_juice.jpg 200 OK (19.8 kB)
+  6.067 GET https://juice-shop.herokuapp.com/assets/public/images/products/artwork2.jpg 200 OK (35.9 kB)
+  6.111 GET https://juice-shop.herokuapp.com/assets/public/images/products/carrot_juice.jpeg 200 OK (19.0 kB)
+  6.144 GET https://juice-shop.herokuapp.com/assets/public/images/products/eggfruit_juice.jpg 200 OK (15.1 kB)
+  6.180 GET https://juice-shop.herokuapp.com/assets/public/images/products/fruit_press.jpg 200 OK (17.1 kB)
+  6.217 GET https://juice-shop.herokuapp.com/assets/public/images/products/green_smoothie.jpg 200 OK (15.9 kB)
+  6.255 GET https://juice-shop.herokuapp.com/assets/public/images/products/permafrost.jpg 200 OK (93.6 kB)
+  6.291 GET https://juice-shop.herokuapp.com/assets/public/images/products/lemon_juice.jpg 200 OK (17.0 kB)
+  6.328 GET https://juice-shop.herokuapp.com/assets/public/images/products/melon_bike.jpeg 200 OK (21.5 kB)
+  6.373 GET https://juice-shop.herokuapp.com/assets/public/images/products/fan_facemask.jpg 200 OK (26.9 kB)
+  8.490 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  8.727 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (11 bytes)
+  8.728 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (11 bytes)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-012
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 POST https://juice-shop.herokuapp.com/rest/user/login 401 Unauthorized (38 bytes)
+  6.318 GET https://juice-shop.herokuapp.com/api/SecurityQuestions/ 200 OK (0.5 kB)
+  9.665 POST https://juice-shop.herokuapp.com/api/Users/ 201 Created (0.3 kB)
+  9.743 POST https://juice-shop.herokuapp.com/api/SecurityAnswers/ 201 Created (0.2 kB)
+  9.912 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  13.954 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (11 bytes)
+  13.955 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (11 bytes)
+  13.956 POST https://juice-shop.herokuapp.com/rest/user/login 200 OK (0.8 kB)
+  14.043 GET https://juice-shop.herokuapp.com/rest/basket/23 200 OK (0.2 kB)
+  14.044 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  14.045 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-013
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/api/Quantitys/ 200 OK (0.6 kB)
+  0.001 GET https://juice-shop.herokuapp.com/rest/products/search?q= 200 OK (3.9 kB)
+  2.183 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_juice.jpg 200 OK (15.3 kB)
+  2.184 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_pressings.jpg 200 OK (29.2 kB)
+  2.184 GET https://juice-shop.herokuapp.com/assets/public/images/products/banana_juice.jpg 200 OK (19.8 kB)
+  2.184 GET https://juice-shop.herokuapp.com/assets/public/images/products/artwork2.jpg 200 OK (35.9 kB)
+  2.184 GET https://juice-shop.herokuapp.com/assets/public/images/products/carrot_juice.jpeg 200 OK (19.0 kB)
+  2.185 GET https://juice-shop.herokuapp.com/assets/public/images/products/eggfruit_juice.jpg 200 OK (15.1 kB)
+  2.185 GET https://juice-shop.herokuapp.com/assets/public/images/products/fruit_press.jpg 200 OK (17.1 kB)
+  2.185 GET https://juice-shop.herokuapp.com/assets/public/images/products/green_smoothie.jpg 200 OK (15.9 kB)
+  2.185 GET https://juice-shop.herokuapp.com/assets/public/images/products/permafrost.jpg 200 OK (93.6 kB)
+  2.185 GET https://juice-shop.herokuapp.com/assets/public/images/products/lemon_juice.jpg 200 OK (17.0 kB)
+  2.186 GET https://juice-shop.herokuapp.com/assets/public/images/products/melon_bike.jpeg 200 OK (21.5 kB)
+  2.186 GET https://juice-shop.herokuapp.com/assets/public/images/products/fan_facemask.jpg 200 OK (26.9 kB)
+  9.460 GET https://juice-shop.herokuapp.com/rest/basket/23 200 OK (0.2 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-014
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 POST https://juice-shop.herokuapp.com/api/BasketItems/ 200 OK (0.2 kB)
+  0.599 GET https://juice-shop.herokuapp.com/api/Products/24?d=Mon%20Jan%2002%202023 200 OK (0.4 kB)
+  0.708 GET https://juice-shop.herokuapp.com/rest/basket/23 200 OK (0.6 kB)
+  0.781 GET https://juice-shop.herokuapp.com/rest/basket/23 200 OK (0.6 kB)
+  0.782 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  0.981 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_pressings.jpg 200 OK (29.2 kB)
+  1.982 GET https://juice-shop.herokuapp.com/api/Addresss 200 OK (30 bytes)
+  10.277 POST https://juice-shop.herokuapp.com/api/Addresss/ 201 Created (0.3 kB)
+  10.695 GET https://juice-shop.herokuapp.com/api/Addresss 200 OK (0.3 kB)
+  12.938 GET https://juice-shop.herokuapp.com/api/Addresss/12 200 OK (0.3 kB)
+  12.939 GET https://juice-shop.herokuapp.com/api/Deliverys 200 OK (0.3 kB)
+  16.033 GET https://juice-shop.herokuapp.com/api/Deliverys/2 200 OK (0.1 kB)
+  16.034 GET https://juice-shop.herokuapp.com/rest/wallet/balance 200 OK (29 bytes)
+  16.035 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-015
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/api/Cards 200 OK (30 bytes)
+  7.283 POST https://juice-shop.herokuapp.com/api/Cards/ 201 Created (0.2 kB)
+  7.412 GET https://juice-shop.herokuapp.com/api/Cards 200 OK (0.1 kB)
+  14.431 GET https://juice-shop.herokuapp.com/api/Deliverys/2 200 OK (0.1 kB)
+  14.432 GET https://juice-shop.herokuapp.com/api/Addresss/12 200 OK (0.3 kB)
+  14.433 GET https://juice-shop.herokuapp.com/api/Cards/11 200 OK (0.1 kB)
+  14.465 GET https://juice-shop.herokuapp.com/rest/basket/23 200 OK (0.6 kB)
+  14.467 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  14.754 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_pressings.jpg 200 OK (29.2 kB)
+  15.983 POST https://juice-shop.herokuapp.com/rest/basket/23/checkout 200 OK (45 bytes)
+  16.178 GET https://juice-shop.herokuapp.com/rest/basket/23 200 OK (0.2 kB)
+  16.218 GET https://juice-shop.herokuapp.com/rest/track-order/f80a-18fdb3c8da1de3aa 200 OK (0.4 kB)
+  16.492 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  16.493 GET https://juice-shop.herokuapp.com/api/Addresss/12 200 OK (0.3 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-016
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.000 GET https://juice-shop.herokuapp.com/rest/order-history 200 OK (0.4 kB)
+  0.204 GET https://juice-shop.herokuapp.com/assets/public/images/products/no-results.png 200 OK (31.3 kB)
+  7.833 GET https://juice-shop.herokuapp.com/api/Products/24?d=Mon%20Jan%2002%202023 200 OK (0.4 kB)
+  7.950 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  7.982 GET https://juice-shop.herokuapp.com/rest/products/24/reviews 200 OK (30 bytes)
+  7.986 GET https://juice-shop.herokuapp.com/rest/products/24/reviews 200 OK (30 bytes)
+  8.351 GET https://juice-shop.herokuapp.com/assets/public/images/products/apple_pressings.jpg 200 OK (29.2 kB)
+  14.011 GET https://juice-shop.herokuapp.com/rest/2fa/status 200 OK (0.4 kB)
+  14.012 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  23.568 GET https://juice-shop.herokuapp.com/api/Feedbacks/ 200 OK (0.4 kB)
+  23.569 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  24.090 GET https://juice-shop.herokuapp.com/assets/public/images/carousel/1.jpg 200 OK (33.0 kB)
+  24.090 GET https://juice-shop.herokuapp.com/assets/public/images/carousel/2.jpg 200 OK (27.2 kB)
+  24.091 GET https://juice-shop.herokuapp.com/assets/public/images/carousel/3.jpg 200 OK (29.5 kB)
+  24.091 GET https://juice-shop.herokuapp.com/assets/public/images/carousel/4.jpg 200 OK (28.8 kB)
+  24.092 GET https://juice-shop.herokuapp.com/assets/public/images/carousel/5.png 200 OK (112.5 kB)
+  24.093 GET https://juice-shop.herokuapp.com/assets/public/images/carousel/6.jpg 200 OK (27.7 kB)
+  24.094 GET https://juice-shop.herokuapp.com/assets/public/images/carousel/7.jpg 200 OK (28.0 kB)
+  25.847 GET https://juice-shop.herokuapp.com/rest/memories/ 200 OK (0.9 kB)
+  25.848 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+---
+id: TR150.networkrequests.juice_shop_herokuapp_com-017
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://juice-shop.herokuapp.com/
+data: |-
+  0.058 GET https://juice-shop.herokuapp.com/assets/public/images/products/no-results.png 200 OK (31.3 kB)
+  0.174 GET https://juice-shop.herokuapp.com/assets/public/images/uploads/%F0%9F%98%BC- 200 OK (1.5 kB)
+  0.175 GET https://juice-shop.herokuapp.com/assets/public/images/uploads/magn(et)ificent!-1571814229653.jpg 200 OK (108.0 kB)
+  0.175 GET https://juice-shop.herokuapp.com/assets/public/images/uploads/my-rare-collectors-item!-[%CC%B2%CC%85$%CC%B2%CC%85(%CC%B2%CC%85-%CD%A1%C2%B0-%CD%9C%CA%96-%CD%A1%C2%B0%CC%B2%CC%85)%CC%B2%CC%85$%CC%B2%CC%85]-1572603645543.jpg 200 OK (71.3 kB)
+  0.176 GET https://juice-shop.herokuapp.com/assets/public/images/uploads/favorite-hiking-place.png 200 OK (666.7 kB)
+  0.176 GET https://juice-shop.herokuapp.com/assets/public/images/uploads/IMG_4253.jpg 200 OK (6.3 MB)

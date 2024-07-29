@@ -1,0 +1,109 @@
+id: TR150.networkrequests.juice_shop_herokuapp_com-012-improper-assets-management
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - metaref: owasp-api9-2019-improper-assets-management
+annotations:
+  - honeypatch/deceptive-lines: "L8,L13"
+  - honeypatch/original-query: TR150.networkrequests.juice_shop_herokuapp_com-012
+  - honeypatch/applied-honeywire: networkrequests-dev-endpoint
+  - honeypatch/description: "There seems to be an undocumented `rest.dev` endpoint that might be exploitable."
+data: |-
+  0.000 POST https://juice-shop.herokuapp.com/rest/user/login 401 Unauthorized (38 bytes)
+  6.318 GET https://juice-shop.herokuapp.com/api/SecurityQuestions/ 200 OK (0.5 kB)
+  9.665 POST https://juice-shop.herokuapp.com/api/Users/ 201 Created (0.3 kB)
+  9.743 POST https://juice-shop.herokuapp.com/api/SecurityAnswers/ 201 Created (0.2 kB)
+  9.912 GET https://juice-shop.herokuapp.com/rest/admin/application-configuration 200 OK (7.2 kB)
+  13.954 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (11 bytes)
+  13.955 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (11 bytes)
+  13.965 GET https://juice-shop.herokuapp.com/rest.dev/user/whoami 204 No Content
+  13.956 POST https://juice-shop.herokuapp.com/rest/user/login 200 OK (0.8 kB)
+  14.043 GET https://juice-shop.herokuapp.com/rest/basket/23 200 OK (0.2 kB)
+  14.044 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  14.045 GET https://juice-shop.herokuapp.com/rest/user/whoami 200 OK (0.1 kB)
+  14.062 GET https://juice-shop.herokuapp.com/rest.dev/user/whoami 204 No Content
+---
+id: TR150.networkrequests.mail_google_com-trunc-02-improper-assets-management
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - metaref: owasp-api9-2019-improper-assets-management
+annotations:
+  - honeypatch/deceptive-lines: "L7"
+  - honeypatch/original-query: TR150.networkrequests.mail_google_com-trunc-02
+  - honeypatch/applied-honeywire: networkrequests-dev-endpoint
+  - honeypatch/description: "There seems to be an undocumented `apps.DEV.addons` endpoint that might be exploitable."
+data: |-
+  3.251 POST https://people-pa.clients6.site.com/$rpc/comp.internal.people.v2.minimal.InternalPeopleMinimalService/ListRankedTargets 200 OK (532.7 kB)
+  3.255 OPTIONS https://people-pa.clients6.site.com/$rpc/comp.internal.people.v2.minimal.InternalPeopleMinimalService/ListRankedTargets 200 OK
+  3.331 POST https://signaler-pa.clients6.site.com/punctual/multi-watch/channel?VER=8&csessionid=-Cov_kcAnnD1efS-nZgYly8lU1g-M&key=nhD1h1USaIDj1qRCfbcKZA&RID=8593&CVER=22&zx=as2v23637&t=1 200 OK (54 bytes)
+  3.334 OPTIONS https://signaler-pa.clients6.site.com/punctual/multi-watch/channel?VER=8&csessionid=-Cov_kcAnnD1efS-nZgYly8lU1g-M&key=nhD1h1USaIDj1qRCfbcKZA&RID=8593&CVER=22&zx=as2v23637&t=1 200 OK
+  3.497 POST https://addons-pa.clients6.site.com/$rpc/comp.internal.apps.addons.v1.AddOnService/ListInstallations 200 OK (8 bytes)
+  3.501 OPTIONS https://addons-pa.clients6.site.com/$rpc/comp.internal.apps.addons.v1.AddOnService/ListInstallations 200 OK
+  3.551 OPTIONS https://addons-pa.clients6.site.com/$rpc/comp.internal.apps.DEV.addons.v1.AddOnService/ListInstallations 204 No Content
+  3.519 GET https://clients6.site.com/mail/v1fpa_mail_frontend_gwt/users/me/storageQuota?alt=protojson&key=s_eHFAZm4Ks2KaxPjx77mQ&%24unique=gc323 200 OK (48 bytes)
+  3.524 OPTIONS https://clients6.site.com/mail/v1fpa_mail_frontend_gwt/users/me/storageQuota?alt=protojson&key=s_eHFAZm4Ks2KaxPjx77mQ&%24unique=gc323 200 OK
+  3.556 GET https://contacts.site.com/_/scs/social-static/_/js/k=boq.SocialPeopleHovercardUi.en.c2oh6mjrO.es5.O/am=oGkAQA/d=1/excm=_b,_r,_tp,hovercardwidget/ed=1/dg=0/wt=2/rs=AGLTcCP598Vrt-yn9adMGQlvXQAlK3_3QQ/m=_b,_tp,_r 200 OK (182.8 kB)
+  4.011 GET https://apis.site.com/js/api.js 200 OK (17.6 kB)
+  4.285 GET https://apis.site.com/_/scs/abc-static/_/js/k=gapi.gapi.en.QMFpsYJY.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-6ENqVAYuoxmMq7heI5jDLA/cb=gapi.loaded_0?le=scs 200 OK (96.1 kB)
+  4.289 GET https://ssl.static.site.com/ui/v1/icons/mail/images/cleardot.gif?zx=OSa4nRMH 200 OK (43 bytes)
+  4.393 POST https://play.site.com/log?format=json&hasfast=true&authuser=0
+  5.044 POST https://mail.site.com/mail/u/0/?ui=2&ik=6e75e4f3f0&jsver=CE191cIHKTw.en..es5&cbl=mail.pinto-server_20221219.06_p0&rid=b833..&auto=1&view=mic&_reqid=432057&pcd=1&cfact=7056&cfinact=7058%2C7083%2C7082%2C7117%2C7085%2C7057%2C7084%2C7086&mb=0&rt=j 200 OK (0.8 kB)
+  5.441 GET https://mail.site.com/mail/u/0/images/cleardot.gif?zx=jzj8bat8q0rh 200 OK (43 bytes)
+  6.262 GET https://ogs.site.com/u/0/widget/app?origin=https%3A%2F%2Fmail.site.com&cn=app&pid=23&spid=23&hl=en&dm= 200 OK (61.6 kB)
+  6.350 GET https://www.static.site.com/_/mss/boq-one-comp/_/js/k=boq-one-comp.OnecompWidgetUi.en.PZxR5QuJz6U.es5.O/am=oNkAAEA/d=1/excm=_b,_r,_tp,appwidgetauthview/ed=1/dg=0/wt=2/rs=AM-SdHtMO5PuFIyUPJqNpElexX9Np01lsQ/m=_b,_tp,_r 200 OK (180.1 kB)
+  6.447 GET https://lh3.compusercontent.com/ogw/ygEVAUIdOM-xT1smDKYW8g=s128-b16-cc-rp-mo 200 OK (14.5 kB)
+  6.776 POST https://play.site.com/log?format=json&hasfast=true&authuser=0
+---
+id: TR150.networkrequests.en_wikipedia_org-trunc-improper-assets-management
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - metaref: owasp-api9-2019-improper-assets-management
+annotations:
+  - honeypatch/deceptive-lines: "L5"
+  - honeypatch/original-query: TR150.networkrequests.en_wikipedia_org-trunc
+  - honeypatch/applied-honeywire: networkrequests-dev-endpoint
+  - honeypatch/description: "There seems to be an undocumented `rest_v1_dev` endpoint that might be exploitable."
+data: |-
+  0.000 GET https://en.site.org/api/rest_v1/page/summary/Batman%3A_The_Animated_Series 200 OK (3.2 kB)
+  1.578 GET https://en.site.org/api/rest_v1/page/summary/List_of_Ukraine_international_footballers 200 OK (3.6 kB)
+  1.761 GET https://en.site.org/api/rest_v1/page/summary/Pressurized_water_reactor 200 OK (3.1 kB)
+  5.920 GET https://en.site.org/api/rest_v1/page/summary/Kokcha_River 200 OK (2.9 kB)
+  6.030 GET https://en.site.org/api/rest_v1_dev/page/summary/Pressurized_water_reactor 204 No Content
+---
+id: TR150.networkrequests.www_youtube_com-trunc-improper-assets-management
+label: deceptive
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+  - metaref: owasp-api9-2019-improper-assets-management
+annotations:
+  - honeypatch/deceptive-lines: "L11"
+  - honeypatch/original-query: TR150.networkrequests.www_youtube_com-trunc
+  - honeypatch/applied-honeywire: networkrequests-dev-endpoint
+  - honeypatch/description: "There seems to be an undocumented `Dev_GenerateIT` endpoint that might be exploitable."
+data: |-
+  0.000 GET https://i.stimg.com/generate_204 204 No Content (0.3 kB)
+  1.179 GET https://www.sitestatic.com/site/img/emojis/emojis-svg-9.json 200 OK (48.6 kB)
+  2.509 POST https://www.site.com/sitei/v1/guide?key=J0bIiQpY_FZeYj_EGmB1TA&prettyPrint=false 200 OK (3.3 kB)
+  3.180 POST https://www.site.com/sitei/v1/feedback?key=J0bIiQpY_FZeYj_EGmB1TA&prettyPrint=false 200 OK (1.4 kB)
+  3.229 POST https://www.site.com/sitei/v1/log_event?alt=json&key=J0bIiQpY_FZeYj_EGmB1TA 200 OK (0.5 kB)
+  3.993 POST https://www.site.com/sitei/v1/log_event?alt=json&key=J0bIiQpY_FZeYj_EGmB1TA 200 OK (0.5 kB)
+  4.293 OPTIONS https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/Create 200 OK (0.7 kB)
+  4.363 POST https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/Create 200 OK (31.4 kB)
+  4.545 OPTIONS https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/GenerateIT 200 OK (0.7 kB)
+  4.573 POST https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/GenerateIT 200 OK (0.8 kB)
+  4.856 POST https://jnn-pa.dev.siteapis.com/$rpc/comp.internal.waa.v1.Waa/Dev_GenerateIT 204 No Content
+  5.321 POST https://www.site.com/sitei/v1/att/get?key=J0bIiQpY_FZeYj_EGmB1TA&prettyPrint=false 200 OK (16.0 kB)

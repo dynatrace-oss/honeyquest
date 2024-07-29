@@ -1,0 +1,96 @@
+id: TR150.networkrequests.www_dropbox_com-trunc-01
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://www.dropbox.com/home
+data: |-
+  0.000 GET https://www.site.com/home 200 OK (264.3 kB)
+  0.552 GET https://cfl.sitestatic.com/static/js/langpack/icu-de.json?19358 200 OK (1.5 MB)
+  1.901 POST https://www.site.com/2/files/list_subfolders 200 OK (11.2 kB)
+  1.918 POST https://www.site.com/dws2/rpc/pagelet_data/edison_prompt_props_prefetch 200 OK (0.9 kB)
+  2.204 POST https://www.site.com/2/design_systems_waffle/get_waffle 200 OK (3.2 kB)
+  2.215 POST https://www.site.com/web/notifications/retrieve 200 OK (19.5 kB)
+  2.222 GET https://dl-web.site.com/account_photo/get/dbaphid%3AAAC9YUnbatsbN3ps_Jxjlp4rg?circle_crop=1&size=128x128&vers=1584630086311 200 OK (26.1 kB)
+  2.824 POST https://www.site.com/2/chronicle/can_rewind 200 OK (54 bytes)
+  2.826 POST https://www.site.com/2/sharing/get_folder_member_counts 409 Conflict (66 bytes)
+  2.829 POST https://www.site.com/2/suggest/get_suggested_v2 200 OK (6.6 kB)
+  2.854 POST https://www.site.com/2/naming_conventions/get_rules 200 OK (2 bytes)
+  2.880 POST https://www.site.com/2/naming_conventions/get_rules 200 OK (2 bytes)
+  2.958 POST https://www.site.com/2/naming_conventions/get_rules 200 OK (2 bytes)
+  2.970 POST https://www.site.com/log/notif_events 200 OK
+  2.984 OPTIONS https://bolt.site.com/2/notify/subscribe 200 OK
+  2.987 POST https://www.site.com/starred/get_status 200 OK (2.4 kB)
+  2.994 POST https://www.site.com/2/profile_services/list_services 200 OK (2.5 kB)
+  2.995 POST https://www.site.com/2/integrations/are_features_available 200 OK (0.6 kB)
+  2.999 POST https://www.site.com/2/integrations/get_user_settings 200 OK (0.7 kB)
+  3.001 POST https://www.site.com/2/app_actions/get_actions_for_user 200 OK (41.2 kB)
+---
+id: TR150.networkrequests.www_dropbox_com-trunc-02
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://www.dropbox.com/home
+data: |-
+  3.003 POST https://www.site.com/2/profile_services/list_services 200 OK (2.5 kB)
+  3.005 POST https://www.site.com/2/sharing/alpha/list_shared_links 400 Bad Request (0.1 kB)
+  3.007 POST https://www.site.com/share_ajax/shared_with 200 OK (0.8 kB)
+  3.049 POST https://www.site.com/2/awareness_subscriptions/folder_subscriptions/get 409 Conflict (64 bytes)
+  3.095 POST https://www.site.com/2/capture/get_team_settings 200 OK (87 bytes)
+  3.125 POST https://www.site.com/2/integrations/get_user_settings 200 OK (0.7 kB)
+  3.241 POST https://www.site.com/2/naming_conventions/renaming_bar/should_show 200 OK (83 bytes)
+  3.477 POST https://www.site.com/2/search/get_experiment_data 200 OK (1.2 kB)
+  3.576 POST https://www.site.com/2/naming_conventions/renaming_bar/should_show 200 OK (83 bytes)
+  3.581 POST https://www.site.com/2/account_management/get_eligibility 200 OK (39 bytes)
+  3.603 POST https://www.site.com/2/device_sync/list_backups 200 OK (43 bytes)
+  3.604 POST https://www.site.com/2/external_drive_backup/list_backups 200 OK (35 bytes)
+  3.606 POST https://www.site.com/2/naming_conventions/renaming_bar/should_show 200 OK (83 bytes)
+  3.762 POST https://www.site.com/log/web_user_action 200 OK (26 bytes)
+  3.763 POST https://www.site.com/log/web_user_action 200 OK (26 bytes)
+  3.764 POST https://www.site.com/log/web_user_action 200 OK (26 bytes)
+  3.770 POST https://www.site.com/2/ml_platform/log_predictions_events 200 OK (2 bytes)
+  3.773 POST https://www.site.com/home_feed/get_file_metadata 200 OK (4.9 kB)
+  3.933 POST https://www.site.com/2/activation/fetch_post_tti_data 200 OK (0.5 kB)
+  3.962 POST https://www.site.com/unity_connection_log 200 OK
+  3.964 POST https://www.site.com/unity_connection_log 200 OK
+---
+id: TR150.networkrequests.www_dropbox_com-trunc-03
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://www.dropbox.com/home
+data: |-
+  3.971 POST https://www.site.com/2/files/get_browse_bolt_data 200 OK (1.7 kB)
+  3.977 POST https://www.site.com/jse 200 OK (2 bytes)
+  4.085 POST https://www.site.com/2/flows/get_rule_batch 200 OK (1.6 kB)
+  4.089 POST https://www.site.com/2/flows/get_folder_rules_config 200 OK (0.4 kB)
+  4.093 POST https://www.site.com/2/stormcrow_servicer/get_assignments 200 OK (1.1 kB)
+  4.095 POST https://www.site.com/2/flows/saved_workflow_template/list 200 OK (31 bytes)
+  4.231 POST https://www.site.com/contacts/get 200 OK (735.8 kB)
+  4.233 POST https://www.site.com/profile_services/connected_services 200 OK (0.2 kB)
+  4.235 POST https://www.site.com/contacts/get 200 OK (735.8 kB)
+  4.266 POST https://www.site.com/2/users/get_space_usage 200 OK (88 bytes)
+  4.268 POST https://www.site.com/2/users/get_plan_info 200 OK (0.5 kB)
+  4.360 OPTIONS https://bolt.site.com/2/notify/subscribe 200 OK
+  4.383 POST https://www.site.com/2/sharing/alpha/list_shared_links 400 Bad Request (0.1 kB)
+  4.385 POST https://www.site.com/2/campaigns_toolkit/get_best_campaigns_for_user 200 OK (0.1 kB)
+  4.491 POST https://www.site.com/get_info_for_quota_upsell 200 OK (0.3 kB)
+  4.663 POST https://www.site.com/2/growth/get_continuous_onboarding 200 OK (27 bytes)
+  4.705 POST https://www.site.com/2/megaphone_chat/get_best_chat_campaigns 200 OK (2 bytes)
+  4.713 OPTIONS https://bolt.site.com/2/notify/subscribe 200 OK
+  4.878 POST https://www.site.com/log/ux_analytics 200 OK
+  4.928 GET https://www.site.com/pithos/privacy_consent_service 307 Temporary Redirect
+  5.085 GET https://www.site.com/pithos/host%3Aconsent.site.com/privacy_consent_service 200 OK (11.8 kB)
+  5.253 GET https://cfl.sitestatic.com/static/metaserver/static/pithos/lang/de.json 200 OK (1.4 kB)
+  5.257 POST https://www.site.com/log/ux_analytics 200 OK
+  5.281 POST https://www.site.com/alternate_wtl_browser_performance_info 200 OK
+  5.294 POST https://www.site.com/alternate_wtl 200 OK (2 bytes)
+  5.301 POST https://www.site.com/log_js_sw_data 200 OK
+  5.763 POST https://www.site.com/log/ux_analytics 200 OK
+  5.787 POST https://www.site.com/log/ux_analytics 200 OK
+  5.990 POST https://www.site.com/unity_connection_log 200 OK

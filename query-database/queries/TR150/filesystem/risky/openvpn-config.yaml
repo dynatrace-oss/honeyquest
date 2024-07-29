@@ -1,0 +1,30 @@
+id: TR150.filesystem.salphard-openvpn-config
+label: risky
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - risk/type: weakness
+  - risk/risky-lines: "L6"
+  - risk/present-weakness: filesystem-openvpn-config
+  - risk/description: "A OpenVPN configuration may be useful for lateral movement."
+data: |-
+  drwxr-xr-x 25 salphard salphard 4.0K Dec 30 08:36 .
+  drwxr-xr-x  4 root     root     4.0K Jun 21  2019 ..
+  -rw-------  1 salphard salphard 7.2K Sep 25 19:17 .bash_history
+  -rw-r--r--  1 salphard salphard  220 Sep 17  2017 .bash_logout
+  -rw-r--r--  1 salphard salphard 3.5K Sep 17  2017 .bashrc
+  -rw-r--r--  1 salphard salphard 4.9K Feb 14  2020 salphard.ovpn
+  drwxr-xr-x  2 root     root     4.0K Nov  1  2020 data
+  -rw-r--r--  1 salphard salphard  617 Oct  3 09:04 dead.letter
+  drwxr-xr-x  5 salphard salphard 4.0K May  4  2018 .ipython
+  drwx------  5 salphard salphard 4.0K Sep 25 17:40 .local
+  -rw-r--r--  1 salphard salphard 788K Nov  3  2020 log.txt
+  drwx------  5 salphard salphard 4.0K Jan 12  2022 .mozilla
+  drwxr-xr-x  2 salphard salphard 4.0K Mar 14  2020 .nano
+  -rw-r--r--  1 root     root       32 Sep 21  2017 .nanorc
+  -rw-r--r--  1 salphard salphard  675 Sep 17  2017 .profile
+  -rw-------  1 salphard salphard    7 Jan 14  2022 .python_history
+  drwx------  2 salphard salphard 4.0K Jun 21  2019 .ssh
+  -rw-------  1 salphard salphard  14K Mar 15  2019 .viminfo

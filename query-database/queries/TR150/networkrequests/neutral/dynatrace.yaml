@@ -1,0 +1,18 @@
+id: TR150.networkrequests.www_dynatrace_com-trunc
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://www.dynatrace.com/
+data: |-
+  0.063 GET https://ixfd-api.bc0a.com/api/ixf/1.0.0/get_capsule/f0000000062657/0798485743 200 OK (0.8 kB)
+  0.219 OPTIONS https://search.site.com/query/rest/search/v2/querySuggest?orgId=sitesoftwareincproduction29acb65a3 200 OK (1.2 kB)
+  0.592 POST https://search.site.com/query/rest/search/v2/querySuggest?orgId=sitesoftwareincproduction29acb65a3 200 OK (1.5 kB)
+  1.263 OPTIONS https://search.site.com/query/rest/search/v2/querySuggest?orgId=sitesoftwareincproduction29acb65a3 200 OK (1.2 kB)
+  1.432 POST https://search.site.com/query/rest/search/v2/querySuggest?orgId=sitesoftwareincproduction29acb65a3 200 OK (1.5 kB)
+  1.604 GET https://cdn.cookielaw.org/consent/67234a6e-fe5b-4c6a-8e49-af976e0cc4e1/ae0c64f4-dc8d-42c7-8e76-fb81ba41ba96/de.json 200 OK (21.0 kB)
+  2.130 OPTIONS https://search.site.com/query/rest/search/v2/querySuggest?orgId=sitesoftwareincproduction29acb65a3 200 OK (1.2 kB)
+  2.133 OPTIONS https://search.site.com/query/rest/search/v2/querySuggest?orgId=sitesoftwareincproduction29acb65a3 200 OK (1.2 kB)
+  2.442 POST https://search.site.com/query/rest/search/v2/querySuggest?orgId=sitesoftwareincproduction29acb65a3 200 OK (1.5 kB)
+  2.443 POST https://search.site.com/query/rest/search/v2/querySuggest?orgId=sitesoftwareincproduction29acb65a3 200 OK (1.5 kB)

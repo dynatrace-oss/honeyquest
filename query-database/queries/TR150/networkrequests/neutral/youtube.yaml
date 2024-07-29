@@ -1,0 +1,19 @@
+id: TR150.networkrequests.www_youtube_com-trunc
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://www.youtube.com/
+data: |-
+  0.000 GET https://i.stimg.com/generate_204 204 No Content (0.3 kB)
+  1.179 GET https://www.sitestatic.com/site/img/emojis/emojis-svg-9.json 200 OK (48.6 kB)
+  2.509 POST https://www.site.com/sitei/v1/guide?key=J0bIiQpY_FZeYj_EGmB1TA&prettyPrint=false 200 OK (3.3 kB)
+  3.180 POST https://www.site.com/sitei/v1/feedback?key=J0bIiQpY_FZeYj_EGmB1TA&prettyPrint=false 200 OK (1.4 kB)
+  3.229 POST https://www.site.com/sitei/v1/log_event?alt=json&key=J0bIiQpY_FZeYj_EGmB1TA 200 OK (0.5 kB)
+  3.993 POST https://www.site.com/sitei/v1/log_event?alt=json&key=J0bIiQpY_FZeYj_EGmB1TA 200 OK (0.5 kB)
+  4.293 OPTIONS https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/Create 200 OK (0.7 kB)
+  4.363 POST https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/Create 200 OK (31.4 kB)
+  4.545 OPTIONS https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/GenerateIT 200 OK (0.7 kB)
+  4.573 POST https://jnn-pa.siteapis.com/$rpc/comp.internal.waa.v1.Waa/GenerateIT 200 OK (0.8 kB)
+  5.321 POST https://www.site.com/sitei/v1/att/get?key=J0bIiQpY_FZeYj_EGmB1TA&prettyPrint=false 200 OK (16.0 kB)

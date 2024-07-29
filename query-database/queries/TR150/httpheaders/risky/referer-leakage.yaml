@@ -1,0 +1,27 @@
+id: TR150.httpheaders.cross-domain-referer-leakage
+label: risky
+type: httpheaders
+references:
+  - payload/author: Virtue Security
+  - payload/license: null
+  - payload/adapted: true
+  - payload/url: https://www.virtuesecurity.com/kb/cross-domain-referer-leakage/
+  - technique/url: https://portswigger.net/kb/issues/00500400_cross-domain-referer-leakage
+annotations:
+  - risk/type: weakness
+  - risk/risky-lines: "L7"
+  - risk/present-weakness: httpheaders-cross-domain-referer-leakage
+  - risk/description: "While requesting a resource from a different domain, the `Referer` header leaks the URL of the current page."
+data: |-
+  GET /ajax/libs/jquery/3.5.1/jquery.min.js HTTP/2
+  Host: ajax.googleapis.com
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0
+  Accept: */*
+  Accept-Encoding: gzip, deflate, br
+  Accept-Language: en-US,en;q=0.9,de-AT;q=0.8,de-DE;q=0.7,de;q=0.6
+  Referer: https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrules
+  Sec-CH-UA: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"
+  Sec-CH-UA-mobile: ?0
+  Sec-CH-UA-platform: "Windows"
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+  X-Requested-With: XMLHttpRequest

@@ -1,0 +1,284 @@
+/*
+ * Copyright 2024 Dynatrace LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Portions of this code, as identified in remarks, are provided under the
+ * Creative Commons BY-SA or the MIT license, and are provided without
+ * any warranty. In each of the remarks, we have provided attribution to the
+ * original creators and other attribution parties, along with the title of
+ * the code (if known) a copyright notice and a link to the license, and a
+ * statement indicating whether or not we have modified the code.
+ */
+
+:root {
+  --cv-text-white: #e8e9ed;
+  --cv-text-black: #212529;
+  --cv-text-black-dim: #666;
+
+  --cv-bg: #222225;
+  --cv-bg-hover: hsl(215, 10%, 40%);
+
+  --cv-bg-hack: hsl(277deg 25% 25%);
+  --cv-bg-hack-btn: hsl(277deg 47% 67%);
+  --cv-bg-hack-btn-hover: hsl(277deg 47% 82%);
+
+  --cv-bg-trap: hsl(200deg 40% 25%);
+  --cv-bg-trap-btn: hsl(200deg 95% 62%);
+  --cv-bg-trap-btn-hover: hsl(200deg 95% 77%);
+}
+
+/* general code view */
+
+.CodeView {
+  padding: 1.5em 0.5em;
+  background-color: var(--cv-bg);
+  position: relative;
+}
+
+.CodeView.disabled {
+  opacity: 0.5;
+}
+
+.CodeView.fullscreen {
+  width: calc(100vw - 5em);
+  margin-left: calc(-1 * (100vw - 5em - 100%) / 2);
+}
+
+.CodeView table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+  color: var(--cv-text-white);
+  pointer-events: none;
+}
+
+.CodeView.selectable table {
+  pointer-events: auto;
+}
+
+@supports (font-variation-settings: normal) {
+  .CodeView table {
+    font-family: "Fira CodeVariable", monospace;
+    font-variation-settings: "wght" 400;
+  }
+}
+
+/* entire line */
+
+.CodeView tr {
+  height: 1.8em;
+  line-height: 1.8em;
+  transition: background-color 0.2s ease;
+}
+
+tr.hack td.TdText {
+  background-color: var(--cv-bg-hack);
+}
+
+tr.trap td.TdText {
+  background-color: var(--cv-bg-trap);
+}
+
+/* hack and trap buttons */
+
+td.TdHack,
+td.TdTrap {
+  width: 4em;
+  min-width: 4em;
+  text-align: center;
+  cursor: pointer;
+}
+
+td.TdHack > *,
+td.TdTrap > * {
+  visibility: hidden;
+}
+
+td.TdHack {
+  border-right: 4px solid transparent;
+}
+
+td.TdTrap {
+  border-left: 4px solid transparent;
+}
+
+td.TdHack span,
+td.TdTrap span {
+  display: inline-block;
+  min-width: 2em;
+  font-size: 0.8em;
+  vertical-align: middle;
+  line-height: 0;
+}
+
+td.TdHack span {
+  text-align: right;
+  padding-right: 0.5em;
+}
+
+td.TdTrap span {
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+td.TdHack:not(.selectable),
+td.TdTrap:not(.selectable) {
+  pointer-events: none;
+}
+
+td.TdHack:not(.selectable, .selected) > *,
+td.TdTrap:not(.selectable, .selected) > * {
+  visibility: hidden !important;
+}
+
+td.TdHack.selected {
+  background-color: var(--cv-bg-hack-btn);
+  border-right: 4px solid var(--cv-bg-hack-btn-hover);
+}
+
+td.TdHack.selected > * {
+  visibility: visible;
+  color: var(--cv-text-black) !important;
+}
+
+td.TdTrap.selected {
+  background-color: var(--cv-bg-trap-btn);
+  border-left: 4px solid var(--cv-bg-trap-btn-hover);
+}
+
+td.TdTrap.selected > * {
+  visibility: visible;
+  color: var(--cv-text-black) !important;
+}
+
+/**
+* Code Snippet: Text field with wrap indicators
+* CSS Classes: td.TdText, td.TdText::before
+*
+* (c) 2018 Fabrizio Calderan https://stackoverflow.com/a/48871175/927377
+* Dynatrace has made changes to this code.
+* This code snippet is supplied without warranty.
+* This code snippet is licensed under CC BY-SA 3.0.
+*/
+
+td.TdText {
+  padding-left: 2em;
+  text-indent: -1em;
+  padding-right: 0.5em;
+  white-space: pre-wrap;
+  overflow: hidden;
+  position: relative;
+}
+
+td.TdText::before {
+  position: absolute;
+  z-index: 1;
+  line-height: inherit;
+  font-size: inherit;
+  color: var(--cv-text-black-dim);
+  content: "\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9\A\21A9";
+}
+
+button.FullscreenButton {
+  display: none;
+}
+
+/* only hover on desktop devices and if hover is even supported */
+@media (min-width: 992px) and (hover: hover) {
+  tr:hover td.TdText {
+    background-color: var(--cv-bg-hover);
+  }
+
+  tr:hover > td.TdHack > *,
+  tr:hover > td.TdTrap > * {
+    visibility: visible;
+  }
+
+  td.TdHack:hover {
+    color: var(--cv-text-black) !important;
+    background-color: var(--cv-bg-hack-btn-hover);
+    border-right: 4px solid var(--cv-bg-hack-btn-hover);
+  }
+
+  td.TdTrap:hover {
+    color: var(--cv-text-black) !important;
+    background-color: var(--cv-bg-trap-btn-hover);
+    border-left: 4px solid var(--cv-bg-trap-btn-hover);
+  }
+
+  button.FullscreenButton {
+    display: unset;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+/* make code scrollable and more compact on mobile devices */
+@media (max-width: 992px) {
+  .CodeView {
+    font-size: 0.8em;
+  }
+
+  .CodeView table {
+    table-layout: auto;
+    overflow-y: auto;
+    display: block;
+  }
+
+  .CodeView td {
+    height: 2em;
+    line-height: 2em;
+  }
+
+  td.TdHack,
+  td.TdTrap {
+    width: 3em;
+    min-width: 3em;
+  }
+
+  td.TdHack > *,
+  td.TdTrap > * {
+    color: var(--cv-text-black-dim);
+    visibility: visible;
+  }
+
+  td.TdHack span,
+  td.TdTrap span {
+    min-width: unset;
+  }
+
+  td.TdHack span {
+    padding-right: 0.3em;
+  }
+
+  td.TdTrap span {
+    padding-left: 0.3em;
+  }
+
+  td.TdText {
+    padding-left: 0.5em;
+    text-indent: 0;
+    white-space: pre;
+  }
+
+  td.TdText::before {
+    content: none;
+  }
+}

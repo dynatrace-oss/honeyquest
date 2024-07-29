@@ -1,0 +1,20 @@
+id: TR150.httpheaders.dynatrace_timecokpit-xhr
+label: neutral
+type: httpheaders
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://dynatrace.timecockpit.com/app/timesheetcalendar
+data: |-
+  GET /shell/applicationversion HTTP/2
+  Host: company.timecockpit.com
+  Accept: application/json, text/plain, */*
+  Accept-encoding: gzip, deflate, br
+  Accept-language: en-US,en;q=0.9,de-AT;q=0.8,de-DE;q=0.7,de;q=0.6
+  Cache-control: no-cache
+  Cookie: ai_user=q0DsBYA6CfdOBxLe3JnylfDf2Kj4aj|2022-12-18T19:48:16.392Z; ai_session=iry+wW27UayxeGYeOkzVwY|16728565734411|1672843095328
+  Pragma: no-cache
+  Referer: https://company.timecockpit.com/app/timesheetcalendar/6a8877f7-436f-4016-9717-53450a583a11
+  Request-id: |EerModLGPAc5cwrGMYJFyVe.uCSexywWvBNuHhaiS3Adf5748eb7d164b5f804c3e
+  traceparent: 00-y7v64xO1lDIp3QnUcAtVGqrTSrVmX7Bks9Vk-VNihOcKFtWUTPConAV4tKJ-01
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36

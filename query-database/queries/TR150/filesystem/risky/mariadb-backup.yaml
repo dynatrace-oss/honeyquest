@@ -1,0 +1,27 @@
+id: TR150.filesystem.root-mariadb-backup
+label: risky
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - risk/type: weakness
+  - risk/risky-lines: "L10"
+  - risk/present-weakness: filesystem-backup
+  - risk/description: "A database backup may contain sensitive information."
+data: |-
+  drwxr-xr-x. 12 root root 4.0K Oct 25 19:26 .
+  dr-xr-xr-x. 18 root root 4.0K May  7  2022 ..
+  -rw-------.  1 root root  21K Oct 25 19:26 .bash_history
+  -rw-r--r--.  1 root root   18 May 11  2019 .bash_logout
+  -rw-r--r--.  1 root root  176 May 11  2019 .bash_profile
+  -rw-r--r--.  1 root root  176 May 11  2019 .bashrc
+  drwxr-xr-x.  3 root root 4.0K Oct  2 18:02 .cache
+  drwx------.  3 root root 4.0K Apr 11  2021 .config
+  -rw-r--r--.  1 root root  100 May 11  2019 .cshrc
+  -rw-r--r--.  1 root root  13M Jun 16  2022 mariadb.tar.gz
+  drwx------.  2 root root 4.0K Sep 27 19:30 .ssh
+  -rw-r--r--.  1 root root  129 May 11  2019 .tcshrc
+  -rw-------.  1 root root  15K Sep 27 19:30 .viminfo
+  drwxr-xr-x.  5 root root 4.0K Jun 15  2022 .vscode-server
+  -rw-r--r--.  1 root root  317 Jul 30 19:45 .wget-hsts

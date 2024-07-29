@@ -1,0 +1,73 @@
+id: TR150.filesystem.home-cathy-backup-tar-gz
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+annotations:
+  - honeypatch/deceptive-lines: "L16"
+  - honeypatch/original-query: TR150.filesystem.home-cathy
+  - honeypatch/applied-honeywire: filesystem-backup
+  - honeypatch/description: "A backup file may contain sensitive information."
+data: |-
+  drwx------ 18 cathy cathy 4.0K Dec 30 03:12 .
+  drwxr-xr-x  3 root  root  4.0K Dec  5 08:43 ..
+  -rw-r--r--  1 cathy cathy  220 Dec  5 08:43 .bash_logout
+  -rw-r--r--  1 cathy cathy 5.5K Dec  5 08:43 .bashrc
+  -rw-r--r--  1 cathy cathy 3.5K Dec  5 08:43 .bashrc.original
+  drwxr-xr-x 10 cathy cathy 4.0K Dec 30 03:12 .cache
+  drwxr-xr-x 14 cathy cathy 4.0K Dec  7 15:16 .config
+  -rw-r--r--  1 cathy cathy   35 Dec  7 15:12 .dmrc
+  -rw-r--r--  1 cathy cathy  12K Dec  5 08:43 .face
+  drwx------  3 cathy cathy 4.0K Dec  7 13:22 .gnupg
+  -rw-------  1 cathy cathy    0 Dec  7 13:22 .ICEauthority
+  drwxr-xr-x  3 cathy cathy 4.0K Dec  5 08:43 .java
+  drwx------  2 cathy cathy 4.0K Dec  7 13:47 .john
+  drwx------  3 cathy cathy 4.0K Dec  7 13:22 .local
+  -rw-r--r--  1 cathy cathy  807 Dec  5 08:43 .profile
+  -rw-r--r--  1 cathy cathy 129M Feb 21 12:40 backup.tar.gz
+  drwxr-xr-x  2 cathy cathy 4.0K Dec  7 13:22 Public
+  drwx------  2 cathy cathy 4.0K Dec  7 14:04 .ssh
+  -rw-r--r--  1 cathy cathy    0 Dec  7 13:23 .sudo_as_admin_successful
+  -rw-r-----  1 cathy cathy    5 Dec 30 03:12 .vboxclient-clipboard.pid
+  -rw-r-----  1 cathy cathy    5 Dec 30 03:12 .vboxclient-display-svga-x11.pid
+  -rw-r-----  1 cathy cathy    5 Dec 30 03:12 .vboxclient-draganddrop.pid
+  -rw-r-----  1 cathy cathy    4 Dec 30 03:12 .vboxclient-hostversion.pid
+  -rw-r-----  1 cathy cathy    5 Dec 30 03:12 .vboxclient-seamless.pid
+  -rw-------  1 cathy cathy   49 Dec 30 03:12 .Xauthority
+  -rw-------  1 cathy cathy 5.8K Dec 30 03:12 .xsession-errors
+  -rw-------  1 cathy cathy 7.9K Dec  7 15:33 .xsession-errors.old
+  -rw-------  1 cathy cathy 1.2K Dec  7 15:32 .zsh_history
+  -rw-r--r--  1 cathy cathy  11K Dec  5 08:43 .zshrc
+---
+id: TR150.filesystem.home-IconThor-backup-tar-gz
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/adapted: true
+annotations:
+  - honeypatch/deceptive-lines: "L13"
+  - honeypatch/original-query: TR150.filesystem.home-IconThor
+  - honeypatch/applied-honeywire: filesystem-backup
+  - honeypatch/description: "A backup file may contain sensitive information."
+data: |-
+  drwxr-xr-x 25 IconThor IconThor 4.0K Dec 30 08:36 .
+  drwxr-xr-x  4 root     root     4.0K Jun 21  2019 ..
+  -rw-r--r--  1 IconThor IconThor 3.5K Sep 17  2017 .bashrc
+  drwxr-xr-x  3 IconThor IconThor 4.0K Oct  1  2017 .bundle
+  drwx------  7 IconThor IconThor 4.0K Jan 12  2022 .cache
+  drwx------  6 IconThor IconThor 4.0K Sep 25 17:40 .config
+  -rw-r--r--  1 IconThor IconThor   88 Jul 11  2021 test.gpg
+  -rw-r--r--  1 IconThor IconThor  25G Sep 25 18:23 vm-101-disk-0_000.qcow2
+  -rw-r--r--  1 IconThor IconThor  25G Sep 25 18:17 vm-101-disk-0_001.qcow2
+  -rw-r--r--  1 IconThor IconThor  25G Sep 25 18:13 vm-101-disk-0_002.qcow2
+  -rw-r--r--  1 IconThor IconThor  25G Sep 25 18:08 vm-101-disk-0_003.qcow2
+  -rw-r--r--  1 IconThor IconThor 3.3G Sep 25 18:01 vm-101-disk-0_004.qcow2
+  -rw-r--r--  1 IconThor IconThor 129M Feb 21 12:40 backup.tar.gz
+  -rw-r--r--  1 IconThor IconThor  367 Sep  4  2020 .wget-hsts
+  -rw-------  1 IconThor IconThor  108 Sep 25 18:27 .Xauthority
+  -rw-------  1 IconThor IconThor 231K Dec 30 08:36 .zsh_history
+  -rw-r--r--  1 IconThor IconThor 3.1K Jun 13  2022 .zshrc

@@ -1,0 +1,17 @@
+id: TR150.networkrequests.www_amazon_com-trunc
+label: neutral
+type: networkrequests
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - payload/url: https://www.amazon.com/s?k=gaming&ref=nb_sb_noss
+data: |-
+  0.110 HEAD https://completion.site.com/api/2017/suggestions 204 No Content (0.3 kB)
+  0.309 OPTIONS https://aan.site.com/cem 200 OK (0.6 kB)
+  0.990 POST https://aan.site.com/cem 200 OK (0.6 kB)
+  1.560 OPTIONS https://aan.site.com/cem 200 OK (0.6 kB)
+  1.674 POST https://aan.site.com/cem 200 OK (0.6 kB)
+  2.045 GET https://hftOcb3t8X3ER.cloudfront.net/?71166aab-b979-4800-9061-4e0a1f353e4c 200 OK (0.5 kB)
+  2.048 GET https://JPQB7nXGB.cloudfront.net/?080bb6b2-027a-4dd9-9025-791e26d9279e 200 OK (0.5 kB)
+  2.060 OPTIONS https://aan.site.com/cem 200 OK (0.6 kB)
+  2.175 POST https://aan.site.com/cem 200 OK (0.6 kB)

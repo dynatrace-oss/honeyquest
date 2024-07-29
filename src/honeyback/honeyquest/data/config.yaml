@@ -1,0 +1,33 @@
+# This file specifies local and custom configuration to prepare datasets for Honeyquest.
+# Copy this file and name it `config.local.yaml` and add your custom values.
+
+resources:
+  paths:
+    config:
+      honeyquest_data: ./query-database
+ops:
+  upload:
+    upload_s3_archive:
+      config:
+        # the archive will be available at this URL
+        # https://[s3_bucket_name].s3.amazonaws.com/[s3_bucket_prefix]/[s3_bucket_key]
+        # or, if you set an alias, at
+        # https://[s3_bucket_alias]/[s3_bucket_prefix]/[s3_bucket_key]
+        s3_bucket_alias: cdn.yourdomain.test
+        s3_bucket_name: honeyquest-yourdomain-bucket
+        s3_bucket_prefix: data
+        s3_bucket_key: honeyquest-queries.tar.gz
+  hackertarget:
+    download_headers:
+      config:
+        # possibly adapt the target url
+        mirror: https://hackertarget.com/500K-headers-100514.tar.gz
+    extract_headers:
+      config:
+        # subsample queries from the raw archive by this factor
+        sample_rate: 0.01
+        seed: 1770918524
+    store_headers:
+      config:
+        # write this many queries into one single yaml file
+        chunk_size: 100

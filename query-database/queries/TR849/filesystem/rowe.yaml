@@ -1,0 +1,46 @@
+id: TR849.filesystem.rowe.home-gaitan
+label: neutral
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - technique/author: Rowe, Neil C.
+  - technique/doi: "10.1109/IAW.2006.1652099"
+  - technique/doi: "10.4304/JCP.2.2.25-36"
+data: |-
+  drwxr-xr-x 2 gaitan gaitan 4.0K Nov 30 17:42 .
+  drwxr-xr-x 4 gaitan gaitan 4.0K Nov 30 17:42 ..
+  -rw-r--r-- 1 gaitan gaitan 1.4K Nov 30 17:42 specv
+  -rw-r--r-- 1 gaitan gaitan 3.2K Nov 30 17:42 other
+  -rw-r--r-- 1 gaitan gaitan 1.1K Nov 30 17:42 rp
+  -rw-r--r-- 1 gaitan gaitan 6.7K Nov 30 17:42 gilmore
+  -rw-r--r-- 1 gaitan gaitan 1.2K Nov 30 17:42 int
+  -rw-r--r-- 1 gaitan gaitan 5.2K Nov 30 17:42 trash
+  -rw-r--r-- 1 gaitan gaitan 2.0K Nov 30 17:42 old.imsl
+  -rw-r--r-- 1 gaitan gaitan 2.7K Nov 30 17:42 flynn
+---
+id: TR849.filesystem.rowe.home-cooper
+label: deceptive
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+  - technique/author: Rowe, Neil C.
+  - technique/doi: "10.1109/IAW.2006.1652099"
+  - technique/doi: "10.4304/JCP.2.2.25-36"
+annotations:
+  - honeypatch/deceptive-lines: "L3-10"
+  - honeypatch/original-query: null
+  - honeypatch/applied-honeywire: filesystem-rowe
+  - honeypatch/description: "Artificial example by Rowe et al. for fake honeypots"
+data: |-
+  drwxr-xr-x 2 cooper cooper 4.0K Nov 30 17:42 .
+  drwxr-xr-x 4 cooper cooper 4.0K Nov 30 17:42 ..
+  -rw-r--r-- 1 cooper cooper 1.2K Nov 30 17:42 examples
+  -rw-r--r-- 1 cooper cooper 2.0K Nov 30 17:42 gif_files
+  -rw-r--r-- 1 cooper cooper 3.2K Nov 30 17:42 idlold
+  -rw-r--r-- 1 cooper cooper 5.2K Nov 30 17:42 wizard
+  -rw-r--r-- 1 cooper cooper 2.7K Nov 30 17:42 114564-01
+  -rw-r--r-- 1 cooper cooper 1.4K Nov 30 17:42 template
+  -rw-r--r-- 1 cooper cooper 1.1K Nov 30 17:42 target_n_horiz
+  -rw-r--r-- 1 cooper cooper 6.7K Nov 30 17:42 ass2

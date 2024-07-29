@@ -1,0 +1,139 @@
+id: TR150.htaccess.admin-redirect
+label: deceptive
+type: htaccess
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - honeypatch/deceptive-lines: "L5"
+  - honeypatch/original-query: null
+  - honeypatch/applied-honeywire: htaccess-admin-redirect
+  - honeypatch/description: "The `Redirect` directive seems to leak the location and access rights to the admin panel."
+data: |-
+  <IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine on
+    RewriteBase /
+    Redirect 301 "/admin" "/plugins/kul/pages/admin/index.php?role=view"
+  </IfModule>
+---
+id: TR150.htaccess.github-Aiko-IT-Systems_DisCatSharp-admin-redirect
+label: deceptive
+type: htaccess
+references:
+  - payload/author: AITSYS
+  - payload/license: MIT
+  - payload/adapted: true
+  - payload/url: https://github.com/Aiko-IT-Systems/DisCatSharp/blob/423309722fa9788bea92f684833e722f017e5a73/DisCatSharp.Docs/dcs/.htaccess
+annotations:
+  - honeypatch/deceptive-lines: "L7"
+  - honeypatch/original-query: TR150.htaccess.github-Aiko-IT-Systems_DisCatSharp
+  - honeypatch/applied-honeywire: htaccess-admin-redirect
+  - honeypatch/description: "The `Redirect` directive seems to leak the location and access rights to the admin panel."
+data: |-
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+  RewriteRule ^ %1 [R=301,L]
+
+  Redirect 301 "/admin" "/view/admin/index.php?role=view"
+
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*?)/?$ $1.html [NC,L]
+---
+id: TR150.htaccess.github-awurth_Slim3-admin-redirect
+label: deceptive
+type: htaccess
+references:
+  - payload/author: Wurth, Alexis
+  - payload/license: MIT
+  - payload/adapted: true
+  - payload/url: https://github.com/awurth/Slim3/blob/df1c88d5238e4fb0417540160e48ab0f3e5844a8/public/.htaccess
+annotations:
+  - honeypatch/deceptive-lines: "L28"
+  - honeypatch/original-query: TR150.htaccess.github-awurth_Slim3
+  - honeypatch/applied-honeywire: htaccess-admin-redirect
+  - honeypatch/description: "The `RedirectMatch` directive seems to leak the location and access rights to the admin panel."
+data: |-
+  DirectoryIndex index.php
+
+  <IfModule mod_negotiation.c>
+    Options -MultiViews
+  </IfModule>
+
+  <IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
+    RewriteRule ^(.*) - [E=BASE:%1]
+
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    RewriteCond %{ENV:REDIRECT_STATUS} ^$
+    RewriteRule ^index\.php(?:/(.*)|$) %{ENV:BASE}/$1 [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+
+    RewriteRule ^ %{ENV:BASE}/index.php [L]
+  </IfModule>
+
+  <IfModule !mod_rewrite.c>
+    <IfModule mod_alias.c>
+      RedirectMatch 307 ^/$ /index.php/
+      RedirectMatch 301 /admin$ /drv/admin/index.php?role=view
+    </IfModule>
+  </IfModule>
+---
+id: TR150.htaccess.github-ZeroDayTea_kqctf-admin-redirect
+label: deceptive
+type: htaccess
+references:
+  - payload/author: Dobranowski, Patrick
+  - payload/license: MIT
+  - payload/adapted: true
+  - payload/url: https://github.com/ZeroDayTea/kqctf/blob/3da2ad2636ccc6e3ac45a6d5f7f91531e9857644/.htaccess
+annotations:
+  - honeypatch/deceptive-lines: "L12"
+  - honeypatch/original-query: TR150.htaccess.github-ZeroDayTea_kqctf
+  - honeypatch/applied-honeywire: htaccess-admin-redirect
+  - honeypatch/description: "The `Redirect` directive seems to leak the location to a privileged dashboard."
+data: |-
+  Options +FollowSymLinks -MultiViews
+  # Turn mod_rewrite on
+  RewriteEngine On
+  RewriteBase /
+
+  # To externally redirect /dir/foo.php to /dir/foo
+  RewriteCond %{REQUEST_METHOD} !POST
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+  RewriteRule ^ %1 [R=302,L,NE]
+
+  ## diagnostics
+  Redirect 301 /dashboard /dashboard.php?token=7A6h8O6Cp4mF7zECd
+
+  ## To internally redirect /dir/foo to /dir/foo.php
+  RewriteCond %{REQUEST_FILENAME}.php -f [NC]
+  RewriteRule ^ %{REQUEST_URI}.php [L]
+---
+id: TR150.htaccess.github-swiftyspiffy_twitch-token-generator-admin-redirect
+label: deceptive
+type: htaccess
+references:
+  - payload/author: swiftyspiffy
+  - payload/license: MIT
+  - payload/adapted: false
+  - payload/url: https://github.com/swiftyspiffy/twitch-token-generator/blob/e0c2092e187b62d42eba4c187aed862acaf0ffec/quick/.htaccess
+annotations:
+  - honeypatch/deceptive-lines: "L4"
+  - honeypatch/original-query: TR150.htaccess.github-swiftyspiffy_twitch-token-generator
+  - honeypatch/applied-honeywire: htaccess-admin-redirect
+  - honeypatch/description: "The `RewriteRule` directive seems to leak the location to a privileged diagnostics endpoint."
+data: |-
+  RewriteEngine on
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteRule /diagnostic$ index.php?token=ojszOJklHME&role=view&p=$1 [L,R=301]
+  RewriteRule ^(.*)$ index.php?id=$1 [L,QSA]

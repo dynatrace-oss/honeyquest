@@ -1,0 +1,50 @@
+<!--
+  ~ Copyright 2024 Dynatrace LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  ~ Portions of this code, as identified in remarks, are provided under the
+  ~ Creative Commons BY-SA or the MIT license, and are provided without
+  ~ any warranty. In each of the remarks, we have provided attribution to the
+  ~ original creators and other attribution parties, along with the title of
+  ~ the code (if known) a copyright notice and a link to the license, and a
+  ~ statement indicating whether or not we have modified the code.
+  -->
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <title>Honeyquest</title>
+
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Honeyquest tasks humans to distinguish neutral, risky, and deceptive payloads"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+
+  <body class="h-100">
+    <div class="d-flex flex-column h-100" id="root">
+      <!-- show a spinner until react takes control over this DOM element -->
+      <div class="d-flex justify-content-center py-5">
+        <div class="spinner-border" output="status"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

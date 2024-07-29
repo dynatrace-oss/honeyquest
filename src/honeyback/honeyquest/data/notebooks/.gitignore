@@ -1,0 +1,6 @@
+# environment files, except .env
+!.env
+.env.local
+
+# paper artifacts
+outputs

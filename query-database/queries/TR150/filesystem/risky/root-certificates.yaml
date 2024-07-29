@@ -1,0 +1,29 @@
+id: TR150.filesystem.root-certificates
+label: risky
+type: filesystem
+references:
+  - payload/author: Kahlhofer, Mario
+  - payload/license: CC-BY-4.0
+annotations:
+  - risk/type: weakness
+  - risk/risky-lines: "L10-11,L15-16"
+  - risk/present-weakness: filesystem-private-key
+  - risk/description: "Private keys of certificates may be used to impersonate a server or client."
+data: |-
+  drwxr-xr-x. 12 root root 4.0K Oct 25 19:26 .
+  dr-xr-xr-x. 18 root root 4.0K May  7  2022 ..
+  -rw-------.  1 root root 1.7K Feb  4  2020 anaconda-ks.cfg
+  -rw-------.  1 root root  21K Oct 25 19:26 .bash_history
+  -rw-r--r--.  1 root root   18 May 11  2019 .bash_logout
+  -rw-r--r--.  1 root root  176 May 11  2019 .bash_profile
+  -rw-r--r--.  1 root root  176 May 11  2019 .bashrc
+  drwxr-xr-x.  3 root root 4.0K Mar 29  2021 bolt
+  drwxr-xr-x.  3 root root 4.0K Oct  2 18:02 .cache
+  drwxr-xr-x. 15 root root 4.0K May  7  2022 certs
+  -rw-r--r--.  1 root root  70K May 22  2022 certs.tar.gz
+  drwx------.  3 root root 4.0K Apr 11  2021 .config
+  -rw-r--r--.  1 root root  100 May 11  2019 .cshrc
+  -rw-------.  1 root root   75 Oct  2 19:25 .lesshst
+  drwxr-xr-x.  2 root root 4.0K Jun  6  2022 letsencrypt-keys
+  -rw-r--r--.  1 root root 2.8K Jun  6  2022 letsencrypt.tar.gz
+  drwx------.  2 root root 4.0K Sep 27 19:30 .ssh
