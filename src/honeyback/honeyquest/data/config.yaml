@@ -4,7 +4,7 @@
 resources:
   paths:
     config:
-      honeyquest_data: ./query-database
+      honeyquest_data: ./querydb
 ops:
   upload:
     upload_s3_archive:

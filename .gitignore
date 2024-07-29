@@ -1,6 +1,6 @@
 # dagster
 /.dagster/*
-!/.dagster/.gitkeep
+!/.dagster/dagster.yaml
 
 # honeyquest results
 /results

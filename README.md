@@ -12,8 +12,8 @@ Participants are asked to think like a hacker and tell us their next move.
 
 Honeyquest can be used to evaluate what vulnerabilities and cyber traps are most attractive to attackers.
 
-- 🚀 **Demo** — [honeyquest.cns.research.dynatracelabs.com](https://honeyquest.cns.research.dynatracelabs.com)
-- 📜 **Paper** — [Honeyquest: Rapidly Measuring the Enticingness of Cyber Deception Techniques with Code-based Questionnaires](https://doi.org/10.1145/3678890.3678897)
+<!-- - 🚀 **Demo** — [honeyquest.cns.research.dynatracelabs.com](https://honeyquest.cns.research.dynatracelabs.com) -->
+<!-- - 📜 **Paper** — [Honeyquest: Rapidly Measuring the Enticingness of Cyber Deception Techniques with Code-based Questionnaires](https://doi.org/10.1145/3678890.3678897) -->
 
 ![Honeyquest user interface](./docs/images/honeyquest.gif)
 
@@ -30,15 +30,15 @@ Then, navigate to 🌍 [localhost:3000](http://localhost:3000) in your browser.
 
 ## 📦 Project Structure
 
-- 🚀 Want to **TRY OUT** Honeyquest? Visit our live demo at [honeyquest.cns.research.dynatracelabs.com](https://honeyquest.cns.research.dynatracelabs.com) today.
-- 📊 Want to **ANALYZE** the results from our human subject experiment? Navigate to the 📂 [`./honeyquest-dataset`](./honeyquest-dataset) directory.
+<!-- - 🚀 Want to **TRY OUT** Honeyquest? Visit our live demo at [honeyquest.cns.research.dynatracelabs.com](https://honeyquest.cns.research.dynatracelabs.com) today. -->
+- 📊 Want to **ANALYZE** the results from our human subject experiment? Navigate to the 📂 [`./dataset`](./dataset) directory.
 - 🎨 Want to **CREATE** your own query database? Start with the 📄 [QUERY_DATABASE](./docs/QUERY_DATABASE.md) document.
 - 💻 Want to **DEVELOP** the Honeyquest application locally? Follow the [Developer Guide](#-developer-guide) below.
 - ☁️ Want to **DEPLOY** Honeyquest to AWS? Refer to the 📄 [DEPLOYMENT](./docs/DEPLOYMENT.md) document.
-- ⚖️ Want to **CITE** Honeyquest, our datasets, or our paper? Head to the [License and Attribution](#-license-and-attribution) section.
+- ⚖️ Want to **CITE** Honeyquest, our datasets, or our paper? Head to the [License and Attribution](#%EF%B8%8F-license-and-attribution) section.
 
 Honeyquest needs a query database to run. The query database contains the questions that are presented to the users.
-Our queries are stored in the 📂 [`./query-database`](./query-database) directory. You can also create your own queries.
+Our queries are stored in the 📂 [`./querydb`](./querydb) directory. You can also create your own queries.
 Queries are just YAML files with a specific structure that is described in the 📄 [QUERY_DATABASE](./docs/QUERY_DATABASE.md) document.
 To automate the creation of queries, we also provide a few [Dagster](https://dagster.io/) jobs
 which are described in the 📄 [QUERY_CREATION](./docs/QUERY_CREATION.md) document.
@@ -52,14 +52,14 @@ Our Docker container bundles both the frontend and the backend into a single con
 During our study we ran a human subject experiment with 47 participants,
 who submitted a total of 3,669 responses to our queries (and placed 6,659 individual marks).
 We dataset is freely available for further research and analysis.
-The dataset and a description of it is stored in the 📂 [`./honeyquest-dataset`](./honeyquest-dataset/README.md) directory.
+The dataset and a description of it is stored in the 📂 [`./dataset`](./dataset/README.md) directory.
 Also, we provide a few Jupyter notebooks and Python scripts that we used to analyze the results in the
 📂 [`./src/honeyback/honeyquest/data/notebooks`](./src/honeyback/honeyquest/data/notebooks) directory.
 
 ```mermaid
 graph TB;
   subgraph RESULTS ANALYSIS
-    dataset["<tt><small>/honeyquest-dataset</small></tt>\n<strong>HUMAN SUBJECT</strong>\n<strong>STUDY RESULTS</strong>"]
+    dataset["<tt><small>/dataset</small></tt>\n<strong>HUMAN SUBJECT</strong>\n<strong>STUDY RESULTS</strong>"]
     notebooks["<tt><small>/src/honeyback</small></tt>\n<tt><small>/honeyquest/data/notebooks</small></tt>\nJupyter Notebooks"]
   end
 
@@ -71,7 +71,7 @@ graph TB;
   end
 
   subgraph QUERY CREATION
-    queries["<tt><small>/query-database</small></tt>\n<strong>QUERY DATABASE</strong>"]
+    queries["<tt><small>/querydb</small></tt>\n<strong>QUERY DATABASE</strong>"]
     dagster["<tt><small>/src/honeyback</small></tt>\n<tt><small>/honeyquest/data/jobs</small></tt>\nCreate New Queries"]
     honeypatch["<tt><small>/src/honeypatch</small></tt>\nInject Traps"]
   end
@@ -120,12 +120,12 @@ pre-commit install
 
 The backend exposes a REST API to serve the queries.
 Don't forget to specify the folder that holds the query database.
-For more options, take a look at the CLI help or head to the [Configuration](#-configuration) section.
+For more options, take a look at the CLI help or head to the [Configuration](#%EF%B8%8F-configuration) section.
 Start the backend API with the following command:
 
 ```sh
 cd ./src/honeyback
-poetry run honeyquest --data ../../query-database
+poetry run honeyquest --data ../../querydb
 ```
 
 The frontend serves the user interface.
@@ -141,7 +141,7 @@ npm run dev
 Then, navigate to 🌍 [localhost:3000](http://localhost:3000) in your browser.
 
 Answers from users are stored in a tempory directory that is printed to the console.
-Refer to the [Configuration](#-configuration) section to specify a different location.
+Refer to the [Configuration](#%EF%B8%8F-configuration) section to specify a different location.
 
 ## ⚙️ Configuration
 
@@ -162,7 +162,7 @@ You can also pass the `--data` argument (or the `HONEYQUEST_DATA` environment va
 to the CLI with the path to the query database. The following command uses our query database and starts the backend:
 
 ```sh
-honeyquest --data ./query-database
+honeyquest --data ./querydb
 ```
 
 If you want to create your own query database, refer to the 📄 [QUERY_DATABASE.md](./docs/QUERY_DATABASE.md) document.
@@ -206,8 +206,8 @@ This is useful during development with only a small example dataset to test the 
 > ℹ️ This product is not officially supported by Dynatrace.
 
 - The source code is licensed under [Apache 2.0](./LICENSE.txt)
-- The query database found in 📂 [`./query-database`](./query-database) is licensed under [ODbL 1.0](./data/LICENSE.txt)
-- The results from our human subject experiment found in 📂 [`./honeyquest-dataset`](./honeyquest-dataset) are licensed under [CC BY 4.0](./honeyquest-dataset/LICENSE.txt)
+- The query database found in 📂 [`./querydb`](./querydb) is licensed under [ODbL 1.0](./data/LICENSE.txt)
+- The results from our human subject experiment found in 📂 [`./dataset`](./dataset) are licensed under [CC BY 4.0](./dataset/LICENSE.txt)
 
 Please note certain portions of source code, as identified in remarks, are provided under the Creative Commons BY-SA or the MIT license.
 In each of the remarks, we have provided attribution to the original creators and other attribution parties.

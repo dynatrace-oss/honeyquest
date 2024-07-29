@@ -18,7 +18,7 @@
       "options": {
         "cwd": "src/honeyback",
         "env": {
-          "HONEYQUEST_DATA": "../../query-database",
+          "HONEYQUEST_DATA": "../../querydb",
           "HONEYQUEST_RESULTS": "${workspaceFolder}/results",
           "COOKIE_SECRET": "cookie",
           "ADMIN_TOKEN": "admin"
@@ -33,7 +33,7 @@
       "options": {
         "cwd": "src/honeyback",
         "env": {
-          "HONEYQUEST_DATA": "../../query-database",
+          "HONEYQUEST_DATA": "../../querydb",
           "ADMIN_TOKEN": "admin"
         }
       }
