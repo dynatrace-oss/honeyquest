@@ -73,14 +73,14 @@ repos:
       - id: isort
         name: sort imports with isort
         args: ["--settings-path", "./src/honeyback/pyproject.toml"]
-        files: \.py$
+        files: ^src\/honeyback\/.*\.py$
   - repo: https://github.com/ambv/black
     rev: 24.4.2
     hooks:
       - id: black
         name: format files with black
         args: ["--config", "./src/honeyback/pyproject.toml"]
-        files: \.py$
+        files: ^src\/honeyback\/.*\.py$
         language_version: python3
   - repo: https://github.com/PyCQA/flake8
     rev: 7.1.0
@@ -88,7 +88,7 @@ repos:
       - id: flake8
         name: lint files with flake8
         args: ["--config", "./src/honeyback/tox.ini"]
-        files: \.py$
+        files: ^src\/honeyback\/.*\.py$
         additional_dependencies:
           - flake8-docstrings
           - flake8-rst-docstrings
@@ -98,14 +98,14 @@ repos:
         name: lint files with pylint
         entry: poetry run -C ./src/honeyback pylint --rcfile ./src/honeyback/pyproject.toml -sn -rn
         language: system
-        files: \.py$
+        files: ^src\/honeyback\/.*\.py$
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.11.0
     hooks:
       - id: mypy
         name: check types with mypy
         args: ["--config-file", "./src/honeyback/pyproject.toml"]
-        files: \.py$
+        files: ^src\/honeyback\/.*\.py$
         additional_dependencies:
           # packages with built-in type stubs
           - numpy>=1.26.4,<2.0
