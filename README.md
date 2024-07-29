@@ -23,8 +23,7 @@ Use the Docker image to start Honeyquest.
 Append the `--help` argument to see all available options.
 
 ```sh
-docker build -t honeyquest .
-docker run -it -p 3000:3000 -v "$(pwd)/query-database:/opt/honeyquest/data" honeyquest --data /opt/honeyquest/data
+docker run -it -p 3000:3000 -v "$(pwd)/query-database:/opt/honeyquest/data" ghcr.io/dynatrace-oss/honeyquest --data /opt/honeyquest/data
 ```
 
 Then, navigate to 🌍 [localhost:3000](http://localhost:3000) in your browser.
