@@ -23,7 +23,7 @@ Use the Docker image to start Honeyquest.
 Append the `--help` argument to see all available options.
 
 ```sh
-docker run -it -p 3000:3000 -v "$(pwd)/query-database:/opt/honeyquest/data" ghcr.io/dynatrace-oss/honeyquest --data /opt/honeyquest/data
+docker run -p 3000:3000 ghcr.io/dynatrace-oss/honeyquest -u https://raw.githubusercontent.com/dynatrace-oss/honeyquest/main/.github/hostedfiles/querydb.tar.gz
 ```
 
 Then, navigate to 🌍 [localhost:3000](http://localhost:3000) in your browser.
@@ -155,7 +155,7 @@ and extract it on the fly with the `--data-url` argument (or the `HONEYQUEST_DAT
 The following command downloads our query database from GitHub and starts the backend:
 
 ```sh
-honeyquest --data-url https://cdn.honeyquest.cns.research.dynatracelabs.com/data/honeyquest-queries-hackertarget-2023-01-05.tar.gz
+honeyquest --data-url https://raw.githubusercontent.com/dynatrace-oss/honeyquest/main/.github/hostedfiles/querydb.tar.gz
 ```
 
 You can also pass the `--data` argument (or the `HONEYQUEST_DATA` environment variable)

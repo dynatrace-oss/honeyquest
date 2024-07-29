@@ -63,7 +63,7 @@ variables:
 environments:
   prod:
     variables:
-      HONEYQUEST_DATA_URL: https://cdn.honeyquest.cns.research.dynatracelabs.com/data/honeyquest-queries-TR864-2024-01-15.tar.gz
+      HONEYQUEST_DATA_URL: https://raw.githubusercontent.com/dynatrace-oss/honeyquest/main/.github/hostedfiles/querydb.tar.gz
       HONEYQUEST_INDEX: main
       COOKIE_SECRET: cookie
       ADMIN_TOKEN: admin
@@ -104,7 +104,7 @@ dev:
   http:
     alias: dev.honeyquest.yourdomain.test
   variables:
-    HONEYQUEST_DATA_URL: https://cdn.honeyquest.cns.research.dynatracelabs.com/data/honeyquest-queries-TR864-2024-01-15.tar.gz
+    HONEYQUEST_DATA_URL: https://raw.githubusercontent.com/dynatrace-oss/honeyquest/main/.github/hostedfiles/querydb.tar.gz
     HONEYQUEST_INDEX: main
     COOKIE_SECRET: cookie
     ADMIN_TOKEN: admin
