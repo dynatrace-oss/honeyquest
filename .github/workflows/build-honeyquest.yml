@@ -66,13 +66,17 @@ jobs:
         working-directory: ./src/honeyfront
         run: npm install
 
-      - name: Install Python dependencies
+      - name: Install Honeyback Python dependencies
         working-directory: ./src/honeyback
         run: poetry install --with hooks,analytics
         env:
           RPY2_CFFI_MODE: ABI # needed for rpy2
 
-      - name: Activate Poetry environment
+      - name: Install Honeypatch Python dependencies
+        working-directory: ./src/honeypatch
+        run: poetry install
+
+      - name: Activate Honeyback Poetry environment
         working-directory: ./src/honeyback
         shell: bash
         run: |
