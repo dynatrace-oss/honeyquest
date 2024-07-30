@@ -36,6 +36,7 @@ In this repository, create file `/copilot/honeyquest/manifest.yml` with the foll
 - Set the `http.alias` to your domain
 - Set the `environments.prod.variables.COOKIE_SECRET` to some random string and treat it like a secret
 - Set the `environments.prod.variables.ADMIN_TOKEN` to some random string and treat it like a secret
+- Possibly adjust the `image.build` path to your Dockerfile, if the repository structure differs
 
 Please refer to the root [README](../README.md) for more details about the available environment variables.
 
