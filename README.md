@@ -43,6 +43,7 @@ Queries are just YAML files with a specific structure that is described in the �
 To automate the creation of queries, we also provide a few [Dagster](https://dagster.io/) jobs
 which are described in the 📄 [QUERY_CREATION](./docs/QUERY_CREATION.md) document.
 Some queries are created by "patching" existing queries with our separate 📂 [`./src/honeypatch`](./src/honeypatch) tool.
+Find a bit of information about Honeypatch in the 📄 [HONEYPATCH](./docs/HONEYPATCH.md) document.
 
 The Honeyquest application consists of a frontend and a backend process.
 The frontend is a React application that serves the user interface.
