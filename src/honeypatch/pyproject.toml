@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "honeypatch"
+version = "0.1.0"
+license = "Apache-2.0"
+repository = "https://github.com/dynatrace-oss/honeyquest"
+description = "Honeypatch injects honeywires into arbitrary payload"
+authors = ["Mario Kahlhofer <mario.kahlhofer@dynatrace.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+loguru = "^0.7.2"
+pydantic = "^2.8.2"
+PyYAML = "^6.0.1"
+typer = "^0.12.3"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+flake8 = "*"
+flake8-docstrings = "*"
+flake8-rst-docstrings = "*"
+pylint = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+pytest-cov = "*"
+pre-commit = "*"
+# typing stubs for mypy (must match types of dependencies)
+types-PyYAML = "^6.0"
+
+[tool.poetry.scripts]
+honeypatch = "honeypatch.__main__:app"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.main]
+load-plugins = "pylint.extensions.docparams"
+disable = [
+    "fixme",
+    "duplicate-code",
+    "use-dict-literal",
+    "broad-exception-caught",
+    "logging-fstring-interpolation",
+    "protected-access",
+    "consider-using-with",
+    "too-many-arguments",
+    "too-many-statements",
+    "too-many-locals",
+    "too-few-public-methods",
+    "missing-function-docstring",
+    "missing-module-docstring",
+    "wrong-import-order" # covered by isort
+]
+
+[tool.pylint.parameter_documentation]
+default-docstring-type = "sphinx"
+
+[tool.mypy]
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

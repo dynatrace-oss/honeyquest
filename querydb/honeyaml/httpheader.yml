@@ -1,0 +1,17 @@
+honeywire:
+  kind: httpheader
+  name: httpheader-apiserver
+  description: Adds an HTTP header that hints at some API server location
+  operations:
+    - op: add
+      key: X-Kube-ApiServer
+      value: /hko/api
+---
+honeywire:
+  kind: httpheader
+  name: httpheader-devtoken
+  description: Adds an HTTP header that looks like a JWT developer token (secret 'honeypatch' was used for the signature)
+  operations:
+    - op: add
+      key: X-DevToken
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMwZDk4NGI4Iiwicm9sZSI6ImNsdXN0ZXIifQ.J2c1XH2RsXDjaWJhCHSWR4bBNxEm7l2Q7WxrlG2vph4

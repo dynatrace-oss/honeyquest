@@ -83,8 +83,9 @@ def ui_cli(
     # TODO: RT-2490 let pydantic handle this rule
     # the fully-resolved settings object may only have a data path or url, not none, not both
     if not bool(settings.honeyquest_data) ^ bool(settings.honeyquest_data_url):
-        typer.echo("Please specify either --data or --data-url via the CLI or the environment")
-        raise typer.Exit(1)
+        raise typer.BadParameter(
+            "please specify either --data or --data-url via the CLI or the environment"
+        )
 
     run_server(settings, debug=debug)
 

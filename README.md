@@ -90,14 +90,14 @@ You need the following toolchain installed:
 - [Poetry](https://python-poetry.org/docs/#installation) for Python dependency management
 - [pre-commit](https://pre-commit.com/#install) for the pre-commit hooks
 
-First, install the frontend dependencies.
+First, install Honeyfront (frontend for Honeyquest) dependencies.
 
 ```sh
 cd ./src/honeyfront
 npm install
 ```
 
-Then, install the backend dependencies.
+Then, install Honeyback (backend for Honeyquest) dependencies.
 Backend dependencies are split into multiple groups:
 
 - `main` covers everything for Honeyquest and Dagster to run
@@ -107,7 +107,17 @@ Backend dependencies are split into multiple groups:
 
 ```sh
 cd ./src/honeyback
+poetry shell
 poetry install --with hooks,analytics
+```
+
+Then, install Honeypatch dependencies.
+Note that this is a separate Poetry environment.
+
+```sh
+cd ./src/honeypatch
+poetry shell
+poetry install
 ```
 
 Then, back in the root directory, install the pre-commit hooks.
@@ -116,7 +126,7 @@ Then, back in the root directory, install the pre-commit hooks.
 pre-commit install
 ```
 
-### Start the backend and frontend
+### Start Honeyquest
 
 The backend exposes a REST API to serve the queries.
 Don't forget to specify the folder that holds the query database.
@@ -142,6 +152,18 @@ Then, navigate to 🌍 [localhost:3000](http://localhost:3000) in your browser.
 
 Answers from users are stored in a tempory directory that is printed to the console.
 Refer to the [Configuration](#%EF%B8%8F-configuration) section to specify a different location.
+
+### Start Honeypatch
+
+Honeypatch is stand-alone tool to inject traps into arbitrary, text-based payload.
+Start the program and read the help message.
+
+```sh
+cd ./src/honeypatch
+poetry run honeypatch --help
+```
+
+For more usage instructions, refer to the 📄 [HONEYPATCH.md](./docs/HONEYPATCH.md) document.
 
 ## ⚙️ Configuration
 
@@ -203,8 +225,6 @@ This is useful during development with only a small example dataset to test the 
 
 ## ⚖️ License and Attribution
 
-> ℹ️ This product is not officially supported by Dynatrace.
-
 - The source code is licensed under [Apache 2.0](./LICENSE.txt)
 - The query database found in 📂 [`./querydb`](./querydb) is licensed under [ODbL 1.0](./data/LICENSE.txt)
 - The results from our human subject experiment found in 📂 [`./dataset`](./dataset) are licensed under [CC BY 4.0](./dataset/LICENSE.txt)
@@ -219,3 +239,7 @@ If you use Honeyquest, our query database, or our experimental results, please c
 > In The 27th International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2024),
 > September 30-October 02, 2024, Padua, Italy. ACM, New York, NY, USA, 20 pages.
 > <https://doi.org/10.1145/3678890.3678897>
+
+---
+
+_**Note:** Honeyquest is not officially supported by Dynatrace._

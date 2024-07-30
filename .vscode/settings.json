@@ -6,10 +6,5 @@
     "**/.mypy_cache": true,
     "**/.pytest_cache": true
   },
-  "flake8.args": [
-    "--config=${workspaceFolder}/src/honeyback/tox.ini"
-  ],
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "flake8.cwd": "${fileDirname}"
 }

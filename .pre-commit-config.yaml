@@ -73,69 +73,73 @@ repos:
       - id: isort
         name: sort imports with isort
         args: ["--settings-path", "./src/honeyback/pyproject.toml"]
-        files: ^src\/honeyback\/.*\.py$
+        files: ^src\/(honeyback|honeypatch)\/.*\.py$
   - repo: https://github.com/ambv/black
     rev: 24.4.2
     hooks:
       - id: black
         name: format files with black
         args: ["--config", "./src/honeyback/pyproject.toml"]
-        files: ^src\/honeyback\/.*\.py$
+        files: ^src\/(honeyback|honeypatch)\/.*\.py$
         language_version: python3
   - repo: https://github.com/PyCQA/flake8
     rev: 7.1.0
     hooks:
       - id: flake8
-        name: lint files with flake8
+        name: lint files with flake8 (honeyquest)
         args: ["--config", "./src/honeyback/tox.ini"]
         files: ^src\/honeyback\/.*\.py$
+        additional_dependencies:
+          - flake8-docstrings
+          - flake8-rst-docstrings
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.1.0
+    hooks:
+      - id: flake8
+        name: lint files with flake8 (honeypatch)
+        args: ["--config", "./src/honeypatch/tox.ini"]
+        files: ^src\/honeypatch\/.*\.py$
         additional_dependencies:
           - flake8-docstrings
           - flake8-rst-docstrings
   - repo: local
     hooks:
       - id: pylint
-        name: lint files with pylint
+        name: lint files with pylint (honeyback)
         entry: poetry run -C ./src/honeyback pylint --rcfile ./src/honeyback/pyproject.toml -sn -rn
         language: system
         files: ^src\/honeyback\/.*\.py$
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.11.0
+  - repo: local
+    hooks:
+      - id: pylint
+        name: lint files with pylint (honeypatch)
+        entry: poetry run -C ./src/honeypatch pylint --rcfile ./src/honeypatch/pyproject.toml -sn -rn
+        language: system
+        files: ^src\/honeypatch\/.*\.py$
+  - repo: local
     hooks:
       - id: mypy
-        name: check types with mypy
-        args: ["--config-file", "./src/honeyback/pyproject.toml"]
+        name: check types with mypy (honeyback)
+        entry: poetry run -C ./src/honeyback mypy --config-file ./src/honeyback/pyproject.toml ./src/honeyback
+        language: system
+        pass_filenames: false
         files: ^src\/honeyback\/.*\.py$
-        additional_dependencies:
-          # packages with built-in type stubs
-          - numpy>=1.26.4,<2.0
-          - dagster>=0.14.20,<1.0
-          - fastapi>=0.111.1,<1.0
-          - pydantic>=2.8.2,<3.0
-          - pydantic-settings>=2.3.4,<3.0
-          - typer>=0.12.3,<1.0
-          - uvicorn>=0.30.3,<1.0
-          # official type stubs
-          - boto3-stubs[essential]<=1.34.145,<2.0
-          - pandas-stubs>=1.5.3,<2.0
-          # third-party type stubs
-          - types-cffi>=1.16,<2.0
-          - types-colorama>=0.4,<1.0
-          - types-croniter>=2.0,<3.0
-          - types-decorator>=5.1,<6.0
-          - types-jsonschema>=4.23,<5.0
-          - types-protobuf>=3.20,<4.0
-          - types-psutil>=6.0,<7.0
-          - types-Pygments>=2.18,<3.0
-          - types-python-dateutil>=2.9,<3.0
-          - types-pytz>=2024,<2025
-          - types-pywin32>=306,<307
-          - types-PyYAML>=6.0,<7.0
-          - types-requests>=2.32,<3.0
-          - types-setuptools>=70.3,<71
-          - types-six>=1.16,<2.0
-          - types-toposort>=1.10,<2.0
-          - types-tqdm>=4.66,<5.0
+  - repo: local
+    hooks:
+      - id: mypy
+        name: check types with mypy (honeypatch)
+        entry: poetry run -C ./src/honeypatch mypy --config-file ./src/honeypatch/pyproject.toml ./src/honeypatch/honeypatch ./src/honeypatch/tests
+        language: system
+        pass_filenames: false
+        files: ^src\/honeypatch\/.*\.py$
+  - repo: local
+    hooks:
+      - id: mypy
+        name: test with pytest (honeypatch)
+        entry: poetry run -C ./src/honeypatch pytest -v --cov=honeypatch ./src/honeypatch
+        language: system
+        pass_filenames: false
+        files: ^src\/honeypatch\/.*\.py$
 
   # javascript files
   - repo: local
