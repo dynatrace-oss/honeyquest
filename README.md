@@ -12,7 +12,7 @@ Participants are asked to think like a hacker and tell us their next move.
 
 Honeyquest can be used to evaluate what vulnerabilities and cyber traps are most attractive to attackers.
 
-<!-- - 🚀 **Demo** — [honeyquest.cns.research.dynatracelabs.com](https://honeyquest.cns.research.dynatracelabs.com) -->
+- 🚀 **Demo** — [honeyquest.cns.research.dynatracelabs.com](https://honeyquest.cns.research.dynatracelabs.com)
 <!-- - 📜 **Paper** — [Honeyquest: Rapidly Measuring the Enticingness of Cyber Deception Techniques with Code-based Questionnaires](https://doi.org/10.1145/3678890.3678897) -->
 
 ![Honeyquest user interface](./docs/images/honeyquest.gif)
@@ -30,7 +30,7 @@ Then, navigate to 🌍 [localhost:3000](http://localhost:3000) in your browser.
 
 ## 📦 Project Structure
 
-<!-- - 🚀 Want to **TRY OUT** Honeyquest? Visit our live demo at [honeyquest.cns.research.dynatracelabs.com](https://honeyquest.cns.research.dynatracelabs.com) today. -->
+- 🚀 Want to **TRY OUT** Honeyquest? Visit our live demo at [honeyquest.cns.research.dynatracelabs.com](https://honeyquest.cns.research.dynatracelabs.com) today.
 - 📊 Want to **ANALYZE** the results from our human subject experiment? Navigate to the 📂 [`./dataset`](./dataset) directory.
 - 🎨 Want to **CREATE** your own query database? Start with the 📄 [QUERY_DATABASE](./docs/QUERY_DATABASE.md) document.
 - 💻 Want to **DEVELOP** the Honeyquest application locally? Follow the [Developer Guide](#-developer-guide) below.
