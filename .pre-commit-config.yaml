@@ -26,7 +26,7 @@ repos:
         files: (?<!.d)\.m?[jt]sx?$
         args:
           [
-            --use-current-year,
+            --allow-past-years,
             --license-filepath,
             LICENSE_HEADER.txt,
             --comment-style,
@@ -37,7 +37,7 @@ repos:
         files: \.css?$
         args:
           [
-            --use-current-year,
+            --allow-past-years,
             --license-filepath,
             LICENSE_HEADER.txt,
             --comment-style,
@@ -48,7 +48,7 @@ repos:
         files: \.html??$
         args:
           [
-            --use-current-year,
+            --allow-past-years,
             --license-filepath,
             LICENSE_HEADER.txt,
             --comment-style,
@@ -59,7 +59,7 @@ repos:
         files: (?<!__init__)\.py$
         args:
           [
-            --use-current-year,
+            --allow-past-years,
             --license-filepath,
             LICENSE_HEADER.txt,
             --comment-style,
