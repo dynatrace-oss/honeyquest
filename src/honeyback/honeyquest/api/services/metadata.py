@@ -54,7 +54,7 @@ class MetadataService:
             return None
 
         meta_html = Metadata(**meta_markdown.model_dump())
-        meta_html.text = self._markdown_to_html_renderer(meta_markdown.text)
+        meta_html.text = str(self._markdown_to_html_renderer(meta_markdown.text))
         return meta_html
 
 

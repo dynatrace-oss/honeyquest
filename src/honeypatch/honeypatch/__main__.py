@@ -33,6 +33,7 @@ from .pool import list_honeywires, read_honeywire
 app = typer.Typer(add_completion=False)
 
 
+# pylint: disable=too-many-positional-arguments
 @app.command("inject")
 def inject_cli(
     filename: typer.FileText = typer.Argument(
