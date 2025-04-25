@@ -3,7 +3,7 @@
 ARG WORKDIR=/opt/honeyquest
 
 ############################################################
-FROM bitnami/git:2.45.2 AS git-commit
+FROM bitnami/git:2.49.0@sha256:432f8b1403960e0d6c80a9cbc78440fea0489437a9bcedd3ec39081441d19e65 AS git-commit
 
 WORKDIR /home
 COPY .git /home/.git
@@ -14,7 +14,7 @@ RUN /bin/bash -c 'git show -s --format=%s > /GIT_MESSAGE'
 RUN /bin/bash -c 'git rev-parse --abbrev-ref HEAD > /GIT_BRANCH'
 
 ############################################################
-FROM docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:97f8a87d28786db28a2796ca3932a52aaff75b703f9020a29fd6fc4387f64b47 AS node-deps
+FROM docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:d494ba62a80c2d59a55f80ae540701c592f2920fa1ea0c0344a13f1ddcaad713 AS node-deps
 ARG WORKDIR
 
 WORKDIR ${WORKDIR}/honeyfront
@@ -33,7 +33,7 @@ COPY ./src/honeyfront/src ./src
 RUN npm run build
 
 ##############################################################
-FROM docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:97f8a87d28786db28a2796ca3932a52aaff75b703f9020a29fd6fc4387f64b47 AS python-deps
+FROM docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:d494ba62a80c2d59a55f80ae540701c592f2920fa1ea0c0344a13f1ddcaad713 AS python-deps
 ARG WORKDIR
 
 WORKDIR ${WORKDIR}/honeyback
@@ -47,7 +47,7 @@ RUN --mount=type=cache,target=/root/.cache/pypoetry \
     poetry install --no-root
 
 ###############################################
-FROM docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:97f8a87d28786db28a2796ca3932a52aaff75b703f9020a29fd6fc4387f64b47 AS final
+FROM docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:d494ba62a80c2d59a55f80ae540701c592f2920fa1ea0c0344a13f1ddcaad713 AS final
 ARG WORKDIR
 
 WORKDIR ${WORKDIR}

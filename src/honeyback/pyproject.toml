@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "honeyquest"
-version = "0.1.0"
+version = "0.1.2"
 license = "Apache-2.0"
 repository = "https://github.com/dynatrace-oss/honeyquest"
 description = "Honeyquest tasks humans to distinguish neutral, risky, and deceptive payloads"

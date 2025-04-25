@@ -3,7 +3,7 @@
 ARG WORKDIR=/opt/honeypatch
 
 ##############################################################
-FROM docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:97f8a87d28786db28a2796ca3932a52aaff75b703f9020a29fd6fc4387f64b47 AS python-deps
+FROM docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:d494ba62a80c2d59a55f80ae540701c592f2920fa1ea0c0344a13f1ddcaad713 AS python-deps
 ARG WORKDIR
 
 WORKDIR ${WORKDIR}
@@ -17,7 +17,7 @@ RUN --mount=type=cache,target=/root/.cache/pypoetry \
     poetry install --no-root
 
 ###############################################
-FROM docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:97f8a87d28786db28a2796ca3932a52aaff75b703f9020a29fd6fc4387f64b47 AS final
+FROM docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:d494ba62a80c2d59a55f80ae540701c592f2920fa1ea0c0344a13f1ddcaad713 AS final
 ARG WORKDIR
 
 WORKDIR ${WORKDIR}
