@@ -15,7 +15,7 @@ jobs:
   pre-commit-hooks:
     runs-on: ubuntu-latest
     container:
-      image: nikolaik/python-nodejs:python3.10-nodejs20@sha256:97f8a87d28786db28a2796ca3932a52aaff75b703f9020a29fd6fc4387f64b47
+      image: docker.io/nikolaik/python-nodejs:python3.10-nodejs20@sha256:d494ba62a80c2d59a55f80ae540701c592f2920fa1ea0c0344a13f1ddcaad713
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -100,9 +100,10 @@ jobs:
         with:
           images: |
             ${{ env.IMAGE_NAME }}
+          flavor: |
+            latest=auto
           tags: |
             type=sha
-            type=raw,value=latest,enable={{is_default_branch}}
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
