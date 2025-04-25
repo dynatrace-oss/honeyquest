@@ -60,7 +60,7 @@ def plot_number_of_queries_answered(
         widths=0.5,
         showfliers=False,
         zorder=10,
-        **latex.BOXPLOT_KWARGS
+        **latex.BOXPLOT_KWARGS,
     )
 
     plt.xlim(0, 180)
@@ -106,7 +106,7 @@ def plot_query_response_time(
         widths=0.5,
         showfliers=False,
         zorder=1,
-        **latex.BOXPLOT_KWARGS
+        **latex.BOXPLOT_KWARGS,
     )
 
     latex.tick_distance("x", 5, "minor")

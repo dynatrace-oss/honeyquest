@@ -1,19 +1,26 @@
-[tool.poetry]
+[project]
 name = "honeypatch"
 version = "0.1.2"
 license = "Apache-2.0"
-repository = "https://github.com/dynatrace-oss/honeyquest"
+requires-python = ">=3.10,<3.11"
 description = "Honeypatch injects honeywires into arbitrary payload"
-authors = ["Mario Kahlhofer <mario.kahlhofer@dynatrace.com>"]
+authors = [
+    {name = "Mario Kahlhofer", email = "mario.kahlhofer@dynatrace.com>"}
+]
+dependencies = [
+    "loguru (>=0.7.2,<0.8.0)",
+    "pydantic (>=2.8.2,<3.0.0)",
+    "PyYAML (>=6.0.1,<7.0.0)",
+    "typer (>=0.12.3,<0.13.0)",
+]
 
-[tool.poetry.dependencies]
-python = "~3.10"
-loguru = "^0.7.2"
-pydantic = "^2.8.2"
-PyYAML = "^6.0.1"
-typer = "^0.12.3"
+[project.urls]
+repository = "https://github.com/dynatrace-oss/honeyquest"
 
-[tool.poetry.dev-dependencies]
+[project.scripts]
+honeypatch = "honeypatch.__main__:app"
+
+[tool.poetry.group.dev.dependencies]
 black = "*"
 flake8 = "*"
 flake8-docstrings = "*"
@@ -26,9 +33,6 @@ pytest-cov = "*"
 pre-commit = "*"
 # typing stubs for mypy (must match types of dependencies)
 types-PyYAML = "^6.0"
-
-[tool.poetry.scripts]
-honeypatch = "honeypatch.__main__:app"
 
 [tool.black]
 line-length = 100
@@ -47,6 +51,7 @@ disable = [
     "protected-access",
     "consider-using-with",
     "too-many-arguments",
+    "too-many-positional-arguments",
     "too-many-statements",
     "too-many-locals",
     "too-few-public-methods",

@@ -106,21 +106,23 @@ repos:
     hooks:
       - id: pylint
         name: lint files with pylint (honeyback)
-        entry: poetry run -C ./src/honeyback pylint --rcfile ./src/honeyback/pyproject.toml -sn -rn
+        entry: poetry run -C ./src/honeyback pylint --rcfile ./pyproject.toml -sn -rn ./honeyquest
         language: system
+        pass_filenames: false
         files: ^src\/honeyback\/.*\.py$
   - repo: local
     hooks:
       - id: pylint
         name: lint files with pylint (honeypatch)
-        entry: poetry run -C ./src/honeypatch pylint --rcfile ./src/honeypatch/pyproject.toml -sn -rn
+        entry: poetry run -C ./src/honeypatch pylint --rcfile ./pyproject.toml -sn -rn ./honeypatch ./tests
         language: system
+        pass_filenames: false
         files: ^src\/honeypatch\/.*\.py$
   - repo: local
     hooks:
       - id: mypy
         name: check types with mypy (honeyback)
-        entry: poetry run -C ./src/honeyback mypy --config-file ./src/honeyback/pyproject.toml ./src/honeyback
+        entry: poetry run -C ./src/honeyback mypy --config-file ./pyproject.toml .
         language: system
         pass_filenames: false
         files: ^src\/honeyback\/.*\.py$
@@ -128,7 +130,7 @@ repos:
     hooks:
       - id: mypy
         name: check types with mypy (honeypatch)
-        entry: poetry run -C ./src/honeypatch mypy --config-file ./src/honeypatch/pyproject.toml ./src/honeypatch/honeypatch ./src/honeypatch/tests
+        entry: poetry run -C ./src/honeypatch mypy --config-file ./pyproject.toml ./honeypatch ./tests
         language: system
         pass_filenames: false
         files: ^src\/honeypatch\/.*\.py$
@@ -136,7 +138,7 @@ repos:
     hooks:
       - id: mypy
         name: test with pytest (honeypatch)
-        entry: poetry run -C ./src/honeypatch pytest -v --cov=honeypatch ./src/honeypatch
+        entry: poetry run -C ./src/honeypatch pytest -v --cov=honeypatch .
         language: system
         pass_filenames: false
         files: ^src\/honeypatch\/.*\.py$

@@ -88,7 +88,7 @@ You need the following toolchain installed:
 
 - [Node.js 20](https://nodejs.org/en/download/) for the frontend app
 - [Python 3.10](https://www.python.org/downloads/) for the backend API
-- [Poetry](https://python-poetry.org/docs/#installation) for Python dependency management
+- [Poetry 2](https://python-poetry.org/docs/#installation) for Python dependency management
 - [pre-commit](https://pre-commit.com/#install) for the pre-commit hooks
 
 First, install Honeyfront (frontend for Honeyquest) dependencies.
