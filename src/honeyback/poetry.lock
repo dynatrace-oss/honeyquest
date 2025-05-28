@@ -4158,79 +4158,19 @@ files = [
 
 [[package]]
 name = "rpy2"
-version = "3.6.0"
+version = "3.5.17"
 description = "Python interface to the R language (embedded R)"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.7"
 groups = ["analytics"]
 files = [
-    {file = "rpy2-3.6.0-py3-none-any.whl", hash = "sha256:753322ece2d52ba1fce56dd2977feb2c672ad5ea9db61b66aea9f373aaee7dab"},
-    {file = "rpy2-3.6.0.tar.gz", hash = "sha256:8f427b7ca3c40e91d1bc2377ae92a1d48cf5c422a2d5afe97cb0782bb807178c"},
-]
-
-[package.dependencies]
-packaging = {version = "*", markers = "platform_system == \"Windows\""}
-rpy2-rinterface = ">=3.6.0"
-rpy2-robjects = ">=3.6.0"
-
-[package.extras]
-all = ["rpy2-rinterface[all]", "rpy2-robjects[all]"]
-doc = ["pygraphviz", "sphinx"]
-numpy = ["rpy2-rinterface[numpy]", "rpy2-robjects[numpy]"]
-pandas = ["rpy2-rinterface[numpy]", "rpy2-robjects[numpy]"]
-test = ["rpy2-rinterface[test]", "rpy2-robjects[test]"]
-test-minimal = ["coverage", "pytest (>=8)", "pytest-cov"]
-types = ["mypy", "types-tzlocal"]
-
-[[package]]
-name = "rpy2-rinterface"
-version = "3.6.0"
-description = "Low-level interface from Python to the R."
-optional = false
-python-versions = ">=3.8"
-groups = ["analytics"]
-files = [
-    {file = "rpy2_rinterface-3.6.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:b2b45b82f4323bf1622c436cdc28e86931200abb9ef6f6b792a54b1208b03890"},
-    {file = "rpy2_rinterface-3.6.0-cp310-cp310-win_amd64.whl", hash = "sha256:6973c2696a06327509b888e88e3322f070f34d94105837b0351a95a2bc077365"},
-    {file = "rpy2_rinterface-3.6.0-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:84952b566c4fe5344f360d1f390143e99337e10611a2786e859b3801a48d6944"},
-    {file = "rpy2_rinterface-3.6.0-cp311-cp311-win_amd64.whl", hash = "sha256:43a1413724f27d045eea8fec4ee0a01ab28d482f1cd4caeea0039d88dddf4966"},
-    {file = "rpy2_rinterface-3.6.0-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:25092b7fff23e498a9472d1c3af2d4a8564981e951d36b864bcb3fa1778eaa0c"},
-    {file = "rpy2_rinterface-3.6.0-cp312-cp312-win_amd64.whl", hash = "sha256:fb668c5066949e63417bfea2e8868999e922bc560dac0ec7d8579149278c9c97"},
-    {file = "rpy2_rinterface-3.6.0-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:53f893557edd8f33369ba81963bb2b9d101dd1cf71b1f22e637da0b5ee1bda0e"},
-    {file = "rpy2_rinterface-3.6.0-cp313-cp313-win_amd64.whl", hash = "sha256:7b37f4b55f12a7e03cb5a48507c3d6bdd31c2ce02160b65edda60aec31230763"},
-    {file = "rpy2_rinterface-3.6.0-cp38-cp38-macosx_11_0_universal2.whl", hash = "sha256:bce4836561e7014d69dc3a4405c1e83d77e8db4f231c3958696450265bf1cd11"},
-    {file = "rpy2_rinterface-3.6.0-cp38-cp38-win_amd64.whl", hash = "sha256:44580c76a2ef6ab576c3125814b46d84c01c74266031a1a281b8da14f5f44808"},
-    {file = "rpy2_rinterface-3.6.0-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:6b1c78cbbc5aa5461983e8e6ffefbee1cdcb4865ff438ac04457209d5d8b11c2"},
-    {file = "rpy2_rinterface-3.6.0-cp39-cp39-win_amd64.whl", hash = "sha256:6c6721bc5f02bf9b60e40ba8d1e8d740ac41f65b56487a94eb1513a75db5d0bd"},
-    {file = "rpy2_rinterface-3.6.0.tar.gz", hash = "sha256:bf7e5943d12ebc844f84ecef61b3923610c733bc6e1ea6e8cc55aeca0a2ac04d"},
+    {file = "rpy2-3.5.17.tar.gz", hash = "sha256:dbff08c30f3d79161922623858a5b3b68a3fba8ee1747d6af41bc4ba68f3d582"},
 ]
 
 [package.dependencies]
 cffi = ">=1.15.1"
-packaging = {version = "*", markers = "platform_system == \"Windows\""}
-
-[package.extras]
-all = ["coverage", "pytest (>=8)", "pytest-cov"]
-doc = ["ipykernel", "jupytext", "multipledispatch", "nbconvert", "pygraphviz", "sphinx"]
-test = ["coverage", "pytest (>=8)", "pytest-cov"]
-types = ["mypy", "packaging", "pandas-stubs", "types-Pygments", "types-tzlocal"]
-
-[[package]]
-name = "rpy2-robjects"
-version = "3.6.0"
-description = "Python interface to the R language (embedded R)"
-optional = false
-python-versions = ">=3.8"
-groups = ["analytics"]
-files = [
-    {file = "rpy2_robjects-3.6.0-py3-none-any.whl", hash = "sha256:b119fe629972a5a598885a5d2561564a21a7a9f0577fa5ce5f358d1735a0332b"},
-    {file = "rpy2_robjects-3.6.0.tar.gz", hash = "sha256:1180bc9e6ad4963114db88153094916252bdc2d7e9a23da74c69e6b843d08337"},
-]
-
-[package.dependencies]
 jinja2 = "*"
 packaging = {version = "*", markers = "platform_system == \"Windows\""}
-rpy2-rinterface = ">=3.6.0"
 tzlocal = "*"
 
 [package.extras]
@@ -4238,9 +4178,9 @@ all = ["ipython", "numpy (<1.26) ; python_version < \"3.9\"", "numpy (>=1.26) ; 
 doc = ["ipykernel", "jupytext", "multipledispatch", "nbconvert", "numpy", "pandas", "pygraphviz", "sphinx"]
 numpy = ["numpy (<1.26) ; python_version < \"3.9\"", "numpy (>=1.26) ; python_version >= \"3.9\""]
 pandas = ["numpy (<1.26) ; python_version < \"3.9\"", "numpy (>=1.26) ; python_version >= \"3.9\"", "pandas (>=1.3.5) ; python_version >= \"3.10\"", "pandas ; python_version < \"3.10\""]
-test = ["coverage", "ipython", "numpy (<1.26) ; python_version < \"3.9\"", "numpy (>=1.26) ; python_version >= \"3.9\"", "pandas (>=1.3.5) ; python_version >= \"3.10\"", "pandas ; python_version < \"3.10\"", "pytest", "pytest-cov"]
+test = ["ipython", "numpy (<1.26) ; python_version < \"3.9\"", "numpy (>=1.26) ; python_version >= \"3.9\"", "pandas (>=1.3.5) ; python_version >= \"3.10\"", "pandas ; python_version < \"3.10\"", "pytest"]
 test-minimal = ["coverage", "pytest (>=8)", "pytest-cov"]
-types = ["mypy", "packaging", "pandas-stubs", "types-Pygments", "types-tzlocal"]
+types = ["mypy", "types-tzlocal"]
 
 [[package]]
 name = "rx"
@@ -5434,4 +5374,4 @@ dev = ["black (>=19.3b0) ; python_version >= \"3.6\"", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.11"
-content-hash = "e83ff979440de1c89e21a66128d1e76a6f4a088e3283c36e522456c6d252395f"
+content-hash = "cd68a2db0d49e792750956e32a4d7b695eed0d289a4036600db01c4cb3ae56db"
