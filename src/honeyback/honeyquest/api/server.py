@@ -55,7 +55,7 @@ def create_app(debug: bool):
             # so be sure to follow the correct declaration order here
             Middleware(
                 SessionMiddleware,
-                secret_key=settings.cookie_secret,
+                secret_key=settings.cookie_secret or "",
                 max_age=cookie_max_age,
             ),
         ],
